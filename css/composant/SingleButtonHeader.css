@@ -6,15 +6,12 @@
     z-index: 1000;
 }
 
-.blackHeaderID{
-  background-color: rgb(18, 19, 21); 
-  width: 100%;
-  
+.blackHeaderID {
+    background-color: rgb(18, 19, 21);
+    width: 100%;
 }
 
-
-
-.OrderGeometry{
+.OrderGeometry {
     width: 100%;
     display: flex;
     list-style-type: none;
@@ -22,7 +19,7 @@
     padding-bottom: 0.2vw;
 }
 
-.OrderGeometry2{
+.OrderGeometry2 {
     display: flex;
     list-style-type: none;
     transform: rotate(180deg);
@@ -30,336 +27,222 @@
     padding-bottom: 0.2vw;
 }
 
-
-.generalParameters{
-    background-color: rgb(204, 204, 204); 
+.generalParameters {
+    background-color: rgb(204, 204, 204);
 }
 
-
-
-
-
-
-
-
-
 .headerButton {
-                                            
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
     padding: 12px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 2vh;
-    transition-duration: 0.3s;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     cursor: pointer;
     width: 100%;
     height: 5vh;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    background-color: rgb(43, 60, 86); 
-    color: WHITE;
-    border: 4px solid rgb(57, 77, 107); 
+    background-color: rgb(43, 60, 86);
+    border: 4px solid rgb(57, 77, 107);
+    box-sizing: border-box;
 }
 
 .headerButton:hover {
-  background-color: rgb(183, 197, 215); 
-  color: rgb(43, 60, 86); 
+    background-color: rgb(183, 197, 215);
+    color: rgb(43, 60, 86);
 }
 
-
-
-
-
 .headerButtonBlack {
-                                            
-  color: white;
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 2vh;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  width: 100%;
-  height: 5vh;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-  background-color: rgb(18, 19, 21); 
-  color: WHITE;
-  border: 4px solid rgb(32, 34, 36); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vh;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    width: 100%;
+    height: 5vh;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    background-color: rgb(18, 19, 21);
+    border: 4px solid rgb(32, 34, 36);
+    box-sizing: border-box;
 }
 
 .headerButtonBlack:hover {
-background-color: rgb(44, 45, 48); 
-color: white; 
+    background-color: rgb(44, 45, 48);
+    color: #ffffff;
 }
 
-#globalHeader headerButton{
-  text-decoration: none;
+#globalHeader .headerButton,
+#globalHeader a {
+    text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-#whiteGeometry1{
-
+/* Header Geometric Elements */
+#whiteGeometry1 {
     min-height: 0.5vw;
     min-width: 8vw;
-
     position: relative;
-    animation-name: whiteGeometry1;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    animation: whiteGeometry1 1.5s infinite alternate-reverse;
+}
+
+#whiteGeometry2 {
+    min-height: 0.5vw;
+    min-width: 2vw;
+    position: relative;
+    animation: whiteGeometry2 0.9s infinite alternate-reverse;
+}
+
+#whiteGeometry3 {
+    min-height: 0.5vw;
+    width: 6vw;
+    position: relative;
+    animation: whiteGeometry3 3s infinite alternate-reverse;
+}
+
+#whiteGeometry4 {
+    min-height: 0.5vw;
+    width: 10vw;
+    position: relative;
+    animation: whiteGeometry4 1.5s infinite alternate-reverse;
+}
+
+#whiteGeometry5 {
+    min-height: 0.5vw;
+    width: 4vw;
+    position: relative;
+    animation: whiteGeometry5 2s infinite alternate-reverse;
+}
+
+#whiteGeometry6 {
+    min-height: 0.5vw;
+    min-width: 2vw;
+    position: relative;
+    animation: whiteGeometry6 0.9s infinite alternate-reverse;
+}
+
+#whiteGeometry7 {
+    min-height: 0.5vw;
+    min-width: 8vw;
+    position: relative;
+    animation: whiteGeometry7 2s infinite alternate-reverse;
+}
+
+#whiteGeometry8 {
+    min-height: 0.5vw;
+    min-width: 2vw;
+    position: relative;
+    animation: whiteGeometry8 0.9s infinite alternate-reverse;
+}
+
+#whiteGeometry9 {
+    min-height: 0.5vw;
+    width: 6vw;
+    position: relative;
+    animation: whiteGeometry9 3s infinite alternate-reverse;
+}
+
+#whiteGeometry10 {
+    min-height: 0.5vw;
+    width: 10vw;
+    position: relative;
+    animation: whiteGeometry10 1.5s infinite alternate-reverse;
+}
+
+#whiteGeometry11 {
+    min-height: 0.5vw;
+    width: 4vw;
+    position: relative;
+    animation: whiteGeometry11 2.5s infinite alternate-reverse;
+}
+
+#whiteGeometry12 {
+    min-height: 0.5vw;
+    min-width: 2vw;
+    position: relative;
+    animation: whiteGeometry12 0.9s infinite alternate-reverse;
 }
 
 @keyframes whiteGeometry1 {
-    0%   {left:0vw;}
-    100% {left:10vw;}
-  }
-
-
-
-
-
-  #whiteGeometry2{
-    min-height: 0.5vw;
-    min-width: 2vw;
-
-    position: relative;
-    animation-name: whiteGeometry2;
-    animation-duration: 0.9s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 0vw; }
+    100% { left: 10vw; }
 }
 
 @keyframes whiteGeometry2 {
-    0%   {left:10vw;}
-    100% {left:15vw;}
-  }
-
-
-
-
-
-  #whiteGeometry3{
-    min-height: 0.5vw;
-    width: 6vw;
-
-    position: relative;
-    animation-name: whiteGeometry3;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 10vw; }
+    100% { left: 15vw; }
 }
 
 @keyframes whiteGeometry3 {
-    0%   {left:15vw;}
-    100% {left:28vw;}
-  }
-
-
-
-
-  #whiteGeometry4{
-    min-height: 0.5vw;
-    width: 10vw;
-
-    position: relative;
-    animation-name: whiteGeometry4;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 15vw; }
+    100% { left: 28vw; }
 }
 
 @keyframes whiteGeometry4 {
-    0%   {left:28vw;}
-    100% {left:37vw;}
-  }
-
-
-
-
-  #whiteGeometry5{
-    min-height: 0.5vw;
-    width: 4vw;
-
-    position: relative;
-    animation-name: whiteGeometry5;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 28vw; }
+    100% { left: 37vw; }
 }
 
 @keyframes whiteGeometry5 {
-    0%   {left:37vw;}
-    100% {left:47vw;}
-  }
-
-
-
-  #whiteGeometry6{
-    min-height: 0.5vw;
-    min-width: 2vw;
-
-    position: relative;
-    animation-name: whiteGeometry6;
-    animation-duration: 0.9s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 37vw; }
+    100% { left: 47vw; }
 }
 
 @keyframes whiteGeometry6 {
-    0%   {left:47vw;}
-    100% {left:67vw;}
-  }
-
-
-
-
-
-
-
-
-  #whiteGeometry7{
-
-    min-height: 0.5vw;
-    min-width: 8vw;
-
-    position: relative;
-    animation-name: whiteGeometry7;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 47vw; }
+    100% { left: 67vw; }
 }
 
 @keyframes whiteGeometry7 {
-    0%   {left:0vw;}
-    100% {left:10vw;}
-  }
-
-
-
-
-
-  #whiteGeometry8{
-    min-height: 0.5vw;
-    min-width: 2vw;
-
-    position: relative;
-    animation-name: whiteGeometry8;
-    animation-duration: 0.9s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 0vw; }
+    100% { left: 10vw; }
 }
 
 @keyframes whiteGeometry8 {
-    0%   {left:10vw;}
-    100% {left:15vw;}
-  }
-
-
-
-
-
-  #whiteGeometry9{
-    min-height: 0.5vw;
-    width: 6vw;
-
-    position: relative;
-    animation-name: whiteGeometry9;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 10vw; }
+    100% { left: 15vw; }
 }
 
 @keyframes whiteGeometry9 {
-    0%   {left:15vw;}
-    100% {left:28vw;}
-  }
-
-
-
-
-  #whiteGeometry10{
-    min-height: 0.5vw;
-    width: 10vw;
-
-    position: relative;
-    animation-name: whiteGeometry10;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 15vw; }
+    100% { left: 28vw; }
 }
 
 @keyframes whiteGeometry10 {
-    0%   {left:28vw;}
-    100% {left:37vw;}
-  }
-
-
-
-
-  #whiteGeometry11{
-    min-height: 0.5vw;
-    width: 4vw;
-
-    position: relative;
-    animation-name: whiteGeometry11;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 28vw; }
+    100% { left: 37vw; }
 }
 
 @keyframes whiteGeometry11 {
-    0%   {left:37vw;}
-    100% {left:47vw;}
-  }
-
-
-
-  #whiteGeometry12{
-    min-height: 0.5vw;
-    min-width: 2vw;
-
-    position: relative;
-    animation-name: whiteGeometry12;
-    animation-duration: 0.9s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    0%   { left: 37vw; }
+    100% { left: 47vw; }
 }
 
 @keyframes whiteGeometry12 {
-    0%   {left:47vw;}
-    100% {left:67vw;}
-  }
+    0%   { left: 47vw; }
+    100% { left: 67vw; }
+}
 
-
-
-  @media all and (max-device-width: 412px){
-
-
+@media (max-width: 540px) {
     .headerButton {
-                                            
-      padding: 12px 32px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 3vh;
-      transition-duration: 0.3s;
-      cursor: pointer;
-      width: 100%;
-      height: 8vh;
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 600;
-      background-color: rgb(43, 60, 86); 
-      color: WHITE;
-      border: 4px solid rgb(57, 77, 107); 
-  }
+        padding: 8px 16px;
+        font-size: 2.2vh;
+        height: 7vh;
+    }
+}
 
-
-
+@media (max-width: 412px) {
+    .headerButton {
+        padding: 12px 32px;
+        font-size: 3vh;
+        height: 8vh;
+    }
 }

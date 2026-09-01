@@ -1,517 +1,235 @@
-.galeryImage{
-
-    background-color: rgb(30, 39, 63); 
+.galeryImage {
+    background-color: rgb(30, 39, 63);
     width: 100%;
-    /*height: 100vh;*/
+    box-sizing: border-box;
 }
 
-.galeryImageBlack{
-
-  background-color: rgb(18, 19, 21); 
-  width: 100%;
-  height: 85vh;
+.galeryImageBlack {
+    background-color: rgb(18, 19, 21);
+    width: 100%;
+    height: 85vh;
 }
 
-.OrderGeometry3{
+.OrderGeometry3 {
     width: 100%;
     display: flex;
     padding-bottom: 3vh;
     list-style-type: none;
-
 }
 
-.OrderGeometry4{
+.OrderGeometry4 {
     display: flex;
-    padding-top: 3vh; 
+    padding-top: 3vh;
     list-style-type: none;
 }
 
-.generalParametersGalery{
-  background-color: rgba(183, 197, 215, 0.253);
+.generalParametersGalery {
+    background-color: rgba(183, 197, 215, 0.253);
 }
 
-
-#BarrTest{
+#BarrTest {
     display: flex;
 }
 
 .imagesBarr {
     display: flex;
     gap: 2.7vw;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
-
 
 .imagesBarr2 {
     display: flex;
     gap: 2.7vw;
-    display: flex; /* Use flexbox to align items */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
-
-/*.image1 {animation-timing-function: linear;}*/
 
 .ProjectSectionsTitle {
     font-family: 'Rajdhani', sans-serif;
-    color: white;
+    color: #ffffff;
     text-align: center;
     font-size: 8vh;
     margin-top: 3vh;
 }
 
-#image1 {
-    width: 30vw;
-    height: 17vw;
+/* Gallery Geometry Elements */
+#whiteGeometryA {
+    min-height: 0.5vw;
+    min-width: 8vw;
     position: relative;
-    animation-name: image1;
-    animation-duration: 17s;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-    filter: drop-shadow(8px 8px 10px rgba(34, 118, 69, 0.486));
-    animation-direction: alternate-reverse;
+    animation: whiteGeometryA 2.5s infinite alternate-reverse;
 }
 
-
-.IB_CLASS1 {
-    color: white;
-    padding: 12px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 8vh;
-    transition-duration: 0.3s;
-    cursor: pointer;
-    width: 27vw;
-    height: 35vh;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 600;
-    padding-top: 1vh;
-    background: url("img/RIG.png");
-    background-size: 32vw;
-    background-position-x: 50%;
-    filter: drop-shadow(8px 8px 10px rgb(28, 174, 140));
-    /*color: rgba(43, 60, 86, 0);*/
-    color: rgba(255, 255, 255);
-    /*border: 4px solid rgba(127, 136, 147, 0.256);*/
-}
-
-
-.IB_CLASS1:hover {
-  background-color: rgba(156, 157, 159, 0.384); 
-  color: rgb(255, 255, 255); 
-}
-
-
-  @keyframes image1 {
-    0%   {left:0vw; top:0vh;}
-    25%  {left:1.5vw; top:1.5vh;}
-    50%  {left:1.5vw; top:0vh;}
-    75%  {left:0vw; top:1.5vh;}
-    100% {left:0vw; top:0vh;}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #image2{
-    width: 30vw;
-    height: 17vw;
+#whiteGeometryB {
+    min-height: 0.5vw;
+    min-width: 2vw;
     position: relative;
-    animation-name: image2;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-
-    filter: drop-shadow(8px 8px 10px rgb(15, 20, 35));
-    animation-direction: alternate-reverse;
+    animation: whiteGeometryB 1.2s infinite alternate-reverse;
 }
 
-
-
-.IB_CLASS2 {                  
-  color: white;
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 8vh;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  width: 27vw;
-  height: 35vh;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-
-  padding-top: 1vh;
-
-  background: url("img/UnityDebug.png");
-  background-size: 32vw;
-  background-position-x: 50%;
-  filter: drop-shadow(8px 8px 10px rgb(34, 47, 86));
-
-      
-  color: rgba(43, 60, 86, 0);
-  /*border: 4px solid rgba(127, 136, 147, 0.256);*/
-}
-
-.IB_CLASS2:hover {
-  background-color: rgba(156, 157, 159, 0.384); 
-  color: rgb(255, 255, 255); 
-}
-
-  @keyframes image2 {
-    0%   {left:0vw; top:0vh;}
-    25%  {left:1.5vw; top:1.5vh;}
-    50%  {left:1.5vw; top:0vh;}
-    75%  {left:0vw; top:1.5vh;}
-    100% {left:0vw; top:0vh;}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #image3{
-    width: 28vw;
-    height: 17vw;
+#whiteGeometryC {
+    min-height: 0.5vw;
+    width: 6vw;
     position: relative;
-    animation-name: image3;
-    animation-duration: 13s;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-
-    filter: drop-shadow(8px 8px 10px rgba(61, 90, 97, 0.566));
-    animation-direction: alternate-reverse;
+    animation: whiteGeometryC 4s infinite alternate-reverse;
 }
 
-
-.IB_CLASS3 {                  
-  color: white;
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 8vh;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  width: 27vw;
-  height: 35vh;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-
-  padding-top: 1vh;
-
-  background: url("img/Dev.jpg");
-  background-size: 47vw;
-  background-position-x: 50%;
-  filter: drop-shadow(8px 8px 10px rgb(78, 53, 67));
-      
-  color: rgba(43, 60, 86, 0);
-  /*border: 4px solid rgba(127, 136, 147, 0.256);*/
-}
-
-
-.IB_CLASS3:hover {
-  background-color: rgba(156, 157, 159, 0.384); 
-  color: rgb(255, 255, 255); 
-}
-
-
-  @keyframes image3 {
-    0%   {left:0vw; top:0vh;}
-    25%  {left:1.5vw; top:1.5vh;}
-    50%  {left:1.5vw; top:0vh;}
-    75%  {left:0vw; top:1.5vh;}
-    100% {left:0vw; top:0vh;}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #image4{    
-    width: 30vw;
-    height: 17vw;
+#whiteGeometryD {
+    min-height: 0.5vw;
+    width: 10vw;
     position: relative;
-    animation-name: image4;
-    animation-duration: 17s;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-
-    filter: drop-shadow(8px 8px 10px rgba(34, 118, 69, 0.486));
-    animation-direction: alternate-reverse;
+    animation: whiteGeometryD 2s infinite alternate-reverse;
 }
 
-
-.IB_CLASS4 {                  
-  color: white;
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 8vh;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  width: 27vw;
-  height: 35vh;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-
-  padding-top: 1vh;
-
-  background: url("img/RIG.png");
-  background-size: 32vw;
-  background-position-x: 50%;
-  filter: drop-shadow(8px 8px 10px rgb(28, 174, 140));
-      
-  color: rgba(43, 60, 86, 0);
-  /*border: 4px solid rgba(127, 136, 147, 0.256);*/
-}
-
-
-.IB_CLASS4:hover {
-  background-color: rgba(156, 157, 159, 0.384); 
-  color: rgb(255, 255, 255); 
-}
-
-
-  @keyframes image4 {
-    0%   {left:0vw; top:0vh;}
-    25%  {left:1.5vw; top:1.5vh;}
-    50%  {left:1.5vw; top:0vh;}
-    75%  {left:0vw; top:1.5vh;}
-    100% {left:0vw; top:0vh;}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #image5{
-    width: 30vw;
-    height: 17vw;
+#whiteGeometryE {
+    min-height: 0.5vw;
+    width: 4vw;
     position: relative;
-    animation-name: image5;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-
-    filter: drop-shadow(8px 8px 10px rgb(15, 20, 35));
-    animation-direction: alternate-reverse;
+    animation: whiteGeometryE 3s infinite alternate-reverse;
 }
 
-
-
-.IB_CLASS5 {                  
-  color: white;
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 8vh;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  width: 27vw;
-  height: 35vh;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-
-  padding-top: 1vh;
-
-  background: url("img/UnityDebug.png");
-  background-size: 32vw;
-  background-position-x: 50%;
-  filter: drop-shadow(8px 8px 10px rgb(34, 47, 86));
-
-      
-  color: rgba(43, 60, 86, 0);
-  /*border: 4px solid rgba(127, 136, 147, 0.256);*/
-}
-
-.IB_CLASS5:hover {
-  background-color: rgba(156, 157, 159, 0.384); 
-  color: rgb(255, 255, 255); 
-}
-
-  @keyframes image5 {
-    0%   {left:0vw; top:0vh;}
-    25%  {left:1.5vw; top:1.5vh;}
-    50%  {left:1.5vw; top:0vh;}
-    75%  {left:0vw; top:1.5vh;}
-    100% {left:0vw; top:0vh;}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  #image6{
-    width: 28vw;
-    height: 17vw;
+#whiteGeometryF {
+    min-height: 0.5vw;
+    min-width: 2vw;
     position: relative;
-    animation-name: image6;
-    animation-duration: 13s;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-
-    filter: drop-shadow(8px 8px 10px rgba(61, 90, 97, 0.566));
-    animation-direction: alternate-reverse;
+    animation: whiteGeometryF 1.3s infinite alternate-reverse;
 }
 
-
-.IB_CLASS6 {                  
-  color: white;
-  /*padding: 12px 32px;*/
-  text-align: center;
-  text-decoration: none;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  width: 27vw;
-  height: 35vh;
-
-
-
-
-  padding-top: 1vh;
-
-  background: url("img/gamedesign.jpg");
-  background-size: 23.5vw;
-  background-position-x: 00%;
-  filter: drop-shadow(8px 8px 10px rgb(78, 53, 67));
-  
-  color: rgba(43, 60, 86, 0);
-  border: 2px solid rgba(255, 255, 255, 0.656);
-
-  padding-bottom: 50%;
-  font-weight: 500;
-  font-size: 3vh;
+.whiteGeometryG,
+#whiteGeometryG {
+    min-height: 0.5vw;
+    min-width: 8vw;
+    position: relative;
+    animation: whiteGeometryG 3.5s infinite alternate-reverse;
 }
 
-
-
-.IB_CLASS6:hover {
-    background-color: rgba(156, 157, 159, 0.384);
-    color: rgb(255, 255, 255);
-    padding-bottom: 0%;
-    font-weight: 550;
-    font-size: 5vh;
+#whiteGeometryH {
+    min-height: 0.5vw;
+    min-width: 2vw;
+    position: relative;
+    animation: whiteGeometryH 1.2s infinite alternate-reverse;
 }
 
-
-
-.IB_CLASS6 div {
-    font-family: 'Rajdhani', sans-serif;
-    /*    background-color: rgb(43, 60, 86);*/
-    background-color: rgb(82, 100, 128);
-    color: rgb(255, 255, 255);
-    width: 100%;
+#whiteGeometryI {
+    min-height: 0.5vw;
+    width: 6vw;
+    position: relative;
+    animation: whiteGeometryI 4s infinite alternate-reverse;
 }
 
+#whiteGeometryJ {
+    min-height: 0.5vw;
+    width: 10vw;
+    position: relative;
+    animation: whiteGeometryJ 2s infinite alternate-reverse;
+}
 
-  @keyframes image6 {
-    0%   {left:0vw; top:0vh;}
-    25%  {left:1.5vw; top:1.5vh;}
-    50%  {left:1.5vw; top:0vh;}
-    75%  {left:0vw; top:1.5vh;}
-    100% {left:0vw; top:0vh;}
-  }
+#whiteGeometryK {
+    min-height: 0.5vw;
+    width: 4vw;
+    position: relative;
+    animation: whiteGeometryK 3s infinite alternate-reverse;
+}
 
+#whiteGeometryL {
+    min-height: 0.5vw;
+    min-width: 2vw;
+    position: relative;
+    animation: whiteGeometryL 1.3s infinite alternate-reverse;
+}
 
+@keyframes whiteGeometryA {
+    0%   { left: 0vw; }
+    100% { left: 10vw; }
+}
 
+@keyframes whiteGeometryB {
+    0%   { left: 10vw; }
+    100% { left: 15vw; }
+}
 
+@keyframes whiteGeometryC {
+    0%   { left: 15vw; }
+    100% { left: 28vw; }
+}
 
+@keyframes whiteGeometryD {
+    0%   { left: 28vw; }
+    100% { left: 37vw; }
+}
 
+@keyframes whiteGeometryE {
+    0%   { left: 37vw; }
+    100% { left: 47vw; }
+}
 
+@keyframes whiteGeometryF {
+    0%   { left: 47vw; }
+    100% { left: 67vw; }
+}
 
+@keyframes whiteGeometryG {
+    0%   { left: 0vw; }
+    100% { left: 10vw; }
+}
 
+@keyframes whiteGeometryH {
+    0%   { left: 10vw; }
+    100% { left: 15vw; }
+}
 
+@keyframes whiteGeometryI {
+    0%   { left: 15vw; }
+    100% { left: 28vw; }
+}
 
+@keyframes whiteGeometryJ {
+    0%   { left: 28vw; }
+    100% { left: 37vw; }
+}
+
+@keyframes whiteGeometryK {
+    0%   { left: 37vw; }
+    100% { left: 47vw; }
+}
+
+@keyframes whiteGeometryL {
+    0%   { left: 47vw; }
+    100% { left: 67vw; }
+}
+
+/* Project Cards */
 .ProjectButton {
-    transition-duration: 0.3s;
+    transition: margin-top 0.3s ease;
     display: flex;
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration: none;
+    color: inherit;
     margin-top: 6vh;
     margin-bottom: 6vh;
+    align-items: center;
 }
 
 .ProjectButton:hover {
-
     margin-top: 3vh;
 }
 
 .cover-image-wrap,
 .details-wrap {
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .cover_img_loaded {
     width: 21vw;
     height: 28vh;
+    display: block;
+    object-fit: cover;
 }
+
 .details-wrap {
     background-color: rgb(82, 100, 128);
     min-height: 0.5vw;
@@ -519,19 +237,20 @@
     height: 28vh;
     position: relative;
     font-size: 3vh;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    display: flex; /* Use flexbox to align items */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
 .details-inner {
-    transition-duration: 0.3s;
-    background-color: rgba(43, 60, 86, 1);
+    transition: background-color 0.3s ease;
+    background-color: rgb(43, 60, 86);
     width: 27vw;
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
+    padding: 8px 12px;
+    box-sizing: border-box;
 }
 
 .details-inner:hover {
@@ -541,7 +260,9 @@
 .ProjectButtonTitle {
     color: rgb(255, 255, 255);
     font-size: 4vh;
+    font-weight: 700;
 }
+
 .ProjectButtonData {
     color: rgb(200, 200, 200);
     font-size: 2.5vh;
@@ -552,460 +273,57 @@
     font-size: 3vh;
 }
 
-
-
-
-
-
-
-
-#whiteGeometryA {
-    min-height: 0.5vw;
-    min-width: 8vw;
-    position: relative;
-    animation-name: whiteGeometryA;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-}
-
-@keyframes whiteGeometryA {
-    0%   {left:0vw;}
-    100% {left:10vw;}
-  }
-
-
-
-
-
-  #whiteGeometryB{
-    min-height: 0.5vw;
-    min-width: 2vw;
-
-    position: relative;
-    animation-name: whiteGeometryB;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-@keyframes whiteGeometryB {
-    0%   {left:10vw;}
-    100% {left:15vw;}
-  }
-
-
-
-
-
-  #whiteGeometryC{
-    min-height: 0.5vw;
-    width: 6vw;
-
-    position: relative;
-    animation-name: whiteGeometryC;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-@keyframes whiteGeometryC {
-    0%   {left:15vw;}
-    100% {left:28vw;}
-  }
-
-
-
-
-  #whiteGeometryD{
-    min-height: 0.5vw;
-    width: 10vw;
-
-    position: relative;
-    animation-name: whiteGeometryD;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-@keyframes whiteGeometryD {
-    0%   {left:28vw;}
-    100% {left:37vw;}
-  }
-
-
-
-
-  #whiteGeometryE{
-    min-height: 0.5vw;
-    width: 4vw;
-
-    position: relative;
-    animation-name: whiteGeometryE;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-@keyframes whiteGeometryE {
-    0%   {left:37vw;}
-    100% {left:47vw;}
-  }
-
-
-
-  #whiteGeometryF{
-    min-height: 0.5vw;
-    min-width: 2vw;
-
-    position: relative;
-    animation-name: whiteGeometryF;
-    animation-duration: 1.3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-
-
-@keyframes whiteGeometryF {
-    0%   {left:47vw;}
-    100% {left:67vw;}
-  }
-
-
-
-
-
-
-
-
-  #whiteGeometryG{
-
-    min-height: 0.5vw;
-    min-width: 8vw;
-
-    position: relative;
-    animation-name: whiteGeometryG;
-    animation-duration: 3.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-
-
-@keyframes whiteGeometryG {
-    0%   {left:0vw;}
-    100% {left:10vw;}
-  }
-
-
-
-  #whiteGeometryH{
-    min-height: 0.5vw;
-    min-width: 2vw;
-
-    position: relative;
-    animation-name: whiteGeometryH;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-
-@keyframes whiteGeometryH {
-    0%   {left:10vw;}
-    100% {left:15vw;}
-  }
-
-
-
-  #whiteGeometryI{
-    min-height: 0.5vw;
-    width: 6vw;
-
-    position: relative;
-    animation-name: whiteGeometryI;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-@keyframes whiteGeometryI {
-    0%   {left:15vw;}
-    100% {left:28vw;}
-  }
-
-
-
-
-  #whiteGeometryJ{
-    min-height: 0.5vw;
-    width: 10vw;
-
-    position: relative;
-    animation-name: whiteGeometryJ;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-@keyframes whiteGeometryJ {
-    0%   {left:28vw;}
-    100% {left:37vw;}
-  }
-
-
-
-
-  #whiteGeometryK{
-    min-height: 0.5vw;
-    width: 4vw;
-
-    position: relative;
-    animation-name: whiteGeometryK;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-@keyframes whiteGeometryK {
-    0%   {left:37vw;}
-    100% {left:47vw;}
-  }
-
-
-
-  #whiteGeometryL{
-    min-height: 0.5vw;
-    min-width: 2vw;
-
-    position: relative;
-    animation-name: whiteGeometryL;
-    animation-duration: 1.3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-@keyframes whiteGeometryL {
-    0%   {left:47vw;}
-    100% {left:67vw;}
-  }
-
-
-
-
-
-  @media all and (max-device-width: 540px){
-
-    .imagesBarr{
-      display: flex;
-      flex-direction: column;
-      gap: 4vw;
+/* Responsive Media Queries */
+@media (max-width: 1280px) {
+    .galeryImage {
+        min-height: 73vh;
     }
-
-    .imagesBarr2{
-      display: flex;
-      flex-direction: column;
-      gap: 8vw;
-      justify-content: center;
-    }
-
-    
-
-
-    #image1{    
-      width: 90vw;
-      height: 51vw;
-      padding-left: 5vw;
-  }
-  
-  
-    #image2{
-      width: 90vw;
-      height: 51vw;
-      padding-left: 4.5vw;
-  }
-  
-  
-  
-    #image3{
-      width: 84vw;
-      height: 51vw;
-      padding-left: 6.5vw;
-  }
-
-
-  .galeryImage{
-
-    height: 129.2vh;
-    
 }
 
-
-
-}
-@media all and (max-device-width: 1280px){
-
-  .galeryImage{
-    height: 73vh;
-}
-
-}
-
-  @media all and (max-device-width: 412px){
-
-      .imagesBarr{
-        display: flex;
+@media (max-width: 768px) {
+    .imagesBarr,
+    .imagesBarr2 {
         flex-direction: column;
-        gap: 4vw;
-      }
+        gap: 6vw;
+    }
 
-      .imagesBarr2{
-        display: flex;
+    .ProjectButton {
+        flex-direction: column;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .cover_img_loaded {
+        width: 80vw;
+        height: auto;
+        max-height: 35vh;
+    }
+
+    .details-wrap,
+    .details-inner {
+        width: 80vw;
+        height: auto;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 540px) {
+    .imagesBarr,
+    .imagesBarr2 {
         flex-direction: column;
         gap: 8vw;
         justify-content: center;
-      }
-
-
-      #image1{    
-        width: 90vw;
-        height: 51vw;
-        padding-left: 5vw;
     }
 
-    .IB_CLASS1 {                  
-
-      font-size: 4vh;
-      background-size: 88vw;
-      background-position-y: 50%;
-    }
-    
-    
-      #image2{
-        width: 90vw;
-        height: 51vw;
-        padding-left: 4.5vw;
+    .ProjectButtonTitle {
+        font-size: 3vh;
     }
 
-    .IB_CLASS2 {                  
-
-      font-size: 4vh;
-      background-size: 88vw;
-      background-position-y: 50%;
-    }
-    
-    
-    
-      #image3{
-        width: 84vw;
-        height: 51vw;
-        padding-left: 6.5vw;
+    .ProjectButtonData {
+        font-size: 2vh;
     }
 
-    .IB_CLASS3 {                  
-
-      font-size: 4vh;
-      background-size: 88vw;
-      background-position-y: 50%;
+    .ProjectButtonSkills {
+        font-size: 2.2vh;
     }
-
-
-
-    #image5{
-      width: 84vw;
-      height: 51vw;
-      padding-left: 6.5vw;
-  }
-
-  .IB_CLASS5 {                  
-
-    font-size: 4vh;
-    background-size: 88vw;
-    background-position-y: 50%;
-  }
-
-
-
-
-    #image6{
-      width: 84vw;
-      height: 51vw;
-      padding-left: 6.5vw;
-  }
-
-  .IB_CLASS6 {                  
-
-    font-size: 4vh;
-    background-size: 88vw;
-    background-position-y: 50%;
-  }
-
-
-    .galeryImage{
-
-      height: 81vh;
-      
-  }
-
-
-
 }
-
-
-
-
-@media all and (max-device-width: 390px){
-
-  .imagesBarr{
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
-  }
-
-  .imagesBarr2{
-    display: flex;
-    flex-direction: column;
-    gap: 8vw;
-    justify-content: center;
-  }
-
-
-  #image1{    
-    width: 90vw;
-    height: 51vw;
-    padding-left: 5vw;
-}
-
-
-  #image2{
-    width: 90vw;
-    height: 51vw;
-    padding-left: 4.5vw;
-}
-
-
-
-  #image3{
-    width: 84vw;
-    height: 51vw;
-    padding-left: 6.5vw;
-}
-
-
-.galeryImage{
-
-  height: 83vh;
-  
-}
-
-
-
-}
-
-
-
-
-
-
-

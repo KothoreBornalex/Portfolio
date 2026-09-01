@@ -1,65 +1,98 @@
-
-
-
-.leFooter{
-    background-color: rgb(43, 60, 86); 
+.leFooter {
+    background-color: rgb(43, 60, 86);
     min-height: 1vw;
     min-width: 100%;
-    justify-content: end;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
 }
 
-.leFooterBlack{
-    background-color: rgb(18, 19, 21); 
+.leFooterBlack {
+    background-color: rgb(18, 19, 21);
     min-height: 1vw;
     min-width: 100%;
-    justify-content: end;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.OrderGeometry7{
+.OrderGeometry7 {
     width: 100%;
     display: flex;
     list-style-type: none;
-
+    padding: 0;
+    margin: 0;
 }
 
-.generalParameters3{
-    background-color: rgba(204, 204, 204, 0.831); 
-  }
-
-.generalParameters3Black{
-    background-color: rgb(204, 204, 204); 
-  }
-
-
-
-.leFooter h2{
-    font-family: 'Rajdhani', sans-serif;
-    color: rgb(203, 214, 230); 
-    font-weight: lighter;
-    font-weight: 900;
-    font-size: 130%;
-    padding-left: 6%;
-    justify-content: left;
-
-
-    position: relative;
-    animation-name: TextAnimationPresentation;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-@keyframes TextAnimationPresentation {
-    0%   {left:0%;}
-    100% {left:-4%;}
-}
-
-
-
-.OrderGeometry8{
+.OrderGeometry8 {
     display: flex;
     list-style-type: none;
     transform: rotate(180deg);
+    padding: 0;
+    margin: 0;
+}
+
+.generalParameters3 {
+    background-color: rgba(204, 204, 204, 0.831);
+}
+
+.generalParameters3Black {
+    background-color: rgb(204, 204, 204);
+}
+
+.leFooter h2 {
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(203, 214, 230);
+    font-weight: 700;
+    font-size: 130%;
+    padding-left: 6%;
+    text-align: left;
+    margin: 1vh 0;
+    position: relative;
+    animation: TextAnimationPresentation 6s infinite alternate-reverse;
+}
+
+/* Footer Geometric Elements */
+.leFooter .whiteGeometryG,
+.leFooter #whiteGeometryG {
+    min-height: 0.5vw;
+    min-width: 8vw;
+    position: relative;
+    animation: whiteGeometryG 3.5s infinite alternate-reverse;
+}
+
+.leFooter #whiteGeometryH {
+    min-height: 0.5vw;
+    min-width: 2vw;
+    position: relative;
+    animation: whiteGeometryH 1.2s infinite alternate-reverse;
+}
+
+.leFooter #whiteGeometryI {
+    min-height: 0.5vw;
+    width: 6vw;
+    position: relative;
+    animation: whiteGeometryI 4s infinite alternate-reverse;
+}
+
+.leFooter #whiteGeometryJ {
+    min-height: 0.5vw;
+    width: 10vw;
+    position: relative;
+    animation: whiteGeometryJ 2s infinite alternate-reverse;
+}
+
+.leFooter #whiteGeometryK {
+    min-height: 0.5vw;
+    width: 4vw;
+    position: relative;
+    animation: whiteGeometryK 3s infinite alternate-reverse;
+}
+
+.leFooter #whiteGeometryL {
+    min-height: 0.5vw;
+    min-width: 2vw;
+    position: relative;
+    animation: whiteGeometryL 1.3s infinite alternate-reverse;
 }

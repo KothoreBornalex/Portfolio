@@ -1,54 +1,44 @@
-#ButtonsZone_ID{
+#ButtonsZone_ID {
     margin-left: 80vw;
-
     background-color: rgba(0, 0, 0, 0.178);
     height: 5vh;
     width: 12vw;
 }
 
-
-#EngineButtons_ID{
+#EngineButtons_ID {
     display: flex;
     flex-direction: column;
     gap: 1vh;
-    
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .EB_ID1_UnClicked {
-                                            
-    color: white;
-    padding: 12px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2vh;
-    transition-duration: 0.3s;
-    cursor: pointer;
-    width: 12vw;
-    height: 5vh;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 600;
-    /*background-color: rgb(43, 60, 86);
-    color: WHITE;
-    border: 4px solid rgb(57, 77, 107);*/
-    padding-top: 1vh;
-
-    background-color: rgb(207, 208, 210);
-    
     color: rgb(43, 60, 86);
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vh;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    width: 12vw;
+    height: 5vh;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    padding-top: 1vh;
+    background-color: rgb(207, 208, 210);
     border: 4px solid rgba(127, 136, 147, 0.452);
+    box-sizing: border-box;
 }
 
+.EB_ID1_UnClicked:hover {
+    background-color: rgb(156, 157, 159);
+    color: rgb(43, 60, 86);
+}
 
-
-  .EB_ID1_UnClicked:hover {
-    background-color: rgb(156, 157, 159); 
-    color: rgb(43, 60, 86); 
-  }
-
-
-
-  .EB_ID1_OnClicked {
-    color: white;
+.EB_ID1_OnClicked {
+    color: #ffffff;
     padding: 12px 32px;
     text-align: center;
     text-decoration: none;
@@ -59,43 +49,19 @@
     height: 5vh;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    /*background-color: rgb(43, 60, 86);
-    color: WHITE;
-    border: 4px solid rgb(57, 77, 107);*/
     padding-top: 1vh;
-
-    /*background-color: rgb(43, 60, 86);*/
     background-color: rgb(159, 49, 52);
-
-    color: WHITE;
     border: 4px solid rgba(209, 215, 223, 0.452);
+    box-sizing: border-box;
 }
 
+.EB_ID1_OnClicked:hover {
+    background-color: rgb(164, 79, 82);
+    color: #ffffff;
+}
 
-
-  .EB_ID1_OnClicked:hover {
-    background-color: rgb(164, 79, 82); 
-    color: white; 
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .BB_UnClicked {
-                                            
-    color: white;
+.BB_UnClicked {
+    color: #ffffff;
     padding: 12px 32px;
     text-align: center;
     text-decoration: none;
@@ -106,28 +72,19 @@
     height: 5vh;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    /*background-color: rgb(43, 60, 86);
-    color: WHITE;
-    border: 4px solid rgb(57, 77, 107);*/
     padding-top: 1vh;
-
     background-color: rgb(43, 60, 86);
-
-    color: WHITE;
     border: 4px solid rgba(217, 217, 220, 0.452);
+    box-sizing: border-box;
 }
 
+.BB_UnClicked:hover {
+    background-color: rgb(70, 89, 118);
+    color: #ffffff;
+}
 
-
-  .BB_UnClicked:hover {
-    background-color: rgb(70, 89, 118); 
-    color: white; 
-  }
-
-
-
-  .BB_OnClicked {
-    color: white;
+.BB_OnClicked {
+    color: #ffffff;
     padding: 12px 32px;
     text-align: center;
     text-decoration: none;
@@ -138,137 +95,49 @@
     height: 5vh;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
-    /*background-color: rgb(43, 60, 86);
-    color: WHITE;
-    border: 4px solid rgb(57, 77, 107);*/
     padding-top: 1vh;
-
-    /*background-color: rgb(43, 60, 86);*/
     background-color: rgb(21, 19, 19);
-
-    color: WHITE;
     border: 4px solid rgba(209, 215, 223, 0.452);
+    box-sizing: border-box;
 }
 
-
-
-  .BB_OnClicked:hover {
-    background-color: rgb(32, 30, 30); 
-    color: white; 
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  @media all and (max-device-width: 1280px){
-
-    #ButtonsZone_ID{
-      margin-left: 85vw;
-  
-      background-color: rgba(0, 0, 0, 0.178);
-      height: 11vh;
-      width: 12vw;
-  }
-
-
-
-  .EB_ID1_UnClicked {
-                                            
-    color: white;
-    padding: 12px 32px;
-    font-size: 2vh;
-    width: 12vw;
-    height: 7vh;
-    font-weight: 600;
-    padding-top: 1vh;
+.BB_OnClicked:hover {
+    background-color: rgb(32, 30, 30);
+    color: #ffffff;
 }
 
+@media (max-width: 1280px) {
+    #ButtonsZone_ID {
+        margin-left: 85vw;
+        height: 11vh;
+        width: 12vw;
+    }
 
-
-.EB_ID1_OnClicked {
-  color: white;
-    padding: 12px 32px;
-    font-size: 2vh;
-    width: 12vw;
-    height: 7vh;
-    font-weight: 600;
-    padding-top: 1vh;
+    .EB_ID1_UnClicked,
+    .EB_ID1_OnClicked,
+    .BB_UnClicked,
+    .BB_OnClicked {
+        font-size: 2vh;
+        width: 12vw;
+        height: 7vh;
+        padding-top: 1vh;
+    }
 }
 
+@media (max-width: 480px) {
+    #ButtonsZone_ID {
+        margin-left: 60vw;
+        height: 11vh;
+        width: 12vw;
+    }
 
-
-.BB_UnClicked {
-                                            
-  color: white;
-  padding: 12px 32px;
-  font-size: 2vh;
-  width: 12vw;
-  height: 7vh;
-  padding-top: 1vh;
-  color: WHITE;
-}
-
-}
-
-
-
-
-
-  @media all and (max-device-width: 480px){
-
-    #ButtonsZone_ID{
-      margin-left: 60vw;
-  
-      background-color: rgba(0, 0, 0, 0.178);
-      height: 11vh;
-      width: 12vw;
-  }
-
-
-
-  .EB_ID1_UnClicked {
-                                            
-    color: white;
-    padding: 12px 32px;
-    font-size: 2vh;
-    width: 35vw;
-    height: 7vh;
-    font-weight: 600;
-    padding-top: 1vh;
-}
-
-
-
-.EB_ID1_OnClicked {
-  color: white;
-    padding: 12px 32px;
-    font-size: 2vh;
-    width: 35vw;
-    height: 7vh;
-    font-weight: 600;
-    padding-top: 1vh;
-}
-
-
-
-.BB_UnClicked {
-                                            
-  color: white;
-  padding: 12px 32px;
-  font-size: 2vh;
-  width: 35vw;
-  height: 7vh;
-  padding-top: 1vh;
-  color: WHITE;
-}
-
+    .EB_ID1_UnClicked,
+    .EB_ID1_OnClicked,
+    .BB_UnClicked,
+    .BB_OnClicked {
+        font-size: 2vh;
+        width: 35vw;
+        height: 7vh;
+        padding-top: 1vh;
+    }
 }

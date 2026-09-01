@@ -1,302 +1,185 @@
-
-
-
-
-
-.mainImage{
+.mainImage {
     background: url("img/astroboy1.jpeg");
     background-size: 100vw;
     background-position-y: -100px;
     background-position-x: -10px;
+    background-repeat: no-repeat;
     height: 90vh;
-    /*background-repeat: none;*/
-    
     position: relative;
-    animation-name: backgroundAnimation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    box-sizing: border-box;
 }
 
-.mainImageBlack{
+.mainImageBlack {
     background: url("img/Astronaut.jpeg");
     background-size: 117vw;
+    background-repeat: no-repeat;
     height: 90vh;
-    
-    /*background-repeat: none;*/
-    
-
     position: relative;
-    animation-name: backgroundAnimation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
 }
 
-/*.receptionPart mainImage{
-    background-repeat: none;
-}*/
-
-/*@keyframes backgroundAnimation {
-    0%   {left:0px;}
-    100% {left: -5px;}
-  }*/
-
-#Details{
+#Details {
     font-size: 3vh;
     padding-top: 4vh;
 }
 
-
-
-.mainImage h1 {
+.mainImage h1,
+#MainTitle {
     font-family: 'Rajdhani', sans-serif;
-    color: white;
-    font-weight: lighter;
+    color: #ffffff;
     font-weight: 500;
     font-size: 5vw;
     padding-top: 2%;
     padding-left: 8%;
     position: relative;
-    animation-name: TextAnimationTitle;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation: TextAnimationTitle 5s infinite alternate-reverse;
 }
 
 @keyframes TextAnimationTitle {
-    0%   {left:0%;}
-    100% {left:-2%;}
-  }
+    0%   { left: 0%; }
+    100% { left: -2%; }
+}
 
-
-
-
-.mainImage h2{
+.mainImage h2,
+#TitleIntro,
+#Details {
     font-family: 'Rajdhani', sans-serif;
-    color: white;
-    font-weight: lighter;
+    color: #ffffff;
     font-weight: 400;
     font-size: 2vw;
     padding-left: 6%;
-    justify-content: left;
-
-
+    text-align: left;
     position: relative;
-    animation-name: TextAnimationPresentation;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    animation: TextAnimationPresentation 6s infinite alternate-reverse;
 }
 
 @keyframes TextAnimationPresentation {
-    0%   {left:0%;}
-    100% {left:-4%;}
+    0%   { left: 0%; }
+    100% { left: -4%; }
 }
 
-
-
-#Loading{
+#Loading {
     background-color: rgb(255, 255, 255);
     height: 1.5%;
     width: 1%;
-        
     position: relative;
-    animation-name: Loading;
-    animation-duration: 0.7s;
-    animation-iteration-count: infinite;
+    animation: Loading 0.7s infinite;
 }
-
 
 @keyframes Loading {
-    0%             {left:87%; top: 20%;}
-    25%            {left:89%; top: 20%;}
-    50%            {left:89%; top: 24%;}
-    75%            {left:87%; top: 24%;}
-    100%           {left:87%; top: 20%;}
-  }
+    0%   { left: 87%; top: 20%; }
+    25%  { left: 89%; top: 20%; }
+    50%  { left: 89%; top: 24%; }
+    75%  { left: 87%; top: 24%; }
+    100% { left: 87%; top: 20%; }
+}
 
-
-
-
-
-  #Loading1{
+#Loading1 {
     background-color: rgb(255, 255, 255);
     height: 1.5%;
     width: 1%;
-        
     position: relative;
-    animation-name: Loading1;
-    animation-duration: 0.7s;
-    animation-iteration-count: infinite;
+    animation: Loading1 0.7s infinite;
 }
 
-
 @keyframes Loading1 {
-    0%             {left:89%; top: 24%;}
-    25%            {left:87%; top: 24%;}
-    50%            {left:87%; top: 20%;}
-    75%            {left:89%; top: 20%;}
-    100%           {left:89%; top: 24%;}
-  }
+    0%   { left: 89%; top: 24%; }
+    25%  { left: 87%; top: 24%; }
+    50%  { left: 87%; top: 20%; }
+    75%  { left: 89%; top: 20%; }
+    100% { left: 89%; top: 24%; }
+}
 
-
-
-
-
-
-
-
-  @media all and (max-device-width: 1280px){
-
-    .mainImage{
+@media (max-width: 1280px) {
+    .mainImage {
         background-size: 125vw;
     }
 }
 
-
-@media all and (max-device-width: 1024px){
-
-    footer{
+@media (max-width: 1024px) {
+    footer {
         margin-top: 67.6vh;
     }
-
 }
 
-
-@media all and (max-device-width: 540px){
-
-    .mainImage{
+@media (max-width: 540px) {
+    .mainImage {
         background-size: 270vw;
         background-position-x: -50vw;
     }
 
-
-    .mainImage h1{
-        font-family: 'Rajdhani', sans-serif;
-        color: white;
-        font-weight: lighter;
-        font-weight: 500;
+    .mainImage h1,
+    #MainTitle {
         font-size: 16vw;
         padding-top: 8%;
         padding-left: 8%;
-    
     }
-    
-    
-    .mainImage h2{
-        font-family: 'Rajdhani', sans-serif;
-        color: white;
-        font-weight: lighter;
-        font-weight: 400;
+
+    .mainImage h2,
+    #TitleIntro,
+    #Details {
         font-size: 5vw;
         padding-left: 6%;
         padding-top: 35%;
-
-        justify-content: left;    
     }
 
-    #Loading{
+    #Loading,
+    #Loading1 {
         height: 1%;
         width: 2%;
     }
-
-    #Loading1{
-        height: 1%;
-        width: 2%;
-    }
-
-
-
 }
 
-
-@media all and (max-device-width: 412px){
-
-    .mainImage{
+@media (max-width: 412px) {
+    .mainImage {
         background-size: 430vw;
         background-position-x: -120vw;
     }
 
-
-    .mainImage h1{
-        font-family: 'Rajdhani', sans-serif;
-        color: white;
-        font-weight: lighter;
-        font-weight: 500;
+    .mainImage h1,
+    #MainTitle {
         font-size: 16vw;
         padding-top: 8%;
         padding-left: 8%;
-    
     }
-    
-    
-    .mainImage h2{
-        font-family: 'Rajdhani', sans-serif;
-        color: white;
-        font-weight: lighter;
-        font-weight: 400;
+
+    .mainImage h2,
+    #TitleIntro,
+    #Details {
         font-size: 5vw;
         padding-left: 6%;
-        justify-content: left;
-        padding-top: 0%;  
+        padding-top: 0%;
     }
 
-    #Loading{
+    #Loading,
+    #Loading1 {
         height: 1%;
         width: 2%;
     }
-
-    #Loading1{
-        height: 1%;
-        width: 2%;
-    }
-
-
-
 }
 
-
-@media all and (max-device-width: 280px){
-
-    .mainImage{
+@media (max-width: 280px) {
+    .mainImage {
         background-size: 470vw;
         background-position-x: -150vw;
     }
 
-
-    .mainImage h1{
-        font-family: 'Rajdhani', sans-serif;
-        color: white;
-        font-weight: lighter;
-        font-weight: 500;
+    .mainImage h1,
+    #MainTitle {
         font-size: 16vw;
         padding-top: 5%;
         padding-left: 8%;
-    
     }
-    
-    
-    .mainImage h2{
-        font-family: 'Rajdhani', sans-serif;
-        color: white;
-        font-weight: lighter;
-        font-weight: 500;
+
+    .mainImage h2,
+    #TitleIntro,
+    #Details {
         font-size: 5vw;
         padding-left: 6%;
-        justify-content: left;    
     }
 
-    #Loading{
+    #Loading,
+    #Loading1 {
         height: 1%;
         width: 2%;
     }
-
-    #Loading1{
-        height: 1%;
-        width: 2%;
-    }
-
-
-
 }

@@ -1,318 +1,217 @@
 .networkButtons {
     display: flex;
     gap: 2vw;
-    padding-top: 0%;
+    padding-top: 0;
+    align-items: center;
 }
 
 @keyframes networkButtonsAnimation {
-    0%   {left:0vw; top:0vh;}
-    25%  {left:2vw; top:2vh;}
-    50%  {left:2vw; top:0vh;}
-    75%  {left:0vw; top:2vh;}
-    100% {left:0vw; top:0vh;}
-  }
-
+    0%   { left: 0vw; top: 0vh; }
+    25%  { left: 2vw; top: 2vh; }
+    50%  { left: 2vw; top: 0vh; }
+    75%  { left: 0vw; top: 2vh; }
+    100% { left: 0vw; top: 0vh; }
+}
 
 #Itchio {
     height: 8vh;
     width: 12vw;
-    transition: 0.6s;
+    transition: transform 0.6s ease;
     position: relative;
-    animation-name: networkButtonsAnimation;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation: networkButtonsAnimation 15s infinite alternate-reverse;
 }
 
-    #Itchio:hover {
-        transform: rotate(5deg);
-    }
+#Itchio:hover {
+    transform: rotate(5deg);
+}
 
-
-
-
-#Phone{
-    
+#Phone {
     height: 4vh;
     width: 2vw;
-    transition: 0.4s;
+    transition: transform 0.4s ease;
     position: relative;
-    animation-name: networkButtonsAnimation;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    animation: networkButtonsAnimation 15s infinite alternate-reverse;
 }
 
-#Phone:hover{
-    transform:rotate(25deg);
+#Phone:hover {
+    transform: rotate(25deg);
 }
 
-
-
-#Mail{
-    
+#Mail {
     height: 3.5vh;
     width: 2.25vw;
-    transition: 0.4s;
+    transition: transform 0.4s ease;
     position: relative;
-    animation-name: networkButtonsAnimation;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation: networkButtonsAnimation 12s infinite alternate-reverse;
 }
 
-#Mail:hover{
-    transform:rotate(25deg);
+#Mail:hover {
+    transform: rotate(25deg);
 }
 
-
-
-#Linkedin{
-    
+#Linkedin {
     height: 5.25vh;
     width: 3vw;
-    transition: 0.4s;
+    transition: transform 0.4s ease;
     margin-top: -10%;
     position: relative;
-    animation-name: networkButtonsAnimation;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation: networkButtonsAnimation 9s infinite alternate-reverse;
 }
 
-#Linkedin:hover{
-    
+#Linkedin:hover {
     transform: rotate(25deg);
 }
 
-
-
-
-#Youtube{
-    
+#Youtube {
     height: 3.5vh;
     width: 2.25vw;
-    transition: 0.4s;
+    transition: transform 0.4s ease;
     position: relative;
-    animation-name: networkButtonsAnimation;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation: networkButtonsAnimation 6s infinite alternate-reverse;
 }
 
-#Youtube:hover{
-    transform:rotate(25deg);
-}
-
-
-
-
-#Instagram{
-    
-    height: 5vh;
-    width:2.5vw;
-    transition: 0.4s;
-    margin-top: -10%;
-    position: relative;
-    animation-name: networkButtonsAnimation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-}
-
-
-#Instagram:hover {
+#Youtube:hover {
     transform: rotate(25deg);
 }
 
+#Instagram,
+#CVIcon {
+    height: 5vh;
+    width: 2.5vw;
+    transition: transform 0.4s ease;
+    margin-top: -10%;
+    position: relative;
+    animation: networkButtonsAnimation 5s infinite alternate-reverse;
+}
 
+#Instagram:hover,
+#CVIcon:hover {
+    transform: rotate(25deg);
+}
 
-@media all and (max-device-width: 1280px){
-
-
-    #Phone{
-    
+@media (max-width: 1280px) {
+    #Phone {
         height: 4vh;
         width: 2.3vw;
     }
-    
-    
-    #Mail{
-        
+
+    #Mail {
         height: 3.2vh;
         width: 2.5vw;
     }
-    
-    
-    
-    
-    #Linkedin{
-        
+
+    #Linkedin {
         height: 4.25vh;
         width: 3vw;
     }
-    
-    
-    
-    #Youtube{
-        
+
+    #Youtube {
         height: 3.5vh;
         width: 2.5vw;
     }
-    
-    
-    #Instagram{
-        
-        height: 5vh;
-        width:2.9vw;
-    }
 
+    #Instagram,
+    #CVIcon {
+        height: 5vh;
+        width: 2.9vw;
+    }
 }
 
-
-
-@media all and (max-device-width: 540px){
-
+@media (max-width: 540px) {
     .networkButtons {
-        display: flex;
         gap: 8vw;
         padding-left: 10%;
     }
 
-    #Phone{
-    
+    #Phone {
         height: 3vh;
         width: 4vw;
     }
-    
-    
-    #Mail{
-        
+
+    #Mail {
         height: 3vh;
         width: 6vw;
     }
-    
-    
-    
-    
-    #Linkedin{
-        
+
+    #Linkedin {
         height: 5vh;
         width: 8vw;
     }
-    
-    
-    
-    #Youtube{
-        
+
+    #Youtube {
         height: 3.5vh;
         width: 6vw;
     }
-    
-    
-    #Instagram{
-        
-        height: 4.5vh;
-        width:6.5vw;
-    }
 
+    #Instagram,
+    #CVIcon {
+        height: 4.5vh;
+        width: 6.5vw;
+    }
 }
 
-@media all and (max-device-width: 412px){
-
-
+@media (max-width: 412px) {
     .networkButtons {
-        display: flex;
         gap: 8vw;
         padding-left: 10%;
     }
 
-    #Phone{
-    
+    #Phone {
         height: 4vh;
         width: 7vw;
     }
-    
-    
-    #Mail{
-        
+
+    #Mail {
         height: 3.2vh;
         width: 8vw;
     }
-    
-    
-    
-    
-    #Linkedin{
-        
+
+    #Linkedin {
         height: 5vh;
         width: 10.5vw;
     }
-    
-    
-    
-    #Youtube{
-        
+
+    #Youtube {
         height: 3.5vh;
         width: 9vw;
     }
-    
-    
-    #Instagram{
-        
-        height: 5vh;
-        width:10vw;
-    }
 
+    #Instagram,
+    #CVIcon {
+        height: 5vh;
+        width: 10vw;
+    }
 }
 
-
-
-
-@media all and (max-device-width: 280px){
-
-
+@media (max-width: 280px) {
     .networkButtons {
-        display: flex;
         gap: 8vw;
         padding-left: 10%;
     }
 
-    #Phone{
-    
+    #Phone {
         height: 4vh;
         width: 8vw;
     }
-    
-    
-    #Mail{
-        
+
+    #Mail {
         height: 3.2vh;
         width: 9vw;
     }
-    
-    
-    
-    
-    #Linkedin{
-        
+
+    #Linkedin {
         height: 5vh;
         width: 10.5vw;
     }
-    
-    
-    
-    #Youtube{
-        
+
+    #Youtube {
         height: 3.5vh;
         width: 10vw;
     }
-    
-    
-    #Instagram{
-        
-        height: 5vh;
-        width:11vw;
-    }
 
+    #Instagram,
+    #CVIcon {
+        height: 5vh;
+        width: 11vw;
+    }
 }
