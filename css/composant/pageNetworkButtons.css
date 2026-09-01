@@ -1,217 +1,89 @@
 .networkButtons {
     display: flex;
-    gap: 2vw;
-    padding-top: 0;
+    flex-wrap: wrap;
+    gap: 16px;
     align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.networkPill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 22px;
+    background: rgba(22, 32, 54, 0.88);
+    border: 1px solid rgba(183, 197, 215, 0.2);
+    border-radius: 0;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 0.92rem;
+    letter-spacing: 0.3px;
+    transition: transform 0.25s ease-out, border-color 0.25s ease-out, background-color 0.25s ease-out;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.networkPill:hover {
+    background: rgba(126, 200, 227, 0.22);
+    border-color: #7ec8e3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(126, 200, 227, 0.3);
 }
 
 @keyframes networkButtonsAnimation {
-    0%   { left: 0vw; top: 0vh; }
-    25%  { left: 2vw; top: 2vh; }
-    50%  { left: 2vw; top: 0vh; }
-    75%  { left: 0vw; top: 2vh; }
-    100% { left: 0vw; top: 0vh; }
+    0%   { transform: translate3d(0, 0, 0); }
+    25%  { transform: translate3d(5px, 3px, 0); }
+    50%  { transform: translate3d(5px, 0, 0); }
+    75%  { transform: translate3d(0, 3px, 0); }
+    100% { transform: translate3d(0, 0, 0); }
 }
 
 #Itchio {
-    height: 8vh;
-    width: 12vw;
-    transition: transform 0.6s ease;
-    position: relative;
-    animation: networkButtonsAnimation 15s infinite alternate-reverse;
+    height: 48px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    will-change: transform;
+    transition: transform 0.3s ease-out;
+    animation: networkButtonsAnimation 12s infinite alternate-reverse ease-in-out;
 }
 
 #Itchio:hover {
-    transform: rotate(5deg);
+    transform: scale(1.05) rotate(3deg);
 }
 
-#Phone {
-    height: 4vh;
-    width: 2vw;
-    transition: transform 0.4s ease;
-    position: relative;
-    animation: networkButtonsAnimation 15s infinite alternate-reverse;
-}
-
-#Phone:hover {
-    transform: rotate(25deg);
-}
-
-#Mail {
-    height: 3.5vh;
-    width: 2.25vw;
-    transition: transform 0.4s ease;
-    position: relative;
-    animation: networkButtonsAnimation 12s infinite alternate-reverse;
-}
-
-#Mail:hover {
-    transform: rotate(25deg);
-}
-
-#Linkedin {
-    height: 5.25vh;
-    width: 3vw;
-    transition: transform 0.4s ease;
-    margin-top: -10%;
-    position: relative;
-    animation: networkButtonsAnimation 9s infinite alternate-reverse;
-}
-
-#Linkedin:hover {
-    transform: rotate(25deg);
-}
-
-#Youtube {
-    height: 3.5vh;
-    width: 2.25vw;
-    transition: transform 0.4s ease;
-    position: relative;
-    animation: networkButtonsAnimation 6s infinite alternate-reverse;
-}
-
-#Youtube:hover {
-    transform: rotate(25deg);
-}
-
+#Phone,
+#Mail,
+#Linkedin,
+#Youtube,
 #Instagram,
 #CVIcon {
-    height: 5vh;
-    width: 2.5vw;
-    transition: transform 0.4s ease;
-    margin-top: -10%;
-    position: relative;
-    animation: networkButtonsAnimation 5s infinite alternate-reverse;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    will-change: transform;
+    transition: transform 0.3s ease-out;
+    animation: networkButtonsAnimation 8s infinite alternate-reverse ease-in-out;
 }
 
-#Instagram:hover,
+.networkPill:hover img {
+    transform: rotate(18deg) scale(1.1);
+}
+
+#Linkedin:hover,
+#Youtube:hover,
 #CVIcon:hover {
-    transform: rotate(25deg);
-}
-
-@media (max-width: 1280px) {
-    #Phone {
-        height: 4vh;
-        width: 2.3vw;
-    }
-
-    #Mail {
-        height: 3.2vh;
-        width: 2.5vw;
-    }
-
-    #Linkedin {
-        height: 4.25vh;
-        width: 3vw;
-    }
-
-    #Youtube {
-        height: 3.5vh;
-        width: 2.5vw;
-    }
-
-    #Instagram,
-    #CVIcon {
-        height: 5vh;
-        width: 2.9vw;
-    }
+    transform: rotate(20deg) scale(1.1);
 }
 
 @media (max-width: 540px) {
     .networkButtons {
-        gap: 8vw;
-        padding-left: 10%;
+        gap: 10px;
     }
 
-    #Phone {
-        height: 3vh;
-        width: 4vw;
-    }
-
-    #Mail {
-        height: 3vh;
-        width: 6vw;
-    }
-
-    #Linkedin {
-        height: 5vh;
-        width: 8vw;
-    }
-
-    #Youtube {
-        height: 3.5vh;
-        width: 6vw;
-    }
-
-    #Instagram,
-    #CVIcon {
-        height: 4.5vh;
-        width: 6.5vw;
-    }
-}
-
-@media (max-width: 412px) {
-    .networkButtons {
-        gap: 8vw;
-        padding-left: 10%;
-    }
-
-    #Phone {
-        height: 4vh;
-        width: 7vw;
-    }
-
-    #Mail {
-        height: 3.2vh;
-        width: 8vw;
-    }
-
-    #Linkedin {
-        height: 5vh;
-        width: 10.5vw;
-    }
-
-    #Youtube {
-        height: 3.5vh;
-        width: 9vw;
-    }
-
-    #Instagram,
-    #CVIcon {
-        height: 5vh;
-        width: 10vw;
-    }
-}
-
-@media (max-width: 280px) {
-    .networkButtons {
-        gap: 8vw;
-        padding-left: 10%;
-    }
-
-    #Phone {
-        height: 4vh;
-        width: 8vw;
-    }
-
-    #Mail {
-        height: 3.2vh;
-        width: 9vw;
-    }
-
-    #Linkedin {
-        height: 5vh;
-        width: 10.5vw;
-    }
-
-    #Youtube {
-        height: 3.5vh;
-        width: 10vw;
-    }
-
-    #Instagram,
-    #CVIcon {
-        height: 5vh;
-        width: 11vw;
+    .networkPill {
+        padding: 8px 16px;
+        font-size: 0.85rem;
     }
 }

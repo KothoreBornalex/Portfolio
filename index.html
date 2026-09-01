@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ibrahim Mallouka - Game Programmer Portfolio</title>
         <link rel="stylesheet" href="css/IndexStyle.css">
-        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -22,8 +21,10 @@
                     <li><div id="whiteGeometry6" class="generalParameters"></div></li>
                 </ul>
 
-                <div>
-                    <a class="headerButton" href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">DOWNLOAD MY RESUME</a>
+                <div class="headerButtonContainer">
+                    <a class="headerButton" href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">
+                        DOWNLOAD MY RESUME
+                    </a>
                 </div>
 
                 <ul class="OrderGeometry2">
@@ -37,58 +38,104 @@
         </header>
 
         <main>
+            <!-- Hero Bento Card -->
             <div class="receptionPart">
                 <div class="mainImage">
                     <div>
-                        <h1 id="MainTitle">Ibrahim Mallouka,<br>Programmer.</h1>
-                        <h2 id="TitleIntro">As a Computer Science student my skills are:<br>C, C++, C#, Algorithm, MySQL, Network<br>In Prepa at Epita.</h2>
-                        <h2 id="Details">Phone: 07 60 77 76 17<br>Mail: ibrahim.mlk.dev@gmail.com</h2>
+                        <h1 id="MainTitle">Ibrahim Mallouka<br>Game Programmer</h1>
+                        <h2 id="TitleIntro">Computer Science student at EPITA specializing in Game Programming.<br>Core toolkit: <strong>C++, C#, Unreal Engine 5, Unity, Engine Architecture &amp; Networking.</strong></h2>
+                        
+                        <div id="Details">
+                            <span class="contactPill">📞 07 60 77 76 17</span>
+                            <span class="contactPill">✉ ibrahim.mlk.dev@gmail.com</span>
+                        </div>
                     </div>
 
                     <div id="Loading"></div>
                     <div id="Loading1"></div>
 
                     <div class="networkButtons">
-                        <a href="https://www.linkedin.com/in/ibrahim-mallouka/" target="_blank" rel="noopener noreferrer">
-                            <img id="Linkedin" src="css/composant/img/ReseauxLogo/Linkedin.png" alt="LinkedIn profile">
+                        <a class="networkPill" href="https://www.linkedin.com/in/ibrahim-mallouka/" target="_blank" rel="noopener noreferrer">
+                            <img id="Linkedin" src="css/composant/img/ReseauxLogo/Linkedin.png" alt="LinkedIn profile"> LinkedIn
                         </a>
-                        <a href="https://www.youtube.com/@ibrahim_mlk" target="_blank" rel="noopener noreferrer">
-                            <img id="Youtube" src="css/composant/img/ReseauxLogo/Youtube.png" alt="YouTube channel">
+                        <a class="networkPill" href="https://www.youtube.com/@ibrahim_mlk" target="_blank" rel="noopener noreferrer">
+                            <img id="Youtube" src="css/composant/img/ReseauxLogo/Youtube.png" alt="YouTube channel"> YouTube
                         </a>
-                        <a href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">
-                            <img id="CVIcon" src="css/composant/img/ReseauxLogo/CV.png" alt="Download CV">
+                        <a class="networkPill" href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">
+                            <img id="CVIcon" src="css/composant/img/ReseauxLogo/CV.png" alt="Download CV"> Resume CV
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="galeryImage">
+            <!-- GitHub Activity Calendar Section -->
+            <div class="galeryImage" style="padding-bottom: 0;">
                 <ul class="OrderGeometry3">
                     <li><div id="whiteGeometryC" class="generalParametersGalery"></div></li>
                     <li><div id="whiteGeometryE" class="generalParametersGalery"></div></li>
                     <li><div id="whiteGeometryF" class="generalParametersGalery"></div></li>
                 </ul>
 
-                <div class="ProjectSectionsTitle">Networking</div>
+                <div class="ProjectSectionsTitle">Activity</div>
+
+                <div class="githubCalendarCard">
+                    <div class="calendarHeader">
+                        <div class="calendarTitleWrap">
+                            <span id="calendarTotalTitle" class="calendarTitle">357 contributions in the last year</span>
+                            <a class="calendarUserTag" href="https://github.com/KothoreBornalex" target="_blank" rel="noopener noreferrer">@KothoreBornalex</a>
+                        </div>
+                        <div class="calendarNav">
+                            <a class="calendarYearPill active" href="#" data-year="last">Last Year</a>
+                            <a class="calendarYearPill" href="#" data-year="2026">2026</a>
+                            <a class="calendarYearPill" href="#" data-year="2025">2025</a>
+                            <a class="calendarYearPill" href="#" data-year="2024">2024</a>
+                            <a class="calendarYearPill" href="#" data-year="2023">2023</a>
+                            <a class="calendarYearPill" href="#" data-year="2022">2022</a>
+                        </div>
+                    </div>
+
+                    <div class="calendarGridContainer" id="githubCalendarContent">
+                        <!-- Dynamic SVG realtime grid rendered by githubCalendar.js -->
+                    </div>
+
+                    <div class="calendarFooter">
+                        <a href="https://github.com/KothoreBornalex" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                            Realtime GitHub contribution activity
+                        </a>
+                        <div class="calendarLegend">
+                            <span>Less</span>
+                            <div class="legendSquare bg-lvl-0"></div>
+                            <div class="legendSquare bg-lvl-1"></div>
+                            <div class="legendSquare bg-lvl-2"></div>
+                            <div class="legendSquare bg-lvl-3"></div>
+                            <div class="legendSquare bg-lvl-4"></div>
+                            <span>More</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ProjectSectionsTitle" style="margin-top: 3.5rem;">Networking</div>
 
                 <ul class="imagesBarr2">
                     <a class="ProjectButton" href="pageClonesOffensive.html">
-                        <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Sovereign Republic</div>
-                                    <div class="ProjectButtonData">2024 - PC - RolePlayGame - UE5 - 2 Months - 1 Worker</div>
-                                    <div class="ProjectButtonSkills">Networking Development - C++ - Blueprints</div>
-                                </div>
+                        <div class="cover-image-wrap">
+                            <div class="cover-image">
+                                <img class="cover_img_loaded" src="css/composant/img/projects/SovereignRepublic/SovSpoiler3.png" alt="Sovereign Republic preview">
                             </div>
                         </div>
 
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/SovereignRepublic/SovSpoiler3.png" alt="Sovereign Republic preview">
+                        <div class="details-wrap">
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Sovereign Republic</div>
+                                <div class="ProjectButtonData">
+                                    <span class="projectTag">#UE5</span>
+                                    <span class="projectTag">#C++</span>
+                                    <span class="projectTag">#NETWORKING</span>
+                                    <span class="projectTag">#RPC-SYSTEMS</span>
                                 </div>
+                                <div class="ProjectButtonSkills">Multiplayer RPG architecture • Replicated inventory system • Class inheritance entities • Primary Data Assets</div>
                             </div>
+                            <span class="explorePill">View Project</span>
                         </div>
                     </a>
                 </ul>
@@ -102,86 +149,94 @@
 
                 <div class="ProjectSectionsTitle">Gameplay</div>
 
-                <ul class="imagesBarr2">
-                    <!-- Left Project -->
+                <ul class="imagesBarr">
+                    <!-- Wandering Traveller -->
                     <a class="ProjectButton" href="pageWanderingTraveller.html">
                         <div class="cover-image-wrap">
                             <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/WANDERING_TRAVELLER__Banner.png" alt="Wandering Traveller banner">
-                                </div>
+                                <img class="cover_img_loaded" src="css/composant/img/projects/WANDERING_TRAVELLER__Banner.png" alt="Wandering Traveller banner">
                             </div>
                         </div>
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Wandering Traveller</div>
-                                    <div class="ProjectButtonData">2023 - Mobile - Clicker - Unity - 3 Months - 2 Workers</div>
-                                    <div class="ProjectButtonSkills">C# - Optimization - Gameplay</div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Wandering Traveller</div>
+                                <div class="ProjectButtonData">
+                                    <span class="projectTag">#UNITY</span>
+                                    <span class="projectTag">#C#</span>
+                                    <span class="projectTag">#MOBILE</span>
+                                    <span class="projectTag">#OPTIMIZATION</span>
                                 </div>
+                                <div class="ProjectButtonSkills">GPU vertex shader animation pipeline • Zero-GC pooling system • 60 FPS with 112+ simultaneous AI units</div>
                             </div>
+                            <span class="explorePill">View Project</span>
                         </div>
                     </a>
 
-                    <!-- Right Project -->
+                    <!-- Liberty Express -->
                     <a class="ProjectButton" href="pageLibertyExpress.html">
-                        <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Liberty Express</div>
-                                    <div class="ProjectButtonData">2024 - PC - FPS - Unreal Engine 5 - 1 Month - 8 Workers</div>
-                                    <div class="ProjectButtonSkills">C++ - Gameplay Programming - Feedback</div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="cover-image-wrap">
                             <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/LIBERTYEXPRESS_Logo.png" alt="Liberty Express logo">
-                                </div>
+                                <img class="cover_img_loaded" src="css/composant/img/projects/LIBERTYEXPRESS_Logo.png" alt="Liberty Express logo">
                             </div>
+                        </div>
+                        <div class="details-wrap">
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Liberty Express</div>
+                                <div class="ProjectButtonData">
+                                    <span class="projectTag">#UE5</span>
+                                    <span class="projectTag">#C++</span>
+                                    <span class="projectTag">#FPS</span>
+                                    <span class="projectTag">#GAME-FEEL</span>
+                                </div>
+                                <div class="ProjectButtonSkills">Western-style dynamic gunplay • Responsive character controller • Designer tuning tooling via Data Assets</div>
+                            </div>
+                            <span class="explorePill">View Project</span>
                         </div>
                     </a>
                 </ul>
 
-                <ul class="imagesBarr2">
-                    <!-- Left Project -->
+                <ul class="imagesBarr">
+                    <!-- Detroit's Sacrifices -->
                     <a class="ProjectButton" href="pageDetroitsSacrifices.html">
                         <div class="cover-image-wrap">
                             <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/CoverDetroitsSacrifices.png" alt="Detroit's Sacrifices cover">
-                                </div>
+                                <img class="cover_img_loaded" src="css/composant/img/projects/CoverDetroitsSacrifices.png" alt="Detroit's Sacrifices cover">
                             </div>
                         </div>
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Detroit's Sacrifices</div>
-                                    <div class="ProjectButtonData">2023 - PC - FPS/TPS - Unity - 6 Months - 1 Worker</div>
-                                    <div class="ProjectButtonSkills">C# - Gameplay - UI - LD/GD</div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Detroit's Sacrifices</div>
+                                <div class="ProjectButtonData">
+                                    <span class="projectTag">#UNITY</span>
+                                    <span class="projectTag">#C#</span>
+                                    <span class="projectTag">#FPS-TPS</span>
+                                    <span class="projectTag">#AI-BEHAVIORS</span>
                                 </div>
+                                <div class="ProjectButtonSkills">Stealth &amp; combat player mechanics • Sekiro-inspired stylish boss AI • Cyberspace hacking minigame</div>
                             </div>
+                            <span class="explorePill">View Project</span>
                         </div>
                     </a>
 
-                    <!-- Right Project -->
+                    <!-- Woolsome -->
                     <a class="ProjectButton" href="pageWoolsome.html">
-                        <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Woolsome</div>
-                                    <div class="ProjectButtonData">2024 - PC - TopDown - Unreal Engine 5 - 3 Months - 11 Workers</div>
-                                    <div class="ProjectButtonSkills">C++ - Gameplay Programming - Feedback/Tooling</div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="cover-image-wrap">
                             <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/Woolsome/WoolsomeBanner.png" alt="Woolsome banner">
-                                </div>
+                                <img class="cover_img_loaded" src="css/composant/img/projects/Woolsome/WoolsomeBanner.png" alt="Woolsome banner">
                             </div>
+                        </div>
+                        <div class="details-wrap">
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Woolsome</div>
+                                <div class="ProjectButtonData">
+                                    <span class="projectTag">#UE5</span>
+                                    <span class="projectTag">#C++</span>
+                                    <span class="projectTag">#TOP-DOWN</span>
+                                    <span class="projectTag">#CO-OP</span>
+                                </div>
+                                <div class="ProjectButtonSkills">Co-op gameplay physics &amp; bite mechanics • Custom camera spline editor • Flock herding AI systems</div>
+                            </div>
+                            <span class="explorePill">View Project</span>
                         </div>
                     </a>
                 </ul>
@@ -196,41 +251,47 @@
                 <div class="ProjectSectionsTitle">Engine Programming &amp; Tooling</div>
 
                 <ul class="imagesBarr">
+                    <!-- Bond -->
                     <a class="ProjectButton" href="pagebond.html">
                         <div class="cover-image-wrap">
                             <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/SFML_ResultWithoutRaysDebug.png" alt="Bond project preview">
-                                </div>
+                                <img class="cover_img_loaded" src="css/composant/img/projects/SFML_ResultWithoutRaysDebug.png" alt="Bond project preview">
                             </div>
                         </div>
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Bond</div>
-                                    <div class="ProjectButtonData">2023 - PC - Top Down - SFML - 3 Weeks - 3 Workers</div>
-                                    <div class="ProjectButtonSkills">C++ - Engine Programming</div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Bond</div>
+                                <div class="ProjectButtonData">
+                                    <span class="projectTag">#SFML</span>
+                                    <span class="projectTag">#C++</span>
+                                    <span class="projectTag">#2D-ENGINE</span>
+                                    <span class="projectTag">#RAYCASTING</span>
                                 </div>
+                                <div class="ProjectButtonSkills">Custom 2D game engine from scratch • Real-time dynamic raycast shadows • JSON level editor pipeline</div>
                             </div>
+                            <span class="explorePill">View Project</span>
                         </div>
                     </a>
 
+                    <!-- Tex Anim -->
                     <a class="ProjectButton" href="pageTexAnim.html">
-                        <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Tex Anim</div>
-                                    <div class="ProjectButtonData">2023 - Any Platform - Tooling - Unity - 1 Month - 1 Worker</div>
-                                    <div class="ProjectButtonSkills">C# - Editor Tooling</div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="cover-image-wrap">
                             <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/TEXANIM_TexturedAnimation.png" alt="Tex Anim project preview">
-                                </div>
+                                <img class="cover_img_loaded" src="css/composant/img/projects/TEXANIM_TexturedAnimation.png" alt="Tex Anim project preview">
                             </div>
+                        </div>
+                        <div class="details-wrap">
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Tex Anim</div>
+                                <div class="ProjectButtonData">
+                                    <span class="projectTag">#UNITY</span>
+                                    <span class="projectTag">#C#</span>
+                                    <span class="projectTag">#HLSL-SHADERS</span>
+                                    <span class="projectTag">#TOOLING</span>
+                                </div>
+                                <div class="ProjectButtonSkills">Custom Unity Editor Window • Keyframe-to-texture baking pipeline • Node-based animation state graph editor</div>
+                            </div>
+                            <span class="explorePill">View Project</span>
                         </div>
                     </a>
                 </ul>
@@ -256,5 +317,6 @@
             </div>
         </footer>
 
+        <script src="js/githubCalendar.js"></script>
     </body>
 </html>

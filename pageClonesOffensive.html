@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sovereign Republic - Ibrahim Mallouka</title>
         <link rel="stylesheet" href="css/ProjectPageStyle.css">
-        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -22,8 +21,10 @@
                     <li><div id="whiteGeometry6" class="generalParameters"></div></li>
                 </ul>
 
-                <div>
-                    <a class="headerButton" href="index.html">HOME</a>
+                <div class="headerButtonContainer">
+                    <a class="headerButton" href="index.html">
+                        HOME
+                    </a>
                 </div>
 
                 <ul class="OrderGeometry2">
@@ -39,25 +40,27 @@
         <main>
             <div class="galeryImage">
                 <ul class="PageTitleSection">
-                    <li><h1>SOVEREIGN REPUBLIC</h1></li>
+                    <li><h1>Sovereign Republic</h1></li>
                 </ul>
 
+                <!-- Main Bento Showcase -->
                 <ul class="MainBarr">
                     <div class="MainColumn">
                         <div class="cover-image-wrap">
                             <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/SovereignRepublic/SovSpoiler3.png" alt="Sovereign Republic cover preview">
-                                </div>
+                                <img class="cover_img_loaded" src="css/composant/img/projects/SovereignRepublic/SovSpoiler3.png" alt="Sovereign Republic cover preview">
                             </div>
                         </div>
                         <div class="main-details-wrap">
-                            <div class="details">
-                                <div class="main-details-inner">
-                                    <div class="ProjectButtonTitle">Sovereign Republic</div>
-                                    <div class="ProjectButtonData">2024 - PC - RolePlayGame - UE5 - 2 Months - 1 Worker</div>
-                                    <div class="ProjectButtonSkills">Networking Development - C++ - Blueprints</div>
+                            <div class="main-details-inner">
+                                <div class="ProjectButtonTitle">Sovereign Republic</div>
+                                <div class="ProjectButtonData">
+                                    <span class="projectTag">#2024</span>
+                                    <span class="projectTag">#PC</span>
+                                    <span class="projectTag">#UE5</span>
+                                    <span class="projectTag">#Networking</span>
                                 </div>
+                                <div class="ProjectButtonSkills">Networking Development • C++ • Blueprints</div>
                             </div>
                         </div>
                     </div>
@@ -66,34 +69,26 @@
                 </ul>
 
                 <div class="networkButtons">
-                    <a href="https://www.linkedin.com/in/ibrahim-mallouka/" target="_blank" rel="noopener noreferrer">
-                        <img id="Linkedin" src="css/composant/img/ReseauxLogo/Linkedin.png" alt="LinkedIn profile">
+                    <a class="networkPill" href="https://www.linkedin.com/in/ibrahim-mallouka/" target="_blank" rel="noopener noreferrer">
+                        <img id="Linkedin" src="css/composant/img/ReseauxLogo/Linkedin.png" alt="LinkedIn profile"> LinkedIn
                     </a>
-                    <a href="https://www.youtube.com/@ibrahim_mlk" target="_blank" rel="noopener noreferrer">
-                        <img id="Youtube" src="css/composant/img/ReseauxLogo/Youtube.png" alt="YouTube channel">
+                    <a class="networkPill" href="https://www.youtube.com/@ibrahim_mlk" target="_blank" rel="noopener noreferrer">
+                        <img id="Youtube" src="css/composant/img/ReseauxLogo/Youtube.png" alt="YouTube channel"> YouTube
                     </a>
-                    <a href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">
-                        <img id="CVIcon" src="css/composant/img/ReseauxLogo/CV.png" alt="Download CV">
+                    <a class="networkPill" href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">
+                        <img id="CVIcon" src="css/composant/img/ReseauxLogo/CV.png" alt="Download CV"> Resume CV
                     </a>
                 </div>
 
+                <!-- Feature Breakdown Bento Grid -->
                 <ul class="imagesBarr">
                     <!-- Pitch -->
                     <div class="ExplanationColumn">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/CLONESOFFENSIVE_LAAT.png" alt="LAAT Gunship gameplay preview">
-                                </div>
-                            </div>
-                        </div>
+                        <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/CLONESOFFENSIVE_LAAT.png" alt="LAAT Gunship gameplay preview">
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Pitch</div>
-                                    <div class="ProjectColumnContent">Inspired by the Star Wars Mod on Garry's Mod, this game lets you play as a clone during the clone wars. It's mostly PVE and multiplayer. One of the main goals for me doing this was to learn more about C++ in Unreal Engine and Replication.</div>
-                                    <div class="ProjectButtonSkills"></div>
-                                </div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Pitch</div>
+                                <div class="ProjectColumnContent">Inspired by the Star Wars Mod on Garry's Mod, this game lets you play as a clone during the clone wars. It's mostly PVE and multiplayer. One of the main goals for me doing this was to learn more about C++ in Unreal Engine and Network Replication.</div>
                             </div>
                         </div>
                     </div>
@@ -101,40 +96,23 @@
                     <!-- Entity System -->
                     <div class="ExplanationColumn">
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Entity System</div>
-                                    <div class="ProjectColumnContent">The system is based on class inheritance; every interactable object is an entity so that I can extend its behavior cleanly down the road.</div>
-                                    <div class="ProjectColumnContent">With this architecture, Items, Props, AI, and Players are entities, making it straightforward to build gameplay features and network replication (such as a replicated Inventory with RPCs).</div>
-                                </div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Entity System</div>
+                                <div class="ProjectColumnContent">The system is based on class inheritance; every interactable object is an entity so that I can extend its behavior cleanly down the road.</div>
+                                <div class="ProjectColumnContent">With this architecture, Items, Props, AI, and Players are entities, making it straightforward to build gameplay features and network replication (such as a replicated Inventory with RPCs).</div>
                             </div>
                         </div>
-
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/CLONESOFFENSIVE_Inventory.png" alt="Inventory system preview">
-                                </div>
-                            </div>
-                        </div>
+                        <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/CLONESOFFENSIVE_Inventory.png" alt="Inventory system preview">
                     </div>
 
                     <!-- Stats System -->
                     <div class="ExplanationColumn">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/CLONESOFFENSIVE_Stats.png" alt="Stats system preview">
-                                </div>
-                            </div>
-                        </div>
+                        <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/CLONESOFFENSIVE_Stats.png" alt="Stats system preview">
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Stats System</div>
-                                    <div class="ProjectColumnContent">It is replicated and can be used on any actor as an Actor Component. It binds itself to the damage delegate, and base stats are configured using Primary Data Assets.</div>
-                                    <div class="ProjectColumnContent">This allows damage to be applied seamlessly to any actor utilizing Unreal Engine's native damage system.</div>
-                                </div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Stats System</div>
+                                <div class="ProjectColumnContent">It is replicated and can be used on any actor as an Actor Component. It binds itself to the damage delegate, and base stats are configured using Primary Data Assets.</div>
+                                <div class="ProjectColumnContent">This allows damage to be applied seamlessly to any actor utilizing Unreal Engine's native damage system.</div>
                             </div>
                         </div>
                     </div>

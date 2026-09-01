@@ -1,59 +1,101 @@
 .headerID {
-    background-color: rgb(44, 60, 84);
+    background: rgba(20, 29, 48, 0.96);
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .blackHeaderID {
-    background-color: rgb(18, 19, 21);
+    background: rgba(14, 18, 26, 0.96);
     width: 100%;
+}
+
+#globalHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.headerButtonContainer {
+    width: 100%;
+    display: flex;
 }
 
 .OrderGeometry {
     width: 100%;
     display: flex;
     list-style-type: none;
-    padding-top: 0.2vw;
-    padding-bottom: 0.2vw;
+    padding: 0.25vw 0;
+    overflow: hidden;
 }
 
 .OrderGeometry2 {
+    width: 100%;
     display: flex;
     list-style-type: none;
     transform: rotate(180deg);
-    padding-top: 0.2vw;
-    padding-bottom: 0.2vw;
+    padding: 0.25vw 0;
+    overflow: hidden;
 }
 
 .generalParameters {
-    background-color: rgb(204, 204, 204);
+    background: linear-gradient(90deg, rgba(204, 204, 204, 0.95), rgba(126, 200, 227, 0.9));
+    box-shadow: 0 0 8px rgba(126, 200, 227, 0.4);
 }
 
 .headerButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    padding: 12px 32px;
+    color: #e2eaf5;
+    padding: 0 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 2vh;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-size: clamp(0.92rem, 1.7vh, 1.05rem);
     cursor: pointer;
     width: 100%;
-    height: 5vh;
-    font-family: 'Rajdhani', sans-serif;
+    height: 5.5vh;
+    min-height: 48px;
+    font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    background-color: rgb(43, 60, 86);
-    border: 4px solid rgb(57, 77, 107);
+    letter-spacing: 0.8px;
+    background: linear-gradient(180deg, #1e2c45 0%, #141f33 100%);
+    border-top: 2px solid rgba(183, 197, 215, 0.22);
+    border-bottom: 2px solid rgba(183, 197, 215, 0.22);
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
     box-sizing: border-box;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.headerButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(126, 200, 227, 0.25), transparent);
+    transition: left 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.headerButton:hover::before {
+    left: 100%;
 }
 
 .headerButton:hover {
-    background-color: rgb(183, 197, 215);
-    color: rgb(43, 60, 86);
+    background: linear-gradient(180deg, #2b3e63 0%, #1a2942 100%);
+    color: #ffffff;
+    border-color: #7ec8e3;
+    letter-spacing: 1.2px;
+    box-shadow: 0 0 24px rgba(126, 200, 227, 0.35), inset 0 0 16px rgba(126, 200, 227, 0.18);
 }
 
 .headerButtonBlack {
@@ -61,24 +103,34 @@
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    padding: 12px 32px;
+    padding: 0 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 2vh;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-size: clamp(0.92rem, 1.7vh, 1.05rem);
     cursor: pointer;
     width: 100%;
-    height: 5vh;
-    font-family: 'Rajdhani', sans-serif;
+    height: 5.5vh;
+    min-height: 48px;
+    font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    background-color: rgb(18, 19, 21);
-    border: 4px solid rgb(32, 34, 36);
+    letter-spacing: 0.8px;
+    background: #121315;
+    border-top: 2px solid rgba(183, 197, 215, 0.2);
+    border-bottom: 2px solid rgba(183, 197, 215, 0.2);
+    border-left: none;
+    border-right: none;
     box-sizing: border-box;
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .headerButtonBlack:hover {
-    background-color: rgb(44, 45, 48);
+    background: #242c3b;
     color: #ffffff;
+    border-color: #7ec8e3;
+    letter-spacing: 1.2px;
+    box-shadow: 0 0 20px rgba(126, 200, 227, 0.25);
 }
 
 #globalHeader .headerButton,
@@ -86,163 +138,170 @@
     text-decoration: none;
 }
 
-/* Header Geometric Elements */
+/* GPU-Accelerated Header Geometric Elements */
+#whiteGeometry1,
+#whiteGeometry2,
+#whiteGeometry3,
+#whiteGeometry4,
+#whiteGeometry5,
+#whiteGeometry6,
+#whiteGeometry7,
+#whiteGeometry8,
+#whiteGeometry9,
+#whiteGeometry10,
+#whiteGeometry11,
+#whiteGeometry12 {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
 #whiteGeometry1 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     min-width: 8vw;
     position: relative;
-    animation: whiteGeometry1 1.5s infinite alternate-reverse;
+    animation: whiteGeometry1 1.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometry2 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     min-width: 2vw;
     position: relative;
-    animation: whiteGeometry2 0.9s infinite alternate-reverse;
+    animation: whiteGeometry2 0.9s infinite alternate-reverse linear;
 }
 
 #whiteGeometry3 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     width: 6vw;
     position: relative;
-    animation: whiteGeometry3 3s infinite alternate-reverse;
+    animation: whiteGeometry3 3s infinite alternate-reverse linear;
 }
 
 #whiteGeometry4 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     width: 10vw;
     position: relative;
-    animation: whiteGeometry4 1.5s infinite alternate-reverse;
+    animation: whiteGeometry4 1.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometry5 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     width: 4vw;
     position: relative;
-    animation: whiteGeometry5 2s infinite alternate-reverse;
+    animation: whiteGeometry5 2s infinite alternate-reverse linear;
 }
 
 #whiteGeometry6 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     min-width: 2vw;
     position: relative;
-    animation: whiteGeometry6 0.9s infinite alternate-reverse;
+    animation: whiteGeometry6 0.9s infinite alternate-reverse linear;
 }
 
 #whiteGeometry7 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     min-width: 8vw;
     position: relative;
-    animation: whiteGeometry7 2s infinite alternate-reverse;
+    animation: whiteGeometry7 2s infinite alternate-reverse linear;
 }
 
 #whiteGeometry8 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     min-width: 2vw;
     position: relative;
-    animation: whiteGeometry8 0.9s infinite alternate-reverse;
+    animation: whiteGeometry8 0.9s infinite alternate-reverse linear;
 }
 
 #whiteGeometry9 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     width: 6vw;
     position: relative;
-    animation: whiteGeometry9 3s infinite alternate-reverse;
+    animation: whiteGeometry9 3s infinite alternate-reverse linear;
 }
 
 #whiteGeometry10 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     width: 10vw;
     position: relative;
-    animation: whiteGeometry10 1.5s infinite alternate-reverse;
+    animation: whiteGeometry10 1.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometry11 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     width: 4vw;
     position: relative;
-    animation: whiteGeometry11 2.5s infinite alternate-reverse;
+    animation: whiteGeometry11 2.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometry12 {
-    min-height: 0.5vw;
+    min-height: 0.45vw;
     min-width: 2vw;
     position: relative;
-    animation: whiteGeometry12 0.9s infinite alternate-reverse;
+    animation: whiteGeometry12 0.9s infinite alternate-reverse linear;
 }
 
 @keyframes whiteGeometry1 {
-    0%   { left: 0vw; }
-    100% { left: 10vw; }
+    0%   { transform: translate3d(0vw, 0, 0); }
+    100% { transform: translate3d(10vw, 0, 0); }
 }
 
 @keyframes whiteGeometry2 {
-    0%   { left: 10vw; }
-    100% { left: 15vw; }
+    0%   { transform: translate3d(10vw, 0, 0); }
+    100% { transform: translate3d(15vw, 0, 0); }
 }
 
 @keyframes whiteGeometry3 {
-    0%   { left: 15vw; }
-    100% { left: 28vw; }
+    0%   { transform: translate3d(15vw, 0, 0); }
+    100% { transform: translate3d(28vw, 0, 0); }
 }
 
 @keyframes whiteGeometry4 {
-    0%   { left: 28vw; }
-    100% { left: 37vw; }
+    0%   { transform: translate3d(28vw, 0, 0); }
+    100% { transform: translate3d(37vw, 0, 0); }
 }
 
 @keyframes whiteGeometry5 {
-    0%   { left: 37vw; }
-    100% { left: 47vw; }
+    0%   { transform: translate3d(37vw, 0, 0); }
+    100% { transform: translate3d(47vw, 0, 0); }
 }
 
 @keyframes whiteGeometry6 {
-    0%   { left: 47vw; }
-    100% { left: 67vw; }
+    0%   { transform: translate3d(47vw, 0, 0); }
+    100% { transform: translate3d(67vw, 0, 0); }
 }
 
 @keyframes whiteGeometry7 {
-    0%   { left: 0vw; }
-    100% { left: 10vw; }
+    0%   { transform: translate3d(0vw, 0, 0); }
+    100% { transform: translate3d(10vw, 0, 0); }
 }
 
 @keyframes whiteGeometry8 {
-    0%   { left: 10vw; }
-    100% { left: 15vw; }
+    0%   { transform: translate3d(10vw, 0, 0); }
+    100% { transform: translate3d(15vw, 0, 0); }
 }
 
 @keyframes whiteGeometry9 {
-    0%   { left: 15vw; }
-    100% { left: 28vw; }
+    0%   { transform: translate3d(15vw, 0, 0); }
+    100% { transform: translate3d(28vw, 0, 0); }
 }
 
 @keyframes whiteGeometry10 {
-    0%   { left: 28vw; }
-    100% { left: 37vw; }
+    0%   { transform: translate3d(28vw, 0, 0); }
+    100% { transform: translate3d(37vw, 0, 0); }
 }
 
 @keyframes whiteGeometry11 {
-    0%   { left: 37vw; }
-    100% { left: 47vw; }
+    0%   { transform: translate3d(37vw, 0, 0); }
+    100% { transform: translate3d(47vw, 0, 0); }
 }
 
 @keyframes whiteGeometry12 {
-    0%   { left: 47vw; }
-    100% { left: 67vw; }
+    0%   { transform: translate3d(47vw, 0, 0); }
+    100% { transform: translate3d(67vw, 0, 0); }
 }
 
 @media (max-width: 540px) {
     .headerButton {
-        padding: 8px 16px;
-        font-size: 2.2vh;
-        height: 7vh;
-    }
-}
-
-@media (max-width: 412px) {
-    .headerButton {
-        padding: 12px 32px;
-        font-size: 3vh;
-        height: 8vh;
+        padding: 0 16px;
+        font-size: 0.88rem;
     }
 }

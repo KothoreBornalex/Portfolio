@@ -1,10 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import url('composant/SingleButtonHeader.css');
 @import url('composant/mainImage.css');
 @import url('composant/indexNetworkButtons.css');
 @import url('composant/galeryImage.css');
+@import url('composant/githubCalendar.css');
 @import url('composant/skillsPart.css');
 @import url('composant/footer.css');
 @import url('composant/EngineButtons.css');
+
+:root {
+    --bg-main: #0c111e;
+    --bg-surface: rgba(22, 32, 54, 0.92);
+    --bg-surface-hover: rgba(30, 44, 72, 0.95);
+    --bg-card: #172136;
+    --border-glass: rgba(183, 197, 215, 0.16);
+    --border-glass-hover: rgba(126, 200, 227, 0.4);
+    --accent-blue: #7ec8e3;
+    --accent-ice: #c8daf2;
+    --text-primary: #ffffff;
+    --text-secondary: #a9bed6;
+    --text-muted: #7389a8;
+    --radius-card: 0px;
+    --radius-pill: 0px;
+    --radius-sm: 0px;
+    --shadow-card: 0 10px 28px rgba(0, 0, 0, 0.35);
+    --shadow-hover: 0 16px 36px rgba(8, 16, 32, 0.55);
+    --transition-smooth: all 0.25s ease-out;
+}
 
 *,
 *::before,
@@ -15,10 +37,15 @@
 }
 
 body {
-    font-family: 'Rajdhani', sans-serif;
-    background-color: rgb(30, 39, 63);
-    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--bg-main);
+    background-image: 
+        radial-gradient(circle at 15% 15%, rgba(44, 64, 102, 0.25) 0%, transparent 40%),
+        radial-gradient(circle at 85% 60%, rgba(30, 50, 85, 0.3) 0%, transparent 50%);
+    color: var(--text-primary);
     overflow-x: hidden;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -30,4 +57,47 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+/* Sharp Square Tag Utility */
+.projectTag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    background: rgba(43, 60, 86, 0.7);
+    border: 1px solid rgba(183, 197, 215, 0.22);
+    border-radius: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--accent-ice);
+    text-transform: uppercase;
+    transition: var(--transition-smooth);
+}
+
+.projectTag:hover {
+    background: rgba(126, 200, 227, 0.25);
+    border-color: var(--accent-blue);
+    color: #ffffff;
+}
+
+/* Sharp Square Action Badge */
+.actionBadge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 18px;
+    background: #ffffff;
+    color: #0c111e;
+    border-radius: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: var(--transition-smooth);
+}
+
+.actionBadge:hover {
+    background: var(--accent-blue);
+    transform: translateY(-2px);
 }

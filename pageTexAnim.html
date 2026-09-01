@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tex Anim - Ibrahim Mallouka</title>
         <link rel="stylesheet" href="css/ProjectPageStyle.css">
-        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -22,8 +21,10 @@
                     <li><div id="whiteGeometry6" class="generalParameters"></div></li>
                 </ul>
 
-                <div>
-                    <a class="headerButton" href="index.html">HOME</a>
+                <div class="headerButtonContainer">
+                    <a class="headerButton" href="index.html">
+                        HOME
+                    </a>
                 </div>
 
                 <ul class="OrderGeometry2">
@@ -39,25 +40,26 @@
         <main>
             <div class="galeryImage">
                 <ul class="PageTitleSection">
-                    <li><h1>TEX ANIM</h1></li>
+                    <li><h1>Tex Anim</h1></li>
                 </ul>
 
                 <ul class="MainBarr">
                     <div class="MainColumn">
                         <div class="cover-image-wrap">
                             <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/TEXANIM_TexturedAnimation.png" alt="Tex Anim textured animation preview">
-                                </div>
+                                <img class="cover_img_loaded" src="css/composant/img/projects/TEXANIM_TexturedAnimation.png" alt="Tex Anim textured animation preview">
                             </div>
                         </div>
                         <div class="main-details-wrap">
-                            <div class="details">
-                                <div class="main-details-inner">
-                                    <div class="ProjectButtonTitle">Tex Anim</div>
-                                    <div class="ProjectButtonData">2023 - Any Platform - Tooling - Unity - 1 Month - 1 Worker</div>
-                                    <div class="ProjectButtonSkills">Editor Tooling &amp; Shader Development</div>
+                            <div class="main-details-inner">
+                                <div class="ProjectButtonTitle">Tex Anim</div>
+                                <div class="ProjectButtonData">
+                                    <span class="projectTag">#2023</span>
+                                    <span class="projectTag">#Unity</span>
+                                    <span class="projectTag">#Tooling</span>
+                                    <span class="projectTag">#HLSL-Shaders</span>
                                 </div>
+                                <div class="ProjectButtonSkills">Editor Tooling &amp; Shader Development</div>
                             </div>
                         </div>
                     </div>
@@ -66,14 +68,14 @@
                 </ul>
 
                 <div class="networkButtons">
-                    <a href="https://www.linkedin.com/in/ibrahim-mallouka/" target="_blank" rel="noopener noreferrer">
-                        <img id="Linkedin" src="css/composant/img/ReseauxLogo/Linkedin.png" alt="LinkedIn profile">
+                    <a class="networkPill" href="https://www.linkedin.com/in/ibrahim-mallouka/" target="_blank" rel="noopener noreferrer">
+                        <img id="Linkedin" src="css/composant/img/ReseauxLogo/Linkedin.png" alt="LinkedIn profile"> LinkedIn
                     </a>
-                    <a href="https://www.youtube.com/@ibrahim_mlk" target="_blank" rel="noopener noreferrer">
-                        <img id="Youtube" src="css/composant/img/ReseauxLogo/Youtube.png" alt="YouTube channel">
+                    <a class="networkPill" href="https://www.youtube.com/@ibrahim_mlk" target="_blank" rel="noopener noreferrer">
+                        <img id="Youtube" src="css/composant/img/ReseauxLogo/Youtube.png" alt="YouTube channel"> YouTube
                     </a>
-                    <a href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">
-                        <img id="CVIcon" src="css/composant/img/ReseauxLogo/CV.png" alt="Download CV">
+                    <a class="networkPill" href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">
+                        <img id="CVIcon" src="css/composant/img/ReseauxLogo/CV.png" alt="Download CV"> Resume CV
                     </a>
                 </div>
 
@@ -81,98 +83,48 @@
                     <!-- Pitch / Why -->
                     <a class="ExplanationColumn" href="pageWanderingTraveller.html">
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Pitch</div>
-                                    <div class="ProjectColumnContent">Tex Anim is a Unity tool created to streamline production pipelines with vertex-shader animation systems based on textured animations.</div>
-                                    <div class="ProjectButtonSkills"></div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Pitch &amp; Motivation</div>
+                                <div class="ProjectColumnContent">Tex Anim is a Unity tool created to streamline production pipelines with vertex-shader animation systems based on textured animations.</div>
+                                <div class="ProjectColumnContent">To make a mobile game (Click to check out Wandering Traveller), we needed a way to animate hundreds of characters simultaneously on low-end hardware. Encoding vertex animation into texture maps enabled pure GPU-driven mesh animation.</div>
+                                <div class="ProjectButtonData">
+                                    <span class="actionBadge">View Wandering Traveller</span>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/TEXANIM_EditorWindow.png" alt="Tex Anim editor window">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Why?</div>
-                                    <div class="ProjectColumnContent">To make a mobile game (Click to check out Wandering Traveller), we needed a way to animate hundreds of characters simultaneously on low-end hardware.</div>
-                                    <div class="ProjectColumnContent">I chose the Textured Animations technique, encoding animation frames into texture pixels to animate meshes entirely on the GPU via custom vertex shaders.</div>
-                                </div>
-                            </div>
-                        </div>
+                        <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/TEXANIM_EditorWindow.png" alt="Tex Anim editor window">
                     </a>
 
                     <!-- Baking & Storing -->
                     <div class="ExplanationColumn">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/WANDERING_TRAVELLER_CustomEditor.png" alt="Custom editor window">
-                                </div>
-                            </div>
-                        </div>
-
+                        <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/WANDERING_TRAVELLER_CustomEditor.png" alt="Custom editor window">
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Baking &amp; Storing Animations</div>
-                                    <div class="ProjectColumnContent">Using a custom Editor Window, the tool converts character keyframe animations into texture maps before storing them in a ScriptableObject Animation Bank.</div>
-                                </div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Baking &amp; Storing Animations</div>
+                                <div class="ProjectColumnContent">Using a custom Editor Window, the tool converts character keyframe animations into texture maps before storing them in a ScriptableObject Animation Bank.</div>
                             </div>
                         </div>
-
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_phone_loaded" src="css/composant/img/projects/WANDERING_TRAVELLER_AnimationsBank.png" alt="Animations bank inspector">
-                                </div>
-                            </div>
-                        </div>
+                        <img class="cover_img_phone_loaded" src="css/composant/img/projects/WANDERING_TRAVELLER_AnimationsBank.png" alt="Animations bank inspector">
                     </div>
 
                     <!-- How to Bake -->
                     <div class="ExplanationColumn">
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">How to Bake</div>
-                                    <div class="ProjectColumnContent">Each row of the texture represents an animation frame, each column corresponds to a mesh vertex, and each RGB pixel encodes a vertex's position offset at that frame.</div>
-                                </div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Texture Encoding Pipeline</div>
+                                <div class="ProjectColumnContent">Each row of the texture represents an animation frame, each column corresponds to a mesh vertex, and each RGB pixel encodes a vertex's position offset at that frame.</div>
                             </div>
                         </div>
-
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/TEXANIM_TexturedAnimation.png" alt="Textured animation texture map">
-                                </div>
-                            </div>
-                        </div>
+                        <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/TEXANIM_TexturedAnimation.png" alt="Textured animation texture map">
                     </div>
 
-                    <!-- How to Read Animations -->
+                    <!-- Custom Animator -->
                     <div class="ExplanationColumn">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/TEXANIM_Animator.png" alt="Tex Anim custom animator component">
-                                </div>
-                            </div>
-                        </div>
-
+                        <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/TEXANIM_Animator.png" alt="Tex Anim custom animator component">
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">How to Read Animations</div>
-                                    <div class="ProjectColumnContent">A Custom Animator reads texture coordinates, manages smooth blending between states, and dispatches animation parameters to GPU vertex shaders.</div>
-                                </div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Custom GPU Animator</div>
+                                <div class="ProjectColumnContent">A Custom Animator reads texture coordinates, manages smooth blending between states, and dispatches animation parameters to GPU vertex shaders.</div>
                             </div>
                         </div>
                     </div>
@@ -180,21 +132,12 @@
                     <!-- Graph Editor -->
                     <div class="ExplanationColumn">
                         <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Graph Editor</div>
-                                    <div class="ProjectColumnContent">A node-based Graph Editor inspired by Unity's Animator Window was developed to allow state transitions, blend trees, and advanced parameter control.</div>
-                                </div>
+                            <div class="details-inner">
+                                <div class="ProjectButtonTitle">Node Graph Editor</div>
+                                <div class="ProjectColumnContent">A node-based Graph Editor inspired by Unity's Animator Window was developed to allow state transitions, blend trees, and advanced parameter control.</div>
                             </div>
                         </div>
-
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/TEXANIM_LargeEditorWindow.png" alt="Tex Anim graph editor window">
-                                </div>
-                            </div>
-                        </div>
+                        <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/TEXANIM_LargeEditorWindow.png" alt="Tex Anim graph editor window">
                     </div>
                 </ul>
             </div>

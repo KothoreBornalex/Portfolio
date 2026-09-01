@@ -1,422 +1,386 @@
 .galeryImage {
-    background-color: rgb(30, 39, 63);
-    width: 100%;
-    height: 100%;
-    padding-top: 7vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 20px 48px 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6vh;
-    padding-bottom: 6vh;
-    box-sizing: border-box;
+    gap: 32px;
 }
 
 .galeryImageBlack {
     background-color: rgb(18, 19, 21);
     width: 100%;
-    height: 85vh;
 }
 
-.OrderGeometry3 {
+.OrderGeometry3,
+.OrderGeometry4 {
     width: 100%;
     display: flex;
-    padding-bottom: 3vh;
     list-style-type: none;
-}
-
-.OrderGeometry4 {
-    display: flex;
-    padding-top: 3vh;
-    list-style-type: none;
+    padding: 8px 0;
+    overflow: hidden;
 }
 
 .generalParametersGalery {
-    background-color: rgba(183, 197, 215, 0.253);
-}
-
-#BarrTest {
-    display: flex;
+    background: linear-gradient(90deg, rgba(126, 200, 227, 0.7), rgba(183, 197, 215, 0.4));
+    border-radius: 0;
+    box-shadow: 0 0 6px rgba(126, 200, 227, 0.3);
 }
 
 .PageTitleSection {
-    display: flex;
-    gap: 2.7vw;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgb(36, 46, 71);
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 3vh;
-    text-align: center;
+    background: rgba(22, 32, 54, 0.92);
+    border: 1px solid rgba(183, 197, 215, 0.18);
+    border-radius: 0;
+    padding: 16px 28px;
+    font-family: 'Manrope', sans-serif;
     color: #ffffff;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
     list-style: none;
-    padding: 1vh 0;
 }
 
 .PageTitleSection h1 {
-    font-size: inherit;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
     font-weight: 700;
+    letter-spacing: -0.3px;
     margin: 0;
+    text-transform: none;
 }
 
+/* Main Hero Bento Grid (Project Overview + Video) */
 .MainBarr {
-    gap: 2.7vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(36, 46, 71);
-    padding-bottom: 6vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 24px;
+    background: rgba(22, 32, 54, 0.92);
+    border: 1px solid rgba(183, 197, 215, 0.16);
+    border-radius: 0;
+    padding: 24px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     list-style: none;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.imagesBarr {
-    gap: 2.7vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(36, 46, 71);
-    padding-bottom: 6vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    list-style: none;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.ProjectVisuals {
-    transition: margin-top 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    color: inherit;
-    margin-top: 6vh;
-}
-
-.VideoBlock {
-    width: 17vw;
-    height: 22vh;
-}
-
-#RightVideo {
-    width: 45vw;
-    height: 55vh;
-    border: none;
-    max-width: 100%;
+    align-items: stretch;
 }
 
 .MainColumn {
-    transition: margin-top 0.3s ease;
     display: flex;
     flex-direction: column;
-    text-decoration: none;
-    color: inherit;
-    margin-top: 6vh;
-    align-items: center;
-}
-
-.MainColumn:hover {
-    margin-top: 3vh;
-}
-
-.ExplanationColumn {
-    transition: margin-top 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    margin-top: 6vh;
-}
-
-.ExplanationColumn:hover {
-    margin-top: 3vh;
-}
-
-.cover-image-wrap,
-.details-wrap {
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    background: rgba(16, 24, 40, 0.8);
+    border: 1px solid rgba(183, 197, 215, 0.12);
+    border-radius: 0;
+    overflow: hidden;
+    padding: 16px;
     box-sizing: border-box;
+}
+
+.cover-image-wrap {
+    border-radius: 0;
+    overflow: hidden;
+    background: #0d1424;
 }
 
 .cover_img_loaded {
-    width: 17vw;
-    height: 22vh;
-    display: block;
+    width: 100%;
+    height: 220px;
     object-fit: cover;
-}
-
-.explanation_column_cover_img_loaded {
-    width: 30vw;
-    height: 40vh;
     display: block;
-    object-fit: cover;
-}
-
-.cover_img_phone_loaded {
-    width: 13vw;
-    height: 40vh;
-    display: block;
-    object-fit: cover;
 }
 
 .main-details-wrap {
-    background-color: rgb(82, 100, 128);
-    min-height: 0.5vw;
-    width: 17vw;
-    height: 40vh;
-    position: relative;
-    font-size: 3vh;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 16px 4px 4px 4px;
 }
 
 .main-details-inner {
-    transition: background-color 0.3s ease;
-    background-color: rgb(43, 60, 86);
-    width: 17vw;
-    font-family: 'Rajdhani', sans-serif;
-    text-align: center;
-    padding: 8px;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#RightVideo {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border-radius: 0;
+    border: 1px solid rgba(183, 197, 215, 0.2);
+    background: #000000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Feature Breakdown Bento Cards */
+.imagesBarr {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+.ExplanationColumn {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+    background: rgba(22, 32, 54, 0.92);
+    border: 1px solid rgba(183, 197, 215, 0.16);
+    border-radius: 0;
+    padding: 24px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.25s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out;
+    will-change: transform;
+}
+
+.ExplanationColumn:hover {
+    transform: translateY(-4px);
+    background: rgba(28, 42, 70, 0.96);
+    border-color: rgba(126, 200, 227, 0.45);
+    box-shadow: 0 16px 36px rgba(8, 16, 32, 0.5);
+}
+
+.explanation_column_cover_img_loaded {
+    width: 100%;
+    max-width: 420px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+
+.cover_img_phone_loaded {
+    width: 100%;
+    max-width: 240px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
 }
 
 .details-wrap {
-    background-color: rgb(82, 100, 128);
-    min-height: 0.5vw;
-    width: 30vw;
-    height: 40vh;
-    position: relative;
-    font-size: 3vh;
-    box-sizing: border-box;
+    flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 8px;
 }
 
 .details-inner {
-    transition: background-color 0.3s ease;
-    background-color: rgb(43, 60, 86);
-    width: 30vw;
-    font-family: 'Rajdhani', sans-serif;
-    text-align: center;
-    padding: 12px;
-    box-sizing: border-box;
-}
-
-.details-inner:hover {
-    background-color: rgba(43, 60, 86, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .ProjectButtonTitle {
+    font-family: 'Manrope', sans-serif;
     color: #ffffff;
-    font-size: 4vh;
+    font-size: 1.45rem;
     font-weight: 700;
+    letter-spacing: -0.2px;
+    text-transform: none;
 }
 
 .ProjectButtonData {
-    color: rgb(200, 200, 200);
-    font-size: 2.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
 .ProjectButtonSkills {
-    color: #ffffff;
-    font-size: 3vh;
+    font-family: 'Manrope', sans-serif;
+    color: var(--accent-blue);
+    font-size: 0.95rem;
+    font-weight: 600;
 }
 
 .ProjectColumnContent {
-    color: #ffffff;
-    font-size: 2.5vh;
-    line-height: 1.4;
-    margin-top: 8px;
+    font-family: 'Manrope', sans-serif;
+    color: #c8daf2;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
-/* Geometry Elements */
+/* GPU-Accelerated Geometry Elements */
+#whiteGeometryA,
+#whiteGeometryB,
+#whiteGeometryC,
+#whiteGeometryD,
+#whiteGeometryE,
+#whiteGeometryF,
+.whiteGeometryG,
+#whiteGeometryG,
+#whiteGeometryH,
+#whiteGeometryI,
+#whiteGeometryJ,
+#whiteGeometryK,
+#whiteGeometryL {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
 #whiteGeometryA {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     min-width: 8vw;
     position: relative;
-    animation: whiteGeometryA 2.5s infinite alternate-reverse;
+    animation: whiteGeometryA 2.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometryB {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     min-width: 2vw;
     position: relative;
-    animation: whiteGeometryB 1.2s infinite alternate-reverse;
+    animation: whiteGeometryB 1.2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryC {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     width: 6vw;
     position: relative;
-    animation: whiteGeometryC 4s infinite alternate-reverse;
+    animation: whiteGeometryC 4s infinite alternate-reverse linear;
 }
 
 #whiteGeometryD {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     width: 10vw;
     position: relative;
-    animation: whiteGeometryD 2s infinite alternate-reverse;
+    animation: whiteGeometryD 2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryE {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     width: 4vw;
     position: relative;
-    animation: whiteGeometryE 3s infinite alternate-reverse;
+    animation: whiteGeometryE 3s infinite alternate-reverse linear;
 }
 
 #whiteGeometryF {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     min-width: 2vw;
     position: relative;
-    animation: whiteGeometryF 1.3s infinite alternate-reverse;
+    animation: whiteGeometryF 1.3s infinite alternate-reverse linear;
 }
 
 .whiteGeometryG,
 #whiteGeometryG {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     min-width: 8vw;
     position: relative;
-    animation: whiteGeometryG 3.5s infinite alternate-reverse;
+    animation: whiteGeometryG 3.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometryH {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     min-width: 2vw;
     position: relative;
-    animation: whiteGeometryH 1.2s infinite alternate-reverse;
+    animation: whiteGeometryH 1.2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryI {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     width: 6vw;
     position: relative;
-    animation: whiteGeometryI 4s infinite alternate-reverse;
+    animation: whiteGeometryI 4s infinite alternate-reverse linear;
 }
 
 #whiteGeometryJ {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     width: 10vw;
     position: relative;
-    animation: whiteGeometryJ 2s infinite alternate-reverse;
+    animation: whiteGeometryJ 2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryK {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     width: 4vw;
     position: relative;
-    animation: whiteGeometryK 3s infinite alternate-reverse;
+    animation: whiteGeometryK 3s infinite alternate-reverse linear;
 }
 
 #whiteGeometryL {
-    min-height: 0.5vw;
+    min-height: 0.4vw;
     min-width: 2vw;
     position: relative;
-    animation: whiteGeometryL 1.3s infinite alternate-reverse;
+    animation: whiteGeometryL 1.3s infinite alternate-reverse linear;
 }
 
 @keyframes whiteGeometryA {
-    0%   { left: 0vw; }
-    100% { left: 10vw; }
+    0%   { transform: translate3d(0vw, 0, 0); }
+    100% { transform: translate3d(10vw, 0, 0); }
 }
 
 @keyframes whiteGeometryB {
-    0%   { left: 10vw; }
-    100% { left: 15vw; }
+    0%   { transform: translate3d(10vw, 0, 0); }
+    100% { transform: translate3d(15vw, 0, 0); }
 }
 
 @keyframes whiteGeometryC {
-    0%   { left: 15vw; }
-    100% { left: 28vw; }
+    0%   { transform: translate3d(15vw, 0, 0); }
+    100% { transform: translate3d(28vw, 0, 0); }
 }
 
 @keyframes whiteGeometryD {
-    0%   { left: 28vw; }
-    100% { left: 37vw; }
+    0%   { transform: translate3d(28vw, 0, 0); }
+    100% { transform: translate3d(37vw, 0, 0); }
 }
 
 @keyframes whiteGeometryE {
-    0%   { left: 37vw; }
-    100% { left: 47vw; }
+    0%   { transform: translate3d(37vw, 0, 0); }
+    100% { transform: translate3d(47vw, 0, 0); }
 }
 
 @keyframes whiteGeometryF {
-    0%   { left: 47vw; }
-    100% { left: 67vw; }
+    0%   { transform: translate3d(47vw, 0, 0); }
+    100% { transform: translate3d(67vw, 0, 0); }
 }
 
 @keyframes whiteGeometryG {
-    0%   { left: 0vw; }
-    100% { left: 10vw; }
+    0%   { transform: translate3d(0vw, 0, 0); }
+    100% { transform: translate3d(10vw, 0, 0); }
 }
 
 @keyframes whiteGeometryH {
-    0%   { left: 10vw; }
-    100% { left: 15vw; }
+    0%   { transform: translate3d(10vw, 0, 0); }
+    100% { transform: translate3d(15vw, 0, 0); }
 }
 
 @keyframes whiteGeometryI {
-    0%   { left: 15vw; }
-    100% { left: 28vw; }
+    0%   { transform: translate3d(15vw, 0, 0); }
+    100% { transform: translate3d(28vw, 0, 0); }
 }
 
 @keyframes whiteGeometryJ {
-    0%   { left: 28vw; }
-    100% { left: 37vw; }
+    0%   { transform: translate3d(28vw, 0, 0); }
+    100% { transform: translate3d(37vw, 0, 0); }
 }
 
 @keyframes whiteGeometryK {
-    0%   { left: 37vw; }
-    100% { left: 47vw; }
+    0%   { transform: translate3d(37vw, 0, 0); }
+    100% { transform: translate3d(47vw, 0, 0); }
 }
 
 @keyframes whiteGeometryL {
-    0%   { left: 47vw; }
-    100% { left: 67vw; }
+    0%   { transform: translate3d(47vw, 0, 0); }
+    100% { transform: translate3d(67vw, 0, 0); }
 }
 
-/* Responsive Media Queries */
+/* Responsive Breakpoints */
 @media (max-width: 900px) {
     .MainBarr {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     #RightVideo {
-        width: 90vw;
-        height: 50vw;
-    }
-
-    .MainColumn {
-        width: 90vw;
-    }
-
-    .main-details-wrap,
-    .main-details-inner,
-    .cover_img_loaded {
-        width: 90vw;
-        height: auto;
+        min-height: 240px;
     }
 
     .ExplanationColumn {
         flex-direction: column;
-        width: 90vw;
     }
 
     .explanation_column_cover_img_loaded,
-    .cover_img_phone_loaded,
-    .details-wrap,
-    .details-inner {
-        width: 90vw;
+    .cover_img_phone_loaded {
+        max-width: 100%;
         height: auto;
+        max-height: 320px;
     }
 }
