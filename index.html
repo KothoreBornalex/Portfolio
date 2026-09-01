@@ -29,6 +29,7 @@
         <meta name="twitter:image" content="css/composant/img/astroboy1.jpeg">
 
         <link rel="stylesheet" href="css/IndexStyle.css">
+        <link rel="stylesheet" href="css/composant/projectFilter.css">
     </head>
 
     <body>
@@ -67,14 +68,18 @@
                         <h1 id="MainTitle">Ibrahim Mallouka<br>Game Programmer</h1>
                         <h2 id="TitleIntro">Computer Science student at EPITA specializing in Game Programming.<br>Core toolkit: <strong>C++, C#, Unreal Engine 5, Unity, Engine Architecture &amp; Networking.</strong></h2>
                         
-                        <div id="Details">
-                            <span class="contactPill">📞 07 60 77 76 17</span>
-                            <span class="contactPill">✉ ibrahim.mlk.dev@gmail.com</span>
+                        <div class="profileContactBlock">
+                            <img class="profileAvatar" src="css/composant/img/IbrahimMallouka.jpg" alt="Ibrahim Mallouka">
+                            <div id="Details" class="contactColumn">
+                                <a class="contactPill" href="tel:+33760777617">
+                                    <span>📞</span> 07 60 77 76 17
+                                </a>
+                                <a class="contactPill" href="mailto:ibrahim.mlk.dev@gmail.com">
+                                    <span>✉</span> ibrahim.mlk.dev@gmail.com
+                                </a>
+                            </div>
                         </div>
                     </div>
-
-                    <div id="Loading"></div>
-                    <div id="Loading1"></div>
 
                     <div class="networkButtons">
                         <a class="networkPill" href="https://www.linkedin.com/in/ibrahim-mallouka/" target="_blank" rel="noopener noreferrer">
@@ -138,11 +143,11 @@
 
                 <!-- Interactive Project Filter Tabs -->
                 <div class="projectFilterContainer">
-                    <button class="filterTab active" data-filter="all">All Projects <span class="filterCount"></span></button>
-                    <button class="filterTab" data-filter="ue5">Unreal Engine 5 <span class="filterCount"></span></button>
-                    <button class="filterTab" data-filter="unity">Unity <span class="filterCount"></span></button>
-                    <button class="filterTab" data-filter="cpp">C++ &amp; Engine <span class="filterCount"></span></button>
-                    <button class="filterTab" data-filter="tools">Tooling &amp; Shaders <span class="filterCount"></span></button>
+                    <button type="button" class="filterTab active" data-filter="all">All Projects <span class="filterCount"></span></button>
+                    <button type="button" class="filterTab" data-filter="ue5">Unreal Engine 5 <span class="filterCount"></span></button>
+                    <button type="button" class="filterTab" data-filter="unity">Unity <span class="filterCount"></span></button>
+                    <button type="button" class="filterTab" data-filter="cpp">C++ &amp; Engine <span class="filterCount"></span></button>
+                    <button type="button" class="filterTab" data-filter="tools">Tooling &amp; Shaders <span class="filterCount"></span></button>
                 </div>
 
                 <!-- Section: Networking -->

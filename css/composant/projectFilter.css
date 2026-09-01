@@ -7,27 +7,39 @@
     align-items: center;
 }
 
+button.filterTab,
 .filterTab {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background: #0f1523;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: #94a3b8;
     padding: 8px 18px;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', -apple-system, sans-serif;
     font-size: 0.88rem;
     font-weight: 500;
     letter-spacing: 0.3px;
     cursor: pointer;
     border-radius: 0;
     transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
     outline: none;
+    box-shadow: none;
+    line-height: normal;
 }
 
+button.filterTab:hover,
 .filterTab:hover {
     background: #151e30;
     color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.22);
 }
 
+button.filterTab.active,
 .filterTab.active {
     background: rgba(96, 165, 250, 0.15);
     border-color: rgba(96, 165, 250, 0.5);
@@ -37,14 +49,15 @@
 
 .filterCount {
     display: inline-block;
-    margin-left: 6px;
     font-size: 0.75rem;
     padding: 1px 6px;
-    background: rgba(255, 255, 255, 0.06);
-    color: var(--accent-sky);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--accent-sky, #93c5fd);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0;
 }
 
+button.filterTab.active .filterCount,
 .filterTab.active .filterCount {
     background: rgba(96, 165, 250, 0.25);
     color: #ffffff;
@@ -60,6 +73,7 @@
     display: none !important;
 }
 
+.project-section-group.filter-hidden,
 .ProjectSectionsTitle.filter-hidden,
 .section-divider.filter-hidden {
     display: none !important;
@@ -70,6 +84,7 @@
         gap: 6px;
     }
 
+    button.filterTab,
     .filterTab {
         padding: 6px 12px;
         font-size: 0.82rem;
