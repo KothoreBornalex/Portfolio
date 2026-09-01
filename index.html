@@ -12,7 +12,11 @@
         <meta name="description" content="Portfolio of Ibrahim Mallouka - Computer Science student at EPITA with a Bachelor's in Digital Project Management (IIM). Proficient in Rust, C, C++, and C# with a focus on systems programming, network architecture, custom engine development, and memory optimization.">
         
         <!-- Favicon -->
-        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+        <link rel="apple-touch-icon" href="favicon.png">
         
         <!-- Open Graph / Facebook / LinkedIn / Discord -->
         <meta property="og:type" content="website">
@@ -45,7 +49,7 @@
                 </ul>
 
                 <div class="headerButtonContainer">
-                    <a class="headerButton" href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">
+                    <a class="headerButton" href="content/Ibrahim_MALLOUKA_CV.pdf" download="Ibrahim_MALLOUKA_CV.pdf">
                         DOWNLOAD MY RESUME
                     </a>
                 </div>
@@ -64,63 +68,66 @@
             <!-- Hero Bento Card -->
             <div class="receptionPart">
                 <div class="mainImage">
-                    <div class="heroColumnsContainer">
+                    <div class="floatingHeroContainer">
                         <!-- Left Column: Typography, Bio & Social Actions -->
-                        <div class="heroLeftCol">
-                            <h1 id="MainTitle">Ibrahim Mallouka<br>Software &amp; Systems Engineer</h1>
-                            <h2 id="TitleIntro">Computer Science student at EPITA, holding a Bachelor's in Digital Project Management from IIM.<br>Core toolkit: <strong>Rust, C, C++, C#.</strong> Focused on <strong>low-level systems, network architecture, custom engine development, and memory optimization.</strong></h2>
-                            
-                            <div class="heroLeftSocials">
-                                <a class="networkPill" href="https://www.linkedin.com/in/ibrahimmallouka/" target="_blank" rel="noopener noreferrer">
-                                    <img id="Linkedin" src="css/composant/img/ReseauxLogo/Linkedin.png" alt="LinkedIn profile"> LinkedIn
+                        <div class="floatingLeft">
+                            <div class="floatingTitles">
+                                <h1 id="MainTitle">Ibrahim Mallouka</h1>
+                                <div class="floatingRole">Software &amp; Systems Engineer</div>
+                            </div>
+
+                            <!-- Bio statement -->
+                            <div id="TitleIntro" class="floatingBio">
+                                <p>Computer Science student at EPITA, holding a Bachelor's in Digital Project Management from IIM.</p>
+                                <p>Core toolkit: <strong>Rust, C, C++, C#.</strong> Focused on <strong>low-level systems, network architecture, custom engine development, and memory optimization.</strong></p>
+                            </div>
+
+                            <!-- Social / Action Buttons -->
+                            <div class="floatingActions">
+                                <a class="floatingActionBtn" href="https://www.linkedin.com/in/ibrahimmallouka/" target="_blank" rel="noopener noreferrer">
+                                    <img src="css/composant/img/ReseauxLogo/Linkedin.png" alt="LinkedIn"> LinkedIn
                                 </a>
-                                <a class="networkPill" href="https://www.youtube.com/@ibrahim_mlk" target="_blank" rel="noopener noreferrer">
-                                    <img id="Youtube" src="css/composant/img/ReseauxLogo/Youtube.png" alt="YouTube channel"> YouTube
+                                <a class="floatingActionBtn" href="https://www.youtube.com/@ibrahim_mlk" target="_blank" rel="noopener noreferrer">
+                                    <img src="css/composant/img/ReseauxLogo/Youtube.png" alt="YouTube"> YouTube
                                 </a>
-                                <a class="networkPill" href="content/CV_MALLOUKA_Ibrahim_GameProgrammer.pdf" download="Mallouka Ibrahim English CV.pdf">
-                                    <img id="CVIcon" src="css/composant/img/ReseauxLogo/CV.png" alt="Download CV"> Resume CV
+                                <a class="floatingActionBtn" href="content/Ibrahim_MALLOUKA_CV.pdf" download="Ibrahim_MALLOUKA_CV.pdf">
+                                    <img src="css/composant/img/ReseauxLogo/CV.png" alt="Download CV"> Download Resume CV
                                 </a>
                             </div>
                         </div>
 
-                        <!-- Right Column: Profile, Direct Contacts & Verified Credentials Card -->
-                        <div class="heroRightCol">
-                            <div class="heroProfileCard">
-                                <div>
-                                    <div class="heroCardHeader">Profile &amp; Direct Contact</div>
-                                    <div class="profileContactBlock">
-                                        <img class="profileAvatar" src="css/composant/img/IbrahimMallouka.jpg" alt="Ibrahim Mallouka">
-                                        <div id="Details" class="contactColumn">
-                                            <a class="contactPill" href="tel:+33760777617">
-                                                <span>📞</span> 07 60 77 76 17
-                                            </a>
-                                            <a class="contactPill" href="mailto:ibrahim.mlk.dev@gmail.com">
-                                                <span>✉</span> ibrahim.mlk.dev@gmail.com
-                                            </a>
-                                            <span class="contactPill" title="Discord handle">
-                                                <img src="css/composant/img/ReseauxLogo/discord.svg" alt="Discord"> Discord: MLK
-                                            </span>
-                                        </div>
-                                    </div>
+                        <!-- Right Column: Floating Profile Photo & Button Pills (Zero Outer Box) -->
+                        <div class="floatingRight">
+                            <div class="floatingProfileRow">
+                                <img class="floatingAvatar" src="css/composant/img/IbrahimMallouka.jpg" alt="Ibrahim Mallouka">
+                                <div id="Details" class="contactColumn">
+                                    <a class="contactPill" href="tel:+33760777617">
+                                        <span>📞</span> 07 60 77 76 17
+                                    </a>
+                                    <a class="contactPill" href="mailto:ibrahim.mlk.dev@gmail.com">
+                                        <span>✉</span> ibrahim.mlk.dev@gmail.com
+                                    </a>
+                                    <span class="contactPill" title="Discord handle">
+                                        <img src="css/composant/img/ReseauxLogo/discord.svg" alt="Discord"> Discord: MLK
+                                    </span>
                                 </div>
+                            </div>
 
-                                <div class="credentialsColumn">
-                                    <div class="heroCardHeader">Verified Degrees &amp; Language</div>
-                                    <a class="credentialPill" href="css/composant/img/degrees/CertificatDiplômeIIM_ChefProjetDigital.pdf" target="_blank" rel="noopener noreferrer" title="View Official Certificate">
-                                        <img class="credLogo" src="css/composant/img/Logos/devinci_icon.jpg" alt="IIM De Vinci logo">
-                                        <div class="credInfo">
-                                            <span class="credTitle">IIM Digital School</span>
-                                            <span class="credSub">Bachelor Chef de Projet Digital (RNCP 6) ↗</span>
-                                        </div>
-                                    </a>
-                                    <a class="credentialPill" href="css/composant/img/degrees/Diplôme_TOEFL_ITP.pdf" target="_blank" rel="noopener noreferrer" title="View Official TOEFL Score Report">
-                                        <img class="credLogo" src="css/composant/img/Logos/TOEFL.jpg" alt="TOEFL logo">
-                                        <div class="credInfo">
-                                            <span class="credTitle">ETS TOEFL ITP</span>
-                                            <span class="credSub">Score 577 / 677 · B2 Gold Level ↗</span>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div class="credentialsColumn">
+                                <a class="credentialPill" href="css/composant/img/degrees/CertificatDiplômeIIM_ChefProjetDigital.pdf" target="_blank" rel="noopener noreferrer" title="View Official Certificate">
+                                    <img class="credLogo" src="css/composant/img/Logos/devinci_icon.jpg" alt="IIM De Vinci logo">
+                                    <div class="credInfo">
+                                        <span class="credTitle">IIM Digital School</span>
+                                        <span class="credSub">Bachelor Chef de Projet Digital (RNCP 6) ↗</span>
+                                    </div>
+                                </a>
+                                <a class="credentialPill" href="css/composant/img/degrees/Diplôme_TOEFL_ITP.pdf" target="_blank" rel="noopener noreferrer" title="View Official TOEFL Score Report">
+                                    <img class="credLogo" src="css/composant/img/Logos/TOEFL.jpg" alt="TOEFL logo">
+                                    <div class="credInfo">
+                                        <span class="credTitle">ETS TOEFL ITP</span>
+                                        <span class="credSub">Score 577 · Advanced Professional English ↗</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
