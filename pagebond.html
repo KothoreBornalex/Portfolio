@@ -1,265 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bond - Custom 2D C++ Game Engine with SFML featuring dynamic raycast lighting, custom level editor, and entity systems.">
+    <title>Bond | Ibrahim Mallouka</title>
+    <link rel="stylesheet" href="css/ProjectPageStyle.css">
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/ProjectPageStyle.css">
-        <script src="https://kit.fontawesome.com/810b0de2a3.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
-        <title>Document</title>
-    </head>
-
-    <body>
-
-        <header class="headerID">
-
-
-            <div id="globalHeader">
-                <ul class="OrderGeometry">
-                    <li><div id="whiteGeometry1" class="generalParameters"></div></li>
-                    <li><div id="whiteGeometry2" class="generalParameters"></div></li>
-                    <li><div id="whiteGeometry3" class="generalParameters"></div></li>
-                    <!--<li><div id="whiteGeometry4" class="generalParameters"></div></li>-->
-                    <li><div id="whiteGeometry5" class="generalParameters"></div></li>
-                    <li><div id="whiteGeometry6" class="generalParameters"></div></li>
-                </ul>
-
-                <ul><a href="index.html"><button class="headerButton">HOME</button></a></ul>
-
-                <ul class="OrderGeometry2">
-                    <li><div id="whiteGeometry7" class="generalParameters"></div></li>
-                    <li><div id="whiteGeometry8" class="generalParameters"></div></li>
-                    <!--<li><div id="whiteGeometry9" class="generalParameters"></div></li>-->
-                    <li><div id="whiteGeometry10" class="generalParameters"></div></li>
-                    <li><div id="whiteGeometry11" class="generalParameters"></div></li>
-                    <li><div id="whiteGeometry12" class="generalParameters"></div></li>
-                </ul>
-
-
-
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="geo-bar-wrapper" aria-hidden="true">
+                <div class="geo-segment geo-1"></div>
+                <div class="geo-segment geo-2"></div>
+                <div class="geo-segment geo-3"></div>
+                <div class="geo-segment geo-4"></div>
+                <div class="geo-segment geo-5"></div>
+                <div class="geo-segment geo-6"></div>
             </div>
 
+            <nav class="nav-content" aria-label="Main Navigation">
+                <a href="index.html" class="nav-btn">Home</a>
+            </nav>
 
+            <div class="geo-bar-wrapper reverse" aria-hidden="true">
+                <div class="geo-segment geo-1"></div>
+                <div class="geo-segment geo-2"></div>
+                <div class="geo-segment geo-3"></div>
+                <div class="geo-segment geo-4"></div>
+                <div class="geo-segment geo-5"></div>
+                <div class="geo-segment geo-6"></div>
+            </div>
+        </div>
+    </header>
 
+    <main class="project-page-container">
+        <!-- Page Title Header -->
+        <div class="project-page-header">
+            <h1 class="project-page-title">Bond</h1>
+        </div>
 
-
-        </header>
-
-
-
-
-        <main>
-
-
-
-
-            <div class="galeryImage">
-
-
-                <ul class="PageTitleSection">
-                    <h1>BOND</h1>
-
-                </ul>
-
-
-
-                <ul class="MainBarr">
-
-                    <!--Top Left Button-->
-                    <a class="MainColumn">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="cover_img_loaded" src="css/composant/img/projects/SFML_ResultWithoutRaysDebug.png">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="main-details-wrap">
-                            <div class="details">
-                                <div class="main-details-inner">
-                                    <div class="ProjectButtonTitle">BOND</div>
-                                    <div class="ProjectButtonData">2023 - Top Down - SFML - 3 Weeks</div>
-                                    <div class="ProjectButtonSkills">C++ - Engine Programming</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-
-                    <iframe id="RightVideo" width="1080" height="720" src="https://www.youtube.com/embed/tF4DML7FIWk" title="Atlas | Partners in Parkour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    <div class="ProjectTextDescription"
-
-                    </div>
-
-                </ul>
-
-
-                <div class="networkButtons">
-                    <a href="index.html"><img id="Phone" src="css/composant/img/ReseauxLogo/Phone.png" alt="émoji phone"></a>
-                    <a href="index.html"><img id="Mail" src="css/composant/img/ReseauxLogo/Mail.png" alt="émoji mail"></a>
-                    <a href="https://www.linkedin.com/in/ibrahim-mallouka/"><img id="Linkedin" src="css/composant/img/ReseauxLogo/Linkedin.png" alt="émoji linkedin"></a>
-                    <a href="https://www.youtube.com/@ibrahim_mlk"><img id="Youtube" src="css/composant/img/ReseauxLogo/Youtube.png" alt="émoji youtube"></a>
+        <!-- Main Showcase -->
+        <section class="showcase-section" aria-label="Project Overview and Video">
+            <div class="showcase-meta-card">
+                <div class="showcase-thumb-wrap">
+                    <img class="showcase-thumb-img" src="css/composant/img/projects/SFML_ResultWithoutRaysDebug.png" alt="Bond SFML engine screenshot">
                 </div>
-
-
-                <ul class="imagesBarr">
-
-                    <!--Top Left Button-->
-                    <a class="ExplanationColumn">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/SFML_MainMenu.png">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Pitch</div>
-                                    <div class="ProjectColumnContent">Bond is a students project made to learn C++ and the basics of making a game from ground zero. It Helped us getting a better understanding of how to organize our projects, how to work with CPP and how engines would work behind the wall. And we did learned A Lot !</div>
-                                    <div class="ProjectButtonSkills"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-
-                    <!--Top Right Button-->
-                    <a class="ExplanationColumn">
-
-                        <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Level Editor</div>
-                                    <div class="ProjectColumnContent">The "Level Editor" gave us the possibility to create more complex levels and spend less time on the level creations since it was optimized to be easy to use. We saved and load levels inside/from JSON files. </div>
-                                    <div class="ProjectButtonSkills"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/SFML_LevelEditor.png">
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-
-
-                    <!--Top Right Button-->
-                    <a class="ExplanationColumn">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/SFML_ResultWithoutRaysDebug.png">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Entities System</div>
-                                    <div class="ProjectColumnContent">We needed a way to update objects, to list them, to destroy them... So we created a system for it, Entities are the back bone of everything it contains a lot of functinnalities going from handling the clearing of memory to the collision type of the entity. </div>
-                                    <div class="ProjectButtonSkills"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-
-
-                    <!--Top Right Button-->
-                    <a class="ExplanationColumn">
-
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/SFML_RayCastingShadow.png">
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="details-wrap">
-                            <div class="details">
-                                <div class="details-inner">
-                                    <div class="ProjectButtonTitle">Lights & Shadows</div>
-                                    <div class="ProjectColumnContent">I made a raycast system based on the Entities System and I made it so that the outside of the shape created out of all the connections between all raycasts impacts would be the shape of the shadow.</div>
-                                    <div class="ProjectColumnContent">Then I just rendered the shadow under the buildings but above the AI and tada !</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <div class="cover cover-rollover">
-                                    <img class="explanation_column_cover_img_loaded" src="css/composant/img/projects/SFML_RayCastingNoDebug.png">
-                                </div>
-
-                            </div>
-                        </div>
-                    </a>
-
-                </ul>
-
-
-
-                <div class="networkButtons">
-                    <a href="https://github.com/ManonWimmer/A2-GP-GeometryWar"><img id="Itchio" src="css/composant/img/ReseauxLogo/get-it-on-github.png" alt="button itchio"></a>                    
+                <div class="showcase-meta-body">
+                    <h2 class="showcase-title">Bond</h2>
+                    <p class="showcase-info">2023 • PC • Top-Down • SFML • 3 Weeks • Team of 3</p>
+                    <p class="showcase-skills">C++ • Custom Engine Architecture • 2D Raycasting</p>
                 </div>
-
-
             </div>
 
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/tF4DML7FIWk" title="Bond Engine Demonstration" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </section>
 
+        <!-- Action / GitHub Links -->
+        <div class="project-action-links" aria-label="View Source on GitHub">
+            <a href="https://github.com/ManonWimmer/A2-GP-GeometryWar" target="_blank" rel="noopener noreferrer" class="project-badge-link" aria-label="View Bond Engine on GitHub">
+                <img class="project-badge-img" src="css/composant/img/ReseauxLogo/get-it-on-github.png" alt="Get it on GitHub">
+            </a>
+        </div>
 
+        <!-- Features Deep-Dive -->
+        <section class="features-section" aria-label="Technical Features Breakdown">
+            <h2 class="features-heading">Engine Architecture & Features</h2>
 
+            <!-- Pitch -->
+            <article class="feature-card">
+                <div class="feature-visual">
+                    <img class="feature-img" src="css/composant/img/projects/SFML_MainMenu.png" alt="Bond Main Menu" loading="lazy">
+                </div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Project Overview</h3>
+                    <p class="feature-text">
+                        Bond is a student project created to learn C++ fundamentals and game engine architecture from the ground up, using only the SFML multimedia library for windowing and low-level rendering.
+                    </p>
+                    <p class="feature-text">
+                        Working in a team of 3, we implemented memory management, collision physics, an entity system, and custom rendering passes completely from scratch.
+                    </p>
+                </div>
+            </article>
 
-        </main>
+            <!-- Level Editor -->
+            <article class="feature-card reverse">
+                <div class="feature-visual">
+                    <img class="feature-img" src="css/composant/img/projects/SFML_LevelEditor.png" alt="In-Engine Level Editor Tool" loading="lazy">
+                </div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Integrated Level Editor</h3>
+                    <p class="feature-text">
+                        Developed a standalone in-engine Level Editor allowing rapid authoring of complex maps with grid-based tile placement, entity spawner setup, and collision boundary painting.
+                    </p>
+                    <p class="feature-text">
+                        Levels serialize directly to and from JSON files, enabling clean separation of data and runtime game code.
+                    </p>
+                </div>
+            </article>
 
+            <!-- Entities System -->
+            <article class="feature-card">
+                <div class="feature-visual">
+                    <img class="feature-img" src="css/composant/img/projects/SFML_ResultWithoutRaysDebug.png" alt="Entities Architecture Debug View" loading="lazy">
+                </div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Core Entity Architecture</h3>
+                    <p class="feature-text">
+                        Engineered an extensible Entity system that acts as the backbone for all game objects. It manages deterministic tick updates, lifecycle events, memory cleanup, and AABB/circle collision layers.
+                    </p>
+                </div>
+            </article>
 
+            <!-- Raycasting & Shadows -->
+            <article class="feature-card reverse">
+                <div class="feature-visual">
+                    <img class="feature-img" src="css/composant/img/projects/SFML_RayCastingShadow.png" alt="2D Dynamic Raycasted Shadows" loading="lazy">
+                </div>
+                <div class="feature-content">
+                    <h3 class="feature-title">2D Dynamic Line-of-Sight & Shadows</h3>
+                    <p class="feature-text">
+                        Implemented a 2D raycasting visibility algorithm that casts rays toward obstacle vertices, sorting intersection points to construct a dynamic visibility polygon.
+                    </p>
+                    <p class="feature-text">
+                        Shadow geometry is dynamically generated and layered beneath buildings but above AI units, creating realistic stealth line-of-sight mechanics.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="geo-bar-wrapper" aria-hidden="true">
+                <div class="geo-segment geo-1"></div>
+                <div class="geo-segment geo-3"></div>
+                <div class="geo-segment geo-5"></div>
+                <div class="geo-segment geo-2"></div>
+                <div class="geo-segment geo-6"></div>
+                <div class="geo-segment geo-4"></div>
+            </div>
 
-        <footer>
-        <div class="leFooter">
+            <p class="footer-credit">Portfolio & Projects by Ibrahim Mallouka</p>
 
-            <ul class="OrderGeometry7">
-
-                <li><div class="whiteGeometryG" class="generalParameters3"></div></li>
-                <!--<li><div id="whiteGeometryH" class="generalParameters3"></div></li>-->
-                <li><div id="whiteGeometryI" class="generalParameters3"></div></li>
-                <li><div id="whiteGeometryJ" class="generalParameters3"></div></li>
-                <!--<li><div id="whiteGeometryK" class="generalParameters3"></div></li>-->
-                <li><div id="whiteGeometryL" class="generalParameters3"></div></li>
-
-            </ul>
-
-            <h2>Portfolio WebSite Made by Ibrahim Mlk for Ibrahim Mlk.</h2>
-
-
-            <ul class="OrderGeometry8">
-
-                <!--<li><div class="whiteGeometryG" class="generalParameters3"></div></li>-->
-                <li><div id="whiteGeometryH" class="generalParameters3"></div></li>
-                <li><div id="whiteGeometryI" class="generalParameters3"></div></li>
-                <!--<li><div id="whiteGeometryJ" class="generalParameters3"></div></li>-->
-                <li><div id="whiteGeometryK" class="generalParameters3"></div></li>
-                <!--<li><div id="whiteGeometryL" class="generalParameters3"></div></li>-->
-
-            </ul>
-
+            <div class="geo-bar-wrapper reverse" aria-hidden="true">
+                <div class="geo-segment geo-2"></div>
+                <div class="geo-segment geo-4"></div>
+                <div class="geo-segment geo-1"></div>
+                <div class="geo-segment geo-6"></div>
+                <div class="geo-segment geo-3"></div>
+                <div class="geo-segment geo-5"></div>
+            </div>
         </div>
     </footer>
 
-    </body>
-
+</body>
 </html>
