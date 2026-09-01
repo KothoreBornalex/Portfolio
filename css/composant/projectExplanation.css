@@ -5,11 +5,11 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 28px;
 }
 
 .galeryImageBlack {
-    background-color: rgb(18, 19, 21);
+    background-color: #0a0e17;
     width: 100%;
 }
 
@@ -23,25 +23,23 @@
 }
 
 .generalParametersGalery {
-    background: linear-gradient(90deg, rgba(126, 200, 227, 0.7), rgba(183, 197, 215, 0.4));
+    background: rgba(148, 163, 184, 0.3);
     border-radius: 0;
-    box-shadow: 0 0 6px rgba(126, 200, 227, 0.3);
 }
 
 .PageTitleSection {
-    background: rgba(22, 32, 54, 0.92);
-    border: 1px solid rgba(183, 197, 215, 0.18);
+    background: #0f1523;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0;
-    padding: 16px 28px;
+    padding: 16px 24px;
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
     list-style: none;
 }
 
 .PageTitleSection h1 {
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
-    font-weight: 700;
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+    font-weight: 600;
     letter-spacing: -0.3px;
     margin: 0;
     text-transform: none;
@@ -51,12 +49,11 @@
 .MainBarr {
     display: grid;
     grid-template-columns: 1fr 1.6fr;
-    gap: 24px;
-    background: rgba(22, 32, 54, 0.92);
-    border: 1px solid rgba(183, 197, 215, 0.16);
+    gap: 20px;
+    background: #0f1523;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0;
-    padding: 24px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    padding: 20px;
     list-style: none;
     align-items: stretch;
 }
@@ -65,8 +62,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: rgba(16, 24, 40, 0.8);
-    border: 1px solid rgba(183, 197, 215, 0.12);
+    background: #0b0f19;
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 0;
     overflow: hidden;
     padding: 16px;
@@ -76,7 +73,7 @@
 .cover-image-wrap {
     border-radius: 0;
     overflow: hidden;
-    background: #0d1424;
+    background: #090d15;
 }
 
 .cover_img_loaded {
@@ -101,16 +98,15 @@
     height: 100%;
     min-height: 380px;
     border-radius: 0;
-    border: 1px solid rgba(183, 197, 215, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     background: #000000;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* Feature Breakdown Bento Cards */
 .imagesBarr {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
     list-style: none;
     padding: 0;
 }
@@ -119,29 +115,26 @@
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: 24px;
-    background: rgba(22, 32, 54, 0.92);
-    border: 1px solid rgba(183, 197, 215, 0.16);
+    gap: 20px;
+    background: #0f1523;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0;
-    padding: 24px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+    padding: 20px;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.25s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out;
-    will-change: transform;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .ExplanationColumn:hover {
-    transform: translateY(-4px);
-    background: rgba(28, 42, 70, 0.96);
-    border-color: rgba(126, 200, 227, 0.45);
-    box-shadow: 0 16px 36px rgba(8, 16, 32, 0.5);
+    transform: translateY(-2px);
+    background: #141c2e;
+    border-color: rgba(96, 165, 250, 0.35);
 }
 
 .explanation_column_cover_img_loaded {
     width: 100%;
     max-width: 420px;
-    height: 280px;
+    height: 260px;
     object-fit: cover;
     border-radius: 0;
     display: block;
@@ -150,7 +143,7 @@
 .cover_img_phone_loaded {
     width: 100%;
     max-width: 240px;
-    height: 280px;
+    height: 260px;
     object-fit: cover;
     border-radius: 0;
     display: block;
@@ -161,7 +154,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 8px;
+    padding: 4px;
 }
 
 .details-inner {
@@ -173,8 +166,8 @@
 .ProjectButtonTitle {
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
-    font-size: 1.45rem;
-    font-weight: 700;
+    font-size: 1.35rem;
+    font-weight: 600;
     letter-spacing: -0.2px;
     text-transform: none;
 }
@@ -187,20 +180,20 @@
 
 .ProjectButtonSkills {
     font-family: 'Manrope', sans-serif;
-    color: var(--accent-blue);
-    font-size: 0.95rem;
-    font-weight: 600;
+    color: var(--accent-sky);
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .ProjectColumnContent {
     font-family: 'Manrope', sans-serif;
-    color: #c8daf2;
-    font-size: 0.98rem;
-    line-height: 1.6;
+    color: #94a3b8;
+    font-size: 0.94rem;
+    line-height: 1.65;
     font-weight: 400;
 }
 
-/* GPU-Accelerated Geometry Elements */
+/* Minimalist Sliding Geometry Elements */
 #whiteGeometryA,
 #whiteGeometryB,
 #whiteGeometryC,
@@ -219,42 +212,42 @@
 }
 
 #whiteGeometryA {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 8vw;
     position: relative;
     animation: whiteGeometryA 2.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometryB {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryB 1.2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryC {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 6vw;
     position: relative;
     animation: whiteGeometryC 4s infinite alternate-reverse linear;
 }
 
 #whiteGeometryD {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 10vw;
     position: relative;
     animation: whiteGeometryD 2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryE {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 4vw;
     position: relative;
     animation: whiteGeometryE 3s infinite alternate-reverse linear;
 }
 
 #whiteGeometryF {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryF 1.3s infinite alternate-reverse linear;
@@ -262,42 +255,42 @@
 
 .whiteGeometryG,
 #whiteGeometryG {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 8vw;
     position: relative;
     animation: whiteGeometryG 3.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometryH {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryH 1.2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryI {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 6vw;
     position: relative;
     animation: whiteGeometryI 4s infinite alternate-reverse linear;
 }
 
 #whiteGeometryJ {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 10vw;
     position: relative;
     animation: whiteGeometryJ 2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryK {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 4vw;
     position: relative;
     animation: whiteGeometryK 3s infinite alternate-reverse linear;
 }
 
 #whiteGeometryL {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryL 1.3s infinite alternate-reverse linear;
@@ -363,7 +356,6 @@
     100% { transform: translate3d(67vw, 0, 0); }
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 900px) {
     .MainBarr {
         grid-template-columns: 1fr;

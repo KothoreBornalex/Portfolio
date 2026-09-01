@@ -6,76 +6,67 @@
 
 .mainImage {
     background: 
-        linear-gradient(105deg, rgba(12, 17, 30, 0.94) 0%, rgba(18, 27, 48, 0.8) 46%, rgba(26, 38, 66, 0.25) 100%),
+        linear-gradient(to bottom, transparent 60%, #0a0e17 100%),
+        linear-gradient(110deg, rgba(10, 14, 23, 0.95) 0%, rgba(13, 19, 32, 0.88) 45%, rgba(18, 26, 44, 0.35) 100%),
         url("img/astroboy1.jpeg");
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid rgba(183, 197, 215, 0.15);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 4vw 6vw 4.5vw 6vw;
+    padding: 5vw 6vw 5vw 6vw;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .mainImageBlack {
     background: 
-        linear-gradient(105deg, rgba(14, 18, 26, 0.95) 0%, rgba(18, 24, 36, 0.85) 50%, rgba(24, 30, 44, 0.3) 100%),
+        linear-gradient(to bottom, transparent 60%, #0a0e17 100%),
+        linear-gradient(110deg, rgba(12, 16, 24, 0.96) 0%, rgba(15, 20, 30, 0.9) 50%, rgba(20, 26, 38, 0.4) 100%),
         url("img/Astronaut.jpeg");
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
     border-radius: 0;
-    padding: 4vw 6vw;
+    border: none;
+    padding: 5vw 6vw;
 }
 
 .mainImage h1,
 #MainTitle {
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
-    font-weight: 300;
-    font-size: clamp(3rem, 6.2vw, 5.5rem);
-    line-height: 1.1;
+    font-weight: 400;
+    font-size: clamp(3rem, 5.8vw, 5.2rem);
+    line-height: 1.12;
     letter-spacing: -0.5px;
     text-transform: none;
-    position: relative;
-    will-change: transform;
-    animation: TextAnimationTitle 5s infinite alternate-reverse ease-in-out;
     margin-bottom: 1.5rem;
-}
-
-@keyframes TextAnimationTitle {
-    0%   { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-15px, 0, 0); }
 }
 
 .mainImage h2,
 #TitleIntro {
     font-family: 'Manrope', sans-serif;
-    color: #c8daf2;
+    color: #94a3b8;
     font-weight: 400;
-    font-size: clamp(1.05rem, 1.6vw, 1.35rem);
-    line-height: 1.6;
-    max-width: 680px;
-    position: relative;
-    will-change: transform;
-    animation: TextAnimationPresentation 6s infinite alternate-reverse ease-in-out;
+    font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+    line-height: 1.65;
+    max-width: 660px;
     margin-bottom: 1.5rem;
 }
 
-@keyframes TextAnimationPresentation {
-    0%   { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-20px, 0, 0); }
+.mainImage h2 strong,
+#TitleIntro strong {
+    color: #e2e8f0;
+    font-weight: 500;
 }
 
 #Details {
@@ -83,71 +74,34 @@
     flex-wrap: wrap;
     gap: 12px;
     font-family: 'Manrope', sans-serif;
-    font-size: 0.95rem;
-    color: #ffffff;
-    margin-top: 1rem;
+    font-size: 0.92rem;
+    color: #cbd5e1;
+    margin-top: 0.5rem;
 }
 
 .contactPill {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 7px 18px;
-    background: rgba(30, 44, 72, 0.85);
-    border: 1px solid rgba(183, 197, 215, 0.25);
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0;
-    font-size: 0.92rem;
-    font-weight: 400;
-    color: #e2eaf5;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #94a3b8;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .contactPill:hover {
-    background: rgba(126, 200, 227, 0.25);
-    border-color: var(--accent-blue);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.16);
     color: #ffffff;
 }
 
-#Loading {
-    background-color: #7ec8e3;
-    height: 14px;
-    width: 14px;
-    border-radius: 0;
-    position: absolute;
-    right: 12%;
-    top: 22%;
-    will-change: transform;
-    animation: Loading 0.7s infinite linear;
-    box-shadow: 0 0 10px rgba(126, 200, 227, 0.8);
-}
-
-@keyframes Loading {
-    0%   { transform: translate3d(0, 0, 0); }
-    25%  { transform: translate3d(24px, 0, 0); }
-    50%  { transform: translate3d(24px, 24px, 0); }
-    75%  { transform: translate3d(0, 24px, 0); }
-    100% { transform: translate3d(0, 0, 0); }
-}
-
+#Loading,
 #Loading1 {
-    background-color: #ffffff;
-    height: 14px;
-    width: 14px;
-    border-radius: 0;
-    position: absolute;
-    right: 10%;
-    top: 26%;
-    will-change: transform;
-    animation: Loading1 0.7s infinite linear;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-@keyframes Loading1 {
-    0%   { transform: translate3d(0, 0, 0); }
-    25%  { transform: translate3d(-24px, 0, 0); }
-    50%  { transform: translate3d(-24px, -24px, 0); }
-    75%  { transform: translate3d(0, -24px, 0); }
-    100% { transform: translate3d(0, 0, 0); }
+    display: none;
 }
 
 @media (max-width: 900px) {
@@ -155,9 +109,5 @@
         min-height: auto;
         padding: 8vw 6vw;
         background-position: center top;
-    }
-
-    #Loading, #Loading1 {
-        display: none;
     }
 }

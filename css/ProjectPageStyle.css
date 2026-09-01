@@ -8,23 +8,24 @@
 @import url('composant/EngineButtons.css');
 
 :root {
-    --bg-main: #0c111e;
-    --bg-surface: rgba(22, 32, 54, 0.92);
-    --bg-surface-hover: rgba(30, 44, 72, 0.95);
-    --bg-card: #172136;
-    --border-glass: rgba(183, 197, 215, 0.16);
-    --border-glass-hover: rgba(126, 200, 227, 0.4);
-    --accent-blue: #7ec8e3;
-    --accent-ice: #c8daf2;
+    --bg-main: #0a0e17;
+    --bg-surface: #111726;
+    --bg-surface-hover: #161f33;
+    --bg-card: #0f1523;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(96, 165, 250, 0.4);
+    --accent-blue: #60a5fa;
+    --accent-sky: #93c5fd;
+    --accent-ice: #e2e8f0;
     --text-primary: #ffffff;
-    --text-secondary: #a9bed6;
-    --text-muted: #7389a8;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
     --radius-card: 0px;
     --radius-pill: 0px;
     --radius-sm: 0px;
-    --shadow-card: 0 10px 28px rgba(0, 0, 0, 0.35);
-    --shadow-hover: 0 16px 36px rgba(8, 16, 32, 0.55);
-    --transition-smooth: all 0.25s ease-out;
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.35);
+    --transition-smooth: all 0.2s ease;
 }
 
 *,
@@ -36,14 +37,14 @@
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: var(--bg-main);
     background-image: 
-        radial-gradient(circle at 15% 15%, rgba(44, 64, 102, 0.25) 0%, transparent 40%),
-        radial-gradient(circle at 85% 60%, rgba(30, 50, 85, 0.3) 0%, transparent 50%);
+        radial-gradient(circle at 20% 10%, rgba(30, 45, 75, 0.18) 0%, transparent 40%),
+        radial-gradient(circle at 80% 50%, rgba(20, 35, 60, 0.15) 0%, transparent 50%);
     color: var(--text-primary);
     overflow-x: hidden;
-    line-height: 1.5;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -61,40 +62,41 @@ ul {
 .projectTag {
     display: inline-flex;
     align-items: center;
-    padding: 4px 12px;
-    background: rgba(43, 60, 86, 0.7);
-    border: 1px solid rgba(183, 197, 215, 0.22);
+    padding: 3px 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-subtle);
     border-radius: 0;
     font-family: 'Manrope', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: var(--accent-ice);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: var(--accent-sky);
     text-transform: uppercase;
     transition: var(--transition-smooth);
 }
 
 .projectTag:hover {
-    background: rgba(126, 200, 227, 0.25);
-    border-color: var(--accent-blue);
+    background: rgba(96, 165, 250, 0.1);
+    border-color: rgba(96, 165, 250, 0.3);
     color: #ffffff;
 }
 
 .actionBadge {
     display: inline-flex;
     align-items: center;
-    padding: 8px 18px;
+    padding: 8px 16px;
     background: #ffffff;
-    color: #0c111e;
+    color: #0a0e17;
     border-radius: 0;
     font-family: 'Manrope', sans-serif;
-    font-size: 0.92rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
     transition: var(--transition-smooth);
 }
 
 .actionBadge:hover {
     background: var(--accent-blue);
+    color: #ffffff;
     transform: translateY(-2px);
 }

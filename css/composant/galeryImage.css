@@ -1,12 +1,12 @@
 .galeryImage {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 24px 20px;
     box-sizing: border-box;
 }
 
 .galeryImageBlack {
-    background-color: rgb(18, 19, 21);
+    background-color: #0a0e17;
     width: 100%;
 }
 
@@ -15,83 +15,78 @@
     width: 100%;
     display: flex;
     list-style-type: none;
-    padding: 12px 0;
+    padding: 10px 0;
     overflow: hidden;
 }
 
 .generalParametersGalery {
-    background: linear-gradient(90deg, rgba(126, 200, 227, 0.7), rgba(183, 197, 215, 0.4));
+    background: rgba(148, 163, 184, 0.3);
     border-radius: 0;
-    box-shadow: 0 0 6px rgba(126, 200, 227, 0.3);
 }
 
 .ProjectSectionsTitle {
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
-    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+    font-size: clamp(1.4rem, 2.2vw, 1.8rem);
     font-weight: 600;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.2px;
     text-transform: none;
     display: flex;
     align-items: center;
     gap: 16px;
-    margin: 2.5rem 0 1.5rem 0;
+    margin: 2.5rem 0 1.25rem 0;
 }
 
 .ProjectSectionsTitle::after {
     content: '';
     flex: 1;
     height: 1px;
-    background: linear-gradient(90deg, rgba(183, 197, 215, 0.2) 0%, transparent 100%);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .imagesBarr,
 .imagesBarr2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-    gap: 24px;
-    margin-bottom: 24px;
+    gap: 20px;
+    margin-bottom: 20px;
     list-style: none;
 }
 
-/* Single Flagship Project Layout */
 .imagesBarr2:has(> .ProjectButton:only-child) {
     grid-template-columns: 1fr;
 }
 
-/* Sharp Square Project Card */
+/* Clean, Professional Project Card */
 .ProjectButton {
-    background: rgba(22, 32, 54, 0.92);
-    border: 1px solid rgba(183, 197, 215, 0.16);
+    background: #0f1523;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0;
-    padding: 18px;
+    padding: 16px;
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: 22px;
+    gap: 20px;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.25s ease-out, border-color 0.25s ease-out, box-shadow 0.25s ease-out;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
     overflow: hidden;
     position: relative;
-    will-change: transform;
 }
 
 .ProjectButton:hover {
-    transform: translateY(-4px);
-    background: rgba(28, 42, 70, 0.96);
-    border-color: rgba(126, 200, 227, 0.45);
-    box-shadow: 0 16px 36px rgba(8, 16, 32, 0.5);
+    transform: translateY(-2px);
+    background: #141c2e;
+    border-color: rgba(96, 165, 250, 0.35);
 }
 
 .cover-image-wrap {
-    flex: 0 0 46%;
+    flex: 0 0 44%;
     border-radius: 0;
     overflow: hidden;
     position: relative;
-    background: #0d1424;
-    min-height: 220px;
+    background: #090d15;
+    min-height: 200px;
 }
 
 .cover-image {
@@ -104,12 +99,11 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.35s ease-out;
-    will-change: transform;
+    transition: transform 0.3s ease;
 }
 
 .ProjectButton:hover .cover_img_loaded {
-    transform: scale(1.04);
+    transform: scale(1.02);
 }
 
 .details-wrap {
@@ -117,7 +111,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 8px 4px;
+    padding: 4px;
     box-sizing: border-box;
 }
 
@@ -131,10 +125,10 @@
 .ProjectButtonTitle {
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
-    font-size: 1.45rem;
+    font-size: 1.35rem;
     font-weight: 600;
     letter-spacing: -0.2px;
-    line-height: 1.2;
+    line-height: 1.25;
     text-transform: none;
 }
 
@@ -142,40 +136,40 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin: 4px 0;
+    margin: 2px 0;
 }
 
 .ProjectButtonSkills {
     font-family: 'Manrope', sans-serif;
-    color: #c8daf2;
-    font-size: 0.92rem;
-    line-height: 1.45;
+    color: #94a3b8;
+    font-size: 0.88rem;
+    line-height: 1.5;
     font-weight: 400;
 }
 
 .explorePill {
     display: inline-flex;
     align-items: center;
-    padding: 6px 16px;
-    background: rgba(126, 200, 227, 0.15);
-    border: 1px solid rgba(126, 200, 227, 0.35);
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0;
     font-family: 'Manrope', sans-serif;
-    font-size: 0.88rem;
-    font-weight: 600;
-    color: #7ec8e3;
-    margin-top: 12px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    margin-top: 10px;
     width: fit-content;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .ProjectButton:hover .explorePill {
-    background: #7ec8e3;
-    color: #0c111e;
-    border-color: #ffffff;
+    background: rgba(96, 165, 250, 0.15);
+    border-color: rgba(96, 165, 250, 0.4);
+    color: #ffffff;
 }
 
-/* GPU-Accelerated Gallery Geometry Elements */
+/* Minimalist Sliding Gallery Accents */
 #whiteGeometryA,
 #whiteGeometryB,
 #whiteGeometryC,
@@ -194,42 +188,42 @@
 }
 
 #whiteGeometryA {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 8vw;
     position: relative;
     animation: whiteGeometryA 2.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometryB {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryB 1.2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryC {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 6vw;
     position: relative;
     animation: whiteGeometryC 4s infinite alternate-reverse linear;
 }
 
 #whiteGeometryD {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 10vw;
     position: relative;
     animation: whiteGeometryD 2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryE {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 4vw;
     position: relative;
     animation: whiteGeometryE 3s infinite alternate-reverse linear;
 }
 
 #whiteGeometryF {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryF 1.3s infinite alternate-reverse linear;
@@ -237,42 +231,42 @@
 
 .whiteGeometryG,
 #whiteGeometryG {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 8vw;
     position: relative;
     animation: whiteGeometryG 3.5s infinite alternate-reverse linear;
 }
 
 #whiteGeometryH {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryH 1.2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryI {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 6vw;
     position: relative;
     animation: whiteGeometryI 4s infinite alternate-reverse linear;
 }
 
 #whiteGeometryJ {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 10vw;
     position: relative;
     animation: whiteGeometryJ 2s infinite alternate-reverse linear;
 }
 
 #whiteGeometryK {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 4vw;
     position: relative;
     animation: whiteGeometryK 3s infinite alternate-reverse linear;
 }
 
 #whiteGeometryL {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryL 1.3s infinite alternate-reverse linear;
@@ -338,7 +332,6 @@
     100% { transform: translate3d(67vw, 0, 0); }
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 900px) {
     .imagesBarr,
     .imagesBarr2 {
@@ -351,6 +344,6 @@
 
     .cover-image-wrap {
         flex: auto;
-        min-height: 240px;
+        min-height: 220px;
     }
 }

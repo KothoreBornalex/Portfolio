@@ -4,22 +4,19 @@
 }
 
 .githubCalendarCard {
-    background: rgba(22, 32, 54, 0.85);
-    border: 1px solid rgba(183, 197, 215, 0.16);
+    background: #0f1523;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0;
-    padding: 24px 28px;
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(12px);
+    padding: 20px 24px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     box-sizing: border-box;
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: border-color 0.2s ease;
 }
 
 .githubCalendarCard:hover {
-    border-color: rgba(126, 200, 227, 0.4);
-    box-shadow: 0 20px 48px rgba(8, 16, 32, 0.55), 0 0 20px rgba(126, 200, 227, 0.15);
+    border-color: rgba(96, 165, 250, 0.35);
 }
 
 .calendarHeader {
@@ -39,14 +36,14 @@
 .calendarTitle {
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 
 .calendarUserTag {
     font-family: 'Manrope', sans-serif;
-    font-size: 0.9rem;
-    color: var(--accent-blue);
+    font-size: 0.88rem;
+    color: var(--accent-sky);
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -58,19 +55,19 @@
 
 .calendarNav {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     align-items: center;
 }
 
 .calendarYearPill {
-    padding: 4px 12px;
+    padding: 3px 10px;
     border-radius: 0;
     font-family: 'Manrope', sans-serif;
-    font-size: 0.82rem;
-    font-weight: 600;
-    background: rgba(30, 44, 72, 0.6);
-    border: 1px solid rgba(183, 197, 215, 0.2);
-    color: #c8daf2;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #94a3b8;
     cursor: pointer;
     transition: all 0.2s ease;
     text-decoration: none;
@@ -78,26 +75,26 @@
 
 .calendarYearPill.active,
 .calendarYearPill:hover {
-    background: #7ec8e3;
-    color: #0c111e;
-    border-color: #ffffff;
+    background: rgba(96, 165, 250, 0.15);
+    color: #ffffff;
+    border-color: rgba(96, 165, 250, 0.4);
 }
 
 /* Heatmap Grid Wrapper */
 .calendarGridContainer {
     width: 100%;
     overflow-x: auto;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
     scrollbar-width: thin;
-    scrollbar-color: rgba(126, 200, 227, 0.3) rgba(16, 24, 40, 0.5);
+    scrollbar-color: rgba(255, 255, 255, 0.15) rgba(10, 14, 23, 0.5);
 }
 
 .calendarGridContainer::-webkit-scrollbar {
-    height: 6px;
+    height: 4px;
 }
 
 .calendarGridContainer::-webkit-scrollbar-thumb {
-    background: rgba(126, 200, 227, 0.3);
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 0;
 }
 
@@ -116,10 +113,10 @@
     flex-wrap: wrap;
     gap: 12px;
     font-family: 'Manrope', sans-serif;
-    font-size: 0.82rem;
-    color: #8fa6c5;
+    font-size: 0.8rem;
+    color: #64748b;
     padding-top: 8px;
-    border-top: 1px solid rgba(183, 197, 215, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .calendarLegend {
@@ -137,16 +134,16 @@
 /* Tooltip */
 .calendarTooltip {
     position: absolute;
-    background: rgba(12, 17, 30, 0.95);
+    background: #0f1523;
     color: #ffffff;
-    border: 1px solid rgba(126, 200, 227, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: 0;
-    padding: 6px 12px;
+    padding: 5px 10px;
     font-family: 'Manrope', sans-serif;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     pointer-events: none;
     z-index: 1000;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
     transform: translate(-50%, -120%);
     white-space: nowrap;
     opacity: 0;
@@ -158,17 +155,17 @@
 }
 
 /* Color levels */
-.lvl-0 { fill: rgba(36, 50, 78, 0.45); }
-.lvl-1 { fill: #9be9a8; }
-.lvl-2 { fill: #40c463; }
-.lvl-3 { fill: #30a14e; }
-.lvl-4 { fill: #216e39; }
+.lvl-0 { fill: rgba(255, 255, 255, 0.05); }
+.lvl-1 { fill: #0e4429; }
+.lvl-2 { fill: #006d32; }
+.lvl-3 { fill: #26a641; }
+.lvl-4 { fill: #39d353; }
 
-.bg-lvl-0 { background-color: rgba(36, 50, 78, 0.45); border: 1px solid rgba(183, 197, 215, 0.15); }
-.bg-lvl-1 { background-color: #9be9a8; }
-.bg-lvl-2 { background-color: #40c463; }
-.bg-lvl-3 { background-color: #30a14e; }
-.bg-lvl-4 { background-color: #216e39; }
+.bg-lvl-0 { background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.08); }
+.bg-lvl-1 { background-color: #0e4429; }
+.bg-lvl-2 { background-color: #006d32; }
+.bg-lvl-3 { background-color: #26a641; }
+.bg-lvl-4 { background-color: #39d353; }
 
 @media (max-width: 600px) {
     .calendarHeader {

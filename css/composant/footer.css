@@ -5,20 +5,19 @@ footer {
 }
 
 .leFooter {
-    background: rgba(20, 29, 48, 0.92);
-    border: 1px solid rgba(183, 197, 215, 0.16);
+    background: #0f1523;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0;
     padding: 16px 24px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
 }
 
 .leFooterBlack {
-    background: rgba(14, 18, 26, 0.92);
-    border: 1px solid rgba(183, 197, 215, 0.16);
+    background: #0f1523;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 0;
     padding: 16px 24px;
     display: flex;
@@ -31,7 +30,7 @@ footer {
     width: 100%;
     display: flex;
     list-style-type: none;
-    padding: 3px 0;
+    padding: 2px 0;
     margin: 0;
     overflow: hidden;
 }
@@ -41,29 +40,25 @@ footer {
 }
 
 .generalParameters3 {
-    background: linear-gradient(90deg, rgba(204, 204, 204, 0.85), rgba(126, 200, 227, 0.75));
+    background: rgba(148, 163, 184, 0.3);
     border-radius: 0;
-    box-shadow: 0 0 6px rgba(126, 200, 227, 0.3);
 }
 
 .generalParameters3Black {
-    background-color: rgb(204, 204, 204);
+    background: rgba(148, 163, 184, 0.3);
 }
 
 .leFooter h2 {
     font-family: 'Manrope', sans-serif;
-    color: #c8daf2;
-    font-weight: 600;
-    font-size: 1.05rem;
+    color: #94a3b8;
+    font-weight: 500;
+    font-size: 0.95rem;
     letter-spacing: 0.2px;
     text-align: center;
-    margin: 8px 0;
-    position: relative;
-    will-change: transform;
-    animation: TextAnimationPresentation 6s infinite alternate-reverse ease-in-out;
+    margin: 6px 0;
 }
 
-/* GPU-Accelerated Footer Geometric Elements */
+/* Minimalist Sliding Footer Geometric Accents */
 .leFooter .whiteGeometryG,
 .leFooter #whiteGeometryG,
 .leFooter #whiteGeometryH,
@@ -77,42 +72,42 @@ footer {
 
 .leFooter .whiteGeometryG,
 .leFooter #whiteGeometryG {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 8vw;
     position: relative;
     animation: whiteGeometryG 3.5s infinite alternate-reverse linear;
 }
 
 .leFooter #whiteGeometryH {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryH 1.2s infinite alternate-reverse linear;
 }
 
 .leFooter #whiteGeometryI {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 6vw;
     position: relative;
     animation: whiteGeometryI 4s infinite alternate-reverse linear;
 }
 
 .leFooter #whiteGeometryJ {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 10vw;
     position: relative;
     animation: whiteGeometryJ 2s infinite alternate-reverse linear;
 }
 
 .leFooter #whiteGeometryK {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     width: 4vw;
     position: relative;
     animation: whiteGeometryK 3s infinite alternate-reverse linear;
 }
 
 .leFooter #whiteGeometryL {
-    min-height: 0.4vw;
+    min-height: 0.3vw;
     min-width: 2vw;
     position: relative;
     animation: whiteGeometryL 1.3s infinite alternate-reverse linear;
