@@ -5,7 +5,29 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Primary Meta Tags -->
         <title>Ibrahim Mallouka - Game Programmer Portfolio</title>
+        <meta name="title" content="Ibrahim Mallouka - Game Programmer Portfolio">
+        <meta name="description" content="Portfolio of Ibrahim Mallouka - Computer Science student at EPITA specializing in Game Programming. Core toolkit: C++, C#, Unreal Engine 5, Unity, Engine Architecture, and Network Replication.">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        
+        <!-- Open Graph / Facebook / LinkedIn / Discord -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://kothorebornalex.github.io/CurrentPortfolio/">
+        <meta property="og:title" content="Ibrahim Mallouka - Game Programmer Portfolio">
+        <meta property="og:description" content="Explore gameplay systems, engine architecture, UE5 network replication, and shader tools built in C++ and C#.">
+        <meta property="og:image" content="css/composant/img/astroboy1.jpeg">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://kothorebornalex.github.io/CurrentPortfolio/">
+        <meta name="twitter:title" content="Ibrahim Mallouka - Game Programmer Portfolio">
+        <meta name="twitter:description" content="Explore gameplay systems, engine architecture, UE5 network replication, and shader tools built in C++ and C#.">
+        <meta name="twitter:image" content="css/composant/img/astroboy1.jpeg">
+
         <link rel="stylesheet" href="css/IndexStyle.css">
     </head>
 
@@ -114,187 +136,205 @@
                     </div>
                 </div>
 
-                <div class="ProjectSectionsTitle" style="margin-top: 3.5rem;">Networking</div>
+                <!-- Interactive Project Filter Tabs -->
+                <div class="projectFilterContainer">
+                    <button class="filterTab active" data-filter="all">All Projects <span class="filterCount"></span></button>
+                    <button class="filterTab" data-filter="ue5">Unreal Engine 5 <span class="filterCount"></span></button>
+                    <button class="filterTab" data-filter="unity">Unity <span class="filterCount"></span></button>
+                    <button class="filterTab" data-filter="cpp">C++ &amp; Engine <span class="filterCount"></span></button>
+                    <button class="filterTab" data-filter="tools">Tooling &amp; Shaders <span class="filterCount"></span></button>
+                </div>
 
-                <ul class="imagesBarr2">
-                    <a class="ProjectButton" href="pageClonesOffensive.html">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <img class="cover_img_loaded" src="css/composant/img/projects/SovereignRepublic/SovSpoiler3.png" alt="Sovereign Republic preview">
-                            </div>
-                        </div>
+                <!-- Section: Networking -->
+                <div class="project-section-group">
+                    <div class="ProjectSectionsTitle">Networking</div>
 
-                        <div class="details-wrap">
-                            <div class="details-inner">
-                                <div class="ProjectButtonTitle">Sovereign Republic</div>
-                                <div class="ProjectButtonData">
-                                    <span class="projectTag">UE5</span>
-                                    <span class="projectTag">C++</span>
-                                    <span class="projectTag">Networking</span>
-                                    <span class="projectTag">RPC Systems</span>
+                    <ul class="imagesBarr2">
+                        <a class="ProjectButton" href="pageClonesOffensive.html" data-category="ue5 cpp networking">
+                            <div class="cover-image-wrap">
+                                <div class="cover-image">
+                                    <img class="cover_img_loaded" src="css/composant/img/projects/SovereignRepublic/SovSpoiler3.png" alt="Sovereign Republic preview">
                                 </div>
-                                <div class="ProjectButtonSkills">Multiplayer RPG architecture • Replicated inventory system • Class inheritance entities • Primary Data Assets</div>
                             </div>
-                            <span class="explorePill">View Project</span>
-                        </div>
-                    </a>
-                </ul>
 
-                <ul class="OrderGeometry4">
-                    <li><div class="whiteGeometryG" class="generalParametersGalery"></div></li>
-                    <li><div id="whiteGeometryH" class="generalParametersGalery"></div></li>
-                    <li><div id="whiteGeometryI" class="generalParametersGalery"></div></li>
-                    <li><div id="whiteGeometryL" class="generalParametersGalery"></div></li>
-                </ul>
-
-                <div class="ProjectSectionsTitle">Gameplay</div>
-
-                <ul class="imagesBarr">
-                    <!-- Wandering Traveller -->
-                    <a class="ProjectButton" href="pageWanderingTraveller.html">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <img class="cover_img_loaded" src="css/composant/img/projects/WANDERING_TRAVELLER__Banner.png" alt="Wandering Traveller banner">
-                            </div>
-                        </div>
-                        <div class="details-wrap">
-                            <div class="details-inner">
-                                <div class="ProjectButtonTitle">Wandering Traveller</div>
-                                <div class="ProjectButtonData">
-                                    <span class="projectTag">Unity</span>
-                                    <span class="projectTag">C#</span>
-                                    <span class="projectTag">Mobile</span>
-                                    <span class="projectTag">Optimization</span>
+                            <div class="details-wrap">
+                                <div class="details-inner">
+                                    <div class="ProjectButtonTitle">Sovereign Republic</div>
+                                    <div class="ProjectButtonData">
+                                        <span class="projectTag">UE5</span>
+                                        <span class="projectTag">C++</span>
+                                        <span class="projectTag">Networking</span>
+                                        <span class="projectTag">RPC Systems</span>
+                                    </div>
+                                    <div class="ProjectButtonSkills">Multiplayer RPG architecture • Replicated inventory system • Class inheritance entities • Primary Data Assets</div>
                                 </div>
-                                <div class="ProjectButtonSkills">GPU vertex shader animation pipeline • Zero-GC pooling system • 60 FPS with 112+ simultaneous AI units</div>
+                                <span class="explorePill">View Project</span>
                             </div>
-                            <span class="explorePill">View Project</span>
-                        </div>
-                    </a>
+                        </a>
+                    </ul>
+                </div>
 
-                    <!-- Liberty Express -->
-                    <a class="ProjectButton" href="pageLibertyExpress.html">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <img class="cover_img_loaded" src="css/composant/img/projects/LIBERTYEXPRESS_Logo.png" alt="Liberty Express logo">
-                            </div>
-                        </div>
-                        <div class="details-wrap">
-                            <div class="details-inner">
-                                <div class="ProjectButtonTitle">Liberty Express</div>
-                                <div class="ProjectButtonData">
-                                    <span class="projectTag">UE5</span>
-                                    <span class="projectTag">C++</span>
-                                    <span class="projectTag">FPS</span>
-                                    <span class="projectTag">Game Feel</span>
+                <!-- Section: Gameplay -->
+                <div class="project-section-group">
+                    <ul class="OrderGeometry4 section-divider">
+                        <li><div class="whiteGeometryG" class="generalParametersGalery"></div></li>
+                        <li><div id="whiteGeometryH" class="generalParametersGalery"></div></li>
+                        <li><div id="whiteGeometryI" class="generalParametersGalery"></div></li>
+                        <li><div id="whiteGeometryL" class="generalParametersGalery"></div></li>
+                    </ul>
+
+                    <div class="ProjectSectionsTitle">Gameplay</div>
+
+                    <ul class="imagesBarr">
+                        <!-- Wandering Traveller -->
+                        <a class="ProjectButton" href="pageWanderingTraveller.html" data-category="unity tools optimization mobile">
+                            <div class="cover-image-wrap">
+                                <div class="cover-image">
+                                    <img class="cover_img_loaded" src="css/composant/img/projects/WANDERING_TRAVELLER__Banner.png" alt="Wandering Traveller banner">
                                 </div>
-                                <div class="ProjectButtonSkills">Western-style dynamic gunplay • Responsive character controller • Designer tuning tooling via Data Assets</div>
                             </div>
-                            <span class="explorePill">View Project</span>
-                        </div>
-                    </a>
-                </ul>
-
-                <ul class="imagesBarr">
-                    <!-- Detroit's Sacrifices -->
-                    <a class="ProjectButton" href="pageDetroitsSacrifices.html">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <img class="cover_img_loaded" src="css/composant/img/projects/CoverDetroitsSacrifices.png" alt="Detroit's Sacrifices cover">
-                            </div>
-                        </div>
-                        <div class="details-wrap">
-                            <div class="details-inner">
-                                <div class="ProjectButtonTitle">Detroit's Sacrifices</div>
-                                <div class="ProjectButtonData">
-                                    <span class="projectTag">Unity</span>
-                                    <span class="projectTag">C#</span>
-                                    <span class="projectTag">FPS / TPS</span>
-                                    <span class="projectTag">AI Behaviors</span>
+                            <div class="details-wrap">
+                                <div class="details-inner">
+                                    <div class="ProjectButtonTitle">Wandering Traveller</div>
+                                    <div class="ProjectButtonData">
+                                        <span class="projectTag">Unity</span>
+                                        <span class="projectTag">C#</span>
+                                        <span class="projectTag">Mobile</span>
+                                        <span class="projectTag">Optimization</span>
+                                    </div>
+                                    <div class="ProjectButtonSkills">GPU vertex shader animation pipeline • Zero-GC pooling system • 60 FPS with 112+ simultaneous AI units</div>
                                 </div>
-                                <div class="ProjectButtonSkills">Stealth &amp; combat player mechanics • Sekiro-inspired stylish boss AI • Cyberspace hacking minigame</div>
+                                <span class="explorePill">View Project</span>
                             </div>
-                            <span class="explorePill">View Project</span>
-                        </div>
-                    </a>
+                        </a>
 
-                    <!-- Woolsome -->
-                    <a class="ProjectButton" href="pageWoolsome.html">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <img class="cover_img_loaded" src="css/composant/img/projects/Woolsome/WoolsomeBanner.png" alt="Woolsome banner">
-                            </div>
-                        </div>
-                        <div class="details-wrap">
-                            <div class="details-inner">
-                                <div class="ProjectButtonTitle">Woolsome</div>
-                                <div class="ProjectButtonData">
-                                    <span class="projectTag">UE5</span>
-                                    <span class="projectTag">C++</span>
-                                    <span class="projectTag">Top-Down</span>
-                                    <span class="projectTag">Co-op</span>
+                        <!-- Liberty Express -->
+                        <a class="ProjectButton" href="pageLibertyExpress.html" data-category="ue5 cpp gameplay">
+                            <div class="cover-image-wrap">
+                                <div class="cover-image">
+                                    <img class="cover_img_loaded" src="css/composant/img/projects/LIBERTYEXPRESS_Logo.png" alt="Liberty Express logo">
                                 </div>
-                                <div class="ProjectButtonSkills">Co-op gameplay physics &amp; bite mechanics • Custom camera spline editor • Flock herding AI systems</div>
                             </div>
-                            <span class="explorePill">View Project</span>
-                        </div>
-                    </a>
-                </ul>
-
-                <ul class="OrderGeometry4">
-                    <li><div class="whiteGeometryG" class="generalParametersGalery"></div></li>
-                    <li><div id="whiteGeometryH" class="generalParametersGalery"></div></li>
-                    <li><div id="whiteGeometryI" class="generalParametersGalery"></div></li>
-                    <li><div id="whiteGeometryL" class="generalParametersGalery"></div></li>
-                </ul>
-
-                <div class="ProjectSectionsTitle">Engine Programming &amp; Tooling</div>
-
-                <ul class="imagesBarr">
-                    <!-- Bond -->
-                    <a class="ProjectButton" href="pagebond.html">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <img class="cover_img_loaded" src="css/composant/img/projects/SFML_ResultWithoutRaysDebug.png" alt="Bond project preview">
-                            </div>
-                        </div>
-                        <div class="details-wrap">
-                            <div class="details-inner">
-                                <div class="ProjectButtonTitle">Bond</div>
-                                <div class="ProjectButtonData">
-                                    <span class="projectTag">SFML</span>
-                                    <span class="projectTag">C++</span>
-                                    <span class="projectTag">2D Engine</span>
-                                    <span class="projectTag">Raycasting</span>
+                            <div class="details-wrap">
+                                <div class="details-inner">
+                                    <div class="ProjectButtonTitle">Liberty Express</div>
+                                    <div class="ProjectButtonData">
+                                        <span class="projectTag">UE5</span>
+                                        <span class="projectTag">C++</span>
+                                        <span class="projectTag">FPS</span>
+                                        <span class="projectTag">Game Feel</span>
+                                    </div>
+                                    <div class="ProjectButtonSkills">Western-style dynamic gunplay • Responsive character controller • Designer tuning tooling via Data Assets</div>
                                 </div>
-                                <div class="ProjectButtonSkills">Custom 2D game engine from scratch • Real-time dynamic raycast shadows • JSON level editor pipeline</div>
+                                <span class="explorePill">View Project</span>
                             </div>
-                            <span class="explorePill">View Project</span>
-                        </div>
-                    </a>
+                        </a>
+                    </ul>
 
-                    <!-- Tex Anim -->
-                    <a class="ProjectButton" href="pageTexAnim.html">
-                        <div class="cover-image-wrap">
-                            <div class="cover-image">
-                                <img class="cover_img_loaded" src="css/composant/img/projects/TEXANIM_TexturedAnimation.png" alt="Tex Anim project preview">
-                            </div>
-                        </div>
-                        <div class="details-wrap">
-                            <div class="details-inner">
-                                <div class="ProjectButtonTitle">Tex Anim</div>
-                                <div class="ProjectButtonData">
-                                    <span class="projectTag">Unity</span>
-                                    <span class="projectTag">C#</span>
-                                    <span class="projectTag">HLSL Shaders</span>
-                                    <span class="projectTag">Tooling</span>
+                    <ul class="imagesBarr">
+                        <!-- Detroit's Sacrifices -->
+                        <a class="ProjectButton" href="pageDetroitsSacrifices.html" data-category="unity gameplay">
+                            <div class="cover-image-wrap">
+                                <div class="cover-image">
+                                    <img class="cover_img_loaded" src="css/composant/img/projects/CoverDetroitsSacrifices.png" alt="Detroit's Sacrifices cover">
                                 </div>
-                                <div class="ProjectButtonSkills">Custom Unity Editor Window • Keyframe-to-texture baking pipeline • Node-based animation state graph editor</div>
                             </div>
-                            <span class="explorePill">View Project</span>
-                        </div>
-                    </a>
-                </ul>
+                            <div class="details-wrap">
+                                <div class="details-inner">
+                                    <div class="ProjectButtonTitle">Detroit's Sacrifices</div>
+                                    <div class="ProjectButtonData">
+                                        <span class="projectTag">Unity</span>
+                                        <span class="projectTag">C#</span>
+                                        <span class="projectTag">FPS / TPS</span>
+                                        <span class="projectTag">AI Behaviors</span>
+                                    </div>
+                                    <div class="ProjectButtonSkills">Stealth &amp; combat player mechanics • Sekiro-inspired stylish boss AI • Cyberspace hacking minigame</div>
+                                </div>
+                                <span class="explorePill">View Project</span>
+                            </div>
+                        </a>
+
+                        <!-- Woolsome -->
+                        <a class="ProjectButton" href="pageWoolsome.html" data-category="ue5 cpp gameplay">
+                            <div class="cover-image-wrap">
+                                <div class="cover-image">
+                                    <img class="cover_img_loaded" src="css/composant/img/projects/Woolsome/WoolsomeBanner.png" alt="Woolsome banner">
+                                </div>
+                            </div>
+                            <div class="details-wrap">
+                                <div class="details-inner">
+                                    <div class="ProjectButtonTitle">Woolsome</div>
+                                    <div class="ProjectButtonData">
+                                        <span class="projectTag">UE5</span>
+                                        <span class="projectTag">C++</span>
+                                        <span class="projectTag">Top-Down</span>
+                                        <span class="projectTag">Co-op</span>
+                                    </div>
+                                    <div class="ProjectButtonSkills">Co-op gameplay physics &amp; bite mechanics • Custom camera spline editor • Flock herding AI systems</div>
+                                </div>
+                                <span class="explorePill">View Project</span>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- Section: Engine Programming & Tooling -->
+                <div class="project-section-group">
+                    <ul class="OrderGeometry4 section-divider">
+                        <li><div class="whiteGeometryG" class="generalParametersGalery"></div></li>
+                        <li><div id="whiteGeometryH" class="generalParametersGalery"></div></li>
+                        <li><div id="whiteGeometryI" class="generalParametersGalery"></div></li>
+                        <li><div id="whiteGeometryL" class="generalParametersGalery"></div></li>
+                    </ul>
+
+                    <div class="ProjectSectionsTitle">Engine Programming &amp; Tooling</div>
+
+                    <ul class="imagesBarr">
+                        <!-- Bond -->
+                        <a class="ProjectButton" href="pagebond.html" data-category="cpp tools engine">
+                            <div class="cover-image-wrap">
+                                <div class="cover-image">
+                                    <img class="cover_img_loaded" src="css/composant/img/projects/SFML_ResultWithoutRaysDebug.png" alt="Bond project preview">
+                                </div>
+                            </div>
+                            <div class="details-wrap">
+                                <div class="details-inner">
+                                    <div class="ProjectButtonTitle">Bond</div>
+                                    <div class="ProjectButtonData">
+                                        <span class="projectTag">SFML</span>
+                                        <span class="projectTag">C++</span>
+                                        <span class="projectTag">2D Engine</span>
+                                        <span class="projectTag">Raycasting</span>
+                                    </div>
+                                    <div class="ProjectButtonSkills">Custom 2D game engine from scratch • Real-time dynamic raycast shadows • JSON level editor pipeline</div>
+                                </div>
+                                <span class="explorePill">View Project</span>
+                            </div>
+                        </a>
+
+                        <!-- Tex Anim -->
+                        <a class="ProjectButton" href="pageTexAnim.html" data-category="unity tools shaders">
+                            <div class="cover-image-wrap">
+                                <div class="cover-image">
+                                    <img class="cover_img_loaded" src="css/composant/img/projects/TEXANIM_TexturedAnimation.png" alt="Tex Anim project preview">
+                                </div>
+                            </div>
+                            <div class="details-wrap">
+                                <div class="details-inner">
+                                    <div class="ProjectButtonTitle">Tex Anim</div>
+                                    <div class="ProjectButtonData">
+                                        <span class="projectTag">Unity</span>
+                                        <span class="projectTag">C#</span>
+                                        <span class="projectTag">HLSL Shaders</span>
+                                        <span class="projectTag">Tooling</span>
+                                    </div>
+                                    <div class="ProjectButtonSkills">Custom Unity Editor Window • Keyframe-to-texture baking pipeline • Node-based animation state graph editor</div>
+                                </div>
+                                <span class="explorePill">View Project</span>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
             </div>
         </main>
 
@@ -318,5 +358,6 @@
         </footer>
 
         <script src="js/githubCalendar.js"></script>
+        <script src="js/projectFilter.js"></script>
     </body>
 </html>
