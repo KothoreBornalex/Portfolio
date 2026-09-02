@@ -12,6 +12,9 @@
         <meta name="author" content="Ibrahim Mallouka">
         <meta name="description" content="Portfolio of Ibrahim Mallouka - Computer Science student at EPITA with a Bachelor's in Digital Project Management (IIM). Proficient in Rust, C, C++, and C# with a focus on systems programming, network architecture, custom engine development, and memory optimization.">
         
+        <link rel="canonical" href="https://kothorebornalex.github.io/CurrentPortfolio/">
+        <meta name="theme-color" content="#0a0e17">
+        
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -20,18 +23,24 @@
         <link rel="apple-touch-icon" href="favicon.png">
         
         <!-- Open Graph / Facebook / LinkedIn / Discord -->
+        <meta property="og:site_name" content="Ibrahim Mallouka Portfolio">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://kothorebornalex.github.io/CurrentPortfolio/">
         <meta property="og:title" content="Ibrahim Mallouka - Software &amp; Systems Engineer">
         <meta property="og:description" content="Rust, C, C++, C# • Systems programming, network architecture &amp; replication, custom engine development, and memory optimization.">
-        <meta property="og:image" content="css/composant/img/astroboy1.jpeg">
+        <meta property="og:image" content="https://kothorebornalex.github.io/CurrentPortfolio/css/composant/img/og-preview.png">
+        <meta property="og:image:secure_url" content="https://kothorebornalex.github.io/CurrentPortfolio/css/composant/img/og-preview.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Ibrahim Mallouka - Software &amp; Systems Engineer Portfolio">
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:url" content="https://kothorebornalex.github.io/CurrentPortfolio/">
         <meta name="twitter:title" content="Ibrahim Mallouka - Software &amp; Systems Engineer">
         <meta name="twitter:description" content="Rust, C, C++, C# • Systems programming, network architecture &amp; replication, custom engine development, and memory optimization.">
-        <meta name="twitter:image" content="css/composant/img/astroboy1.jpeg">
+        <meta name="twitter:image" content="https://kothorebornalex.github.io/CurrentPortfolio/css/composant/img/og-preview.png">
 
         <link rel="stylesheet" href="css/IndexStyle.css">
         <link rel="stylesheet" href="css/composant/projectFilter.css">
@@ -102,15 +111,15 @@
                             <div class="floatingProfileRow">
                                 <img class="floatingAvatar" src="css/composant/img/IbrahimMallouka.jpg" alt="Ibrahim Mallouka">
                                 <div id="Details" class="contactColumn">
-                                    <a class="contactPill" href="tel:+33760777617">
+                                    <a class="contactPill" href="tel:+33760777617" data-copy="07 60 77 76 17" data-copy-label="phone number" title="Click to call or copy phone number">
                                         <span>📞</span> 07 60 77 76 17
                                     </a>
-                                    <a class="contactPill" href="mailto:ibrahim.mlk.dev@gmail.com">
+                                    <a class="contactPill" href="mailto:ibrahim.mlk.dev@gmail.com" data-copy="ibrahim.mlk.dev@gmail.com" data-copy-label="email address" title="Click to email or copy address">
                                         <span>✉</span> ibrahim.mlk.dev@gmail.com
                                     </a>
-                                    <span class="contactPill" title="Discord handle">
+                                    <div class="contactPill" data-copy="MLK" data-copy-label="Discord handle (MLK)" title="Click to copy Discord handle" role="button" tabindex="0">
                                         <img src="css/composant/img/ReseauxLogo/discord.svg" alt="Discord"> Discord: MLK
-                                    </span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -404,5 +413,7 @@
 
         <script src="js/githubCalendar.js"></script>
         <script src="js/projectFilter.js"></script>
+        <script src="js/copyToast.js"></script>
+        <script src="js/pageTransitions.js"></script>
     </body>
 </html>
