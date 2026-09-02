@@ -112,3 +112,19 @@ footer {
     position: relative;
     animation: whiteGeometryL 1.3s infinite alternate-reverse linear;
 }
+
+@media (max-width: 600px) {
+    footer {
+        padding: 0 14px;
+        margin: 24px auto 16px auto;
+    }
+
+    .leFooter,
+    .leFooterBlack {
+        padding: 12px 14px;
+    }
+
+    .leFooter h2 {
+        font-size: 0.85rem;
+    }
+}

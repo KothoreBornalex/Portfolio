@@ -13,6 +13,7 @@
     gap: 16px;
     box-sizing: border-box;
     transition: border-color 0.2s ease;
+    width: 100%;
 }
 
 .githubCalendarCard:hover {
@@ -25,18 +26,20 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
+    width: 100%;
 }
 
 .calendarTitleWrap {
     display: flex;
     align-items: baseline;
-    gap: 12px;
+    flex-wrap: wrap;
+    gap: 10px 14px;
 }
 
 .calendarTitle {
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
     font-weight: 600;
 }
 
@@ -55,6 +58,7 @@
 
 .calendarNav {
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
     align-items: center;
 }
@@ -71,6 +75,7 @@
     cursor: pointer;
     transition: all 0.2s ease;
     text-decoration: none;
+    user-select: none;
 }
 
 .calendarYearPill.active,
@@ -84,17 +89,19 @@
 .calendarGridContainer {
     width: 100%;
     overflow-x: auto;
-    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    touch-action: pan-x;
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.15) rgba(10, 14, 23, 0.5);
 }
 
 .calendarGridContainer::-webkit-scrollbar {
-    height: 4px;
+    height: 5px;
 }
 
 .calendarGridContainer::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.18);
     border-radius: 0;
 }
 
@@ -115,8 +122,9 @@
     font-family: 'Manrope', sans-serif;
     font-size: 0.8rem;
     color: #64748b;
-    padding-top: 8px;
+    padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
+    width: 100%;
 }
 
 .calendarLegend {
@@ -167,9 +175,41 @@
 .bg-lvl-3 { background-color: #26a641; }
 .bg-lvl-4 { background-color: #39d353; }
 
-@media (max-width: 600px) {
+/* Mobile Optimizations */
+@media (max-width: 640px) {
+    .githubCalendarCard {
+        padding: 16px 12px;
+        gap: 12px;
+    }
+
     .calendarHeader {
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px;
+    }
+
+    .calendarTitleWrap {
+        width: 100%;
+        gap: 6px 10px;
+    }
+
+    .calendarNav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .calendarYearPill {
+        padding: 4px 8px;
+        font-size: 0.74rem;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .calendarFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
     }
 }

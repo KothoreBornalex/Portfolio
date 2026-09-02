@@ -38,13 +38,14 @@
     border-radius: 0;
     border: none;
     padding: 6vw 7vw;
+    box-sizing: border-box;
 }
 
 /* Concept 3: 2-Column Floating Layout with Generous Spacing */
 .floatingHeroContainer {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
-    gap: clamp(48px, 5.5vw, 80px);
+    gap: clamp(36px, 5.5vw, 80px);
     align-items: center;
     width: 100%;
     max-width: 1360px;
@@ -69,17 +70,18 @@
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
     font-weight: 500;
-    font-size: clamp(3.2rem, 5.2vw, 5.4rem);
+    font-size: clamp(2.4rem, 5.2vw, 5.4rem);
     line-height: 1.05;
     letter-spacing: -1px;
     text-transform: none;
     margin: 0;
+    word-break: break-word;
 }
 
 .floatingRole {
     font-family: 'Manrope', sans-serif;
     color: #e0f2fe;
-    font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+    font-size: clamp(1.2rem, 2.2vw, 1.85rem);
     font-weight: 600;
     letter-spacing: -0.3px;
 }
@@ -92,10 +94,11 @@
     font-family: 'Manrope', sans-serif;
     color: #94a3b8;
     font-weight: 400;
-    font-size: clamp(1rem, 1.25vw, 1.18rem);
+    font-size: clamp(0.98rem, 1.25vw, 1.18rem);
     line-height: 1.75;
     max-width: 680px;
     margin: 0;
+    word-break: break-word;
 }
 
 .floatingBio p {
@@ -129,12 +132,14 @@
     color: #cbd5e1;
     text-decoration: none;
     transition: all 0.2s ease;
+    box-sizing: border-box;
 }
 
 .floatingActionBtn img {
     width: 16px;
     height: 16px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
 .floatingActionBtn:hover {
@@ -143,18 +148,20 @@
     color: #ffffff;
 }
 
-/* Right Column - Floating Profile Photo & Button Pills with Generous Spacing */
+/* Right Column - Floating Profile Photo & Button Pills */
 .floatingRight {
     display: flex;
     flex-direction: column;
     gap: 22px;
     min-width: 0;
+    width: 100%;
 }
 
 .floatingProfileRow {
     display: flex;
     align-items: center;
     gap: 24px;
+    width: 100%;
 }
 
 .floatingAvatar {
@@ -190,9 +197,7 @@
     color: #94a3b8;
     text-decoration: none;
     transition: all 0.2s ease;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    box-sizing: border-box;
 }
 
 .contactPill img {
@@ -212,6 +217,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 100%;
 }
 
 .credentialPill {
@@ -225,6 +231,8 @@
     text-decoration: none;
     color: inherit;
     transition: all 0.2s ease;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .credentialPill:hover {
@@ -245,6 +253,7 @@
     display: flex;
     flex-direction: column;
     gap: 3px;
+    min-width: 0;
 }
 
 .credTitle {
@@ -259,6 +268,7 @@
     font-family: 'Manrope', sans-serif;
     font-size: 0.78rem;
     color: #94a3b8;
+    word-break: break-word;
 }
 
 #Loading,
@@ -266,15 +276,131 @@
     display: none;
 }
 
+/* Tablet & Smaller Desktops */
 @media (max-width: 950px) {
     .mainImage {
         min-height: auto;
-        padding: 8vw 6vw;
+        padding: 48px 24px 40px 24px;
         background-position: center top;
     }
 
     .floatingHeroContainer {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 36px;
+    }
+}
+
+/* Mobile Devices (Phones) */
+@media (max-width: 640px) {
+    .mainImage {
+        padding: 32px 16px 28px 16px;
+    }
+
+    .floatingLeft {
+        gap: 1.4rem;
+    }
+
+    .floatingTitles {
+        gap: 8px;
+    }
+
+    .floatingTitles h1,
+    #MainTitle {
+        font-size: clamp(2rem, 8vw, 3.2rem);
+    }
+
+    .floatingRole {
+        font-size: 1.15rem;
+    }
+
+    .floatingBio,
+    #TitleIntro {
+        gap: 0.9rem;
+        font-size: 0.94rem;
+        line-height: 1.65;
+    }
+
+    .floatingActions {
+        gap: 8px;
+        width: 100%;
+    }
+
+    .floatingActionBtn {
+        padding: 8px 14px;
+        font-size: 0.82rem;
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    .floatingRight {
+        gap: 16px;
+    }
+
+    .floatingProfileRow {
+        gap: 14px;
+    }
+
+    .floatingAvatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contactColumn {
+        gap: 8px;
+    }
+
+    .contactPill {
+        padding: 7px 12px;
+        font-size: 0.82rem;
+        gap: 8px;
+        width: 100%;
+        white-space: normal;
+        word-break: break-all;
+    }
+
+    .contactPill img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .credentialsColumn {
+        gap: 8px;
+    }
+
+    .credentialPill {
+        padding: 8px 12px;
+        gap: 12px;
+    }
+
+    .credLogo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .credTitle {
+        font-size: 0.82rem;
+    }
+
+    .credSub {
+        font-size: 0.74rem;
+    }
+}
+
+/* Extra Small Phones (<= 440px) */
+@media (max-width: 440px) {
+    .floatingProfileRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .floatingAvatar {
+        width: 88px;
+        height: 88px;
+    }
+
+    .contactPill {
+        padding: 8px 12px;
+        font-size: 0.82rem;
     }
 }
